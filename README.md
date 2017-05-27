@@ -1,0 +1,1 @@
+List of projects for kaggle competitions. https://www.kaggle.com/claudiucreanga
