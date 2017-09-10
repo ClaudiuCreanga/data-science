@@ -1,0 +1,1021 @@
+medal,date,source,comments,language,votes
+gold,2017-02-23T18:31:04.343Z,Titanic: Machine Learning from Disaster,601,R,1425
+gold,2017-02-24T06:16:36.637Z,Data Science Bowl 2017,264,Python,1210
+gold,2017-05-31T18:38:05.403Z,Zillow Prize: Zillow’s Home Value Prediction (Zestimate),122,R,734
+gold,2017-04-12T14:22:19.073Z,Quora Question Pairs,120,Python,702
+gold,2016-11-15T18:22:13.117Z,Titanic: Machine Learning from Disaster,316,Python,617
+gold,2017-06-30T06:29:53.113Z,Instacart Market Basket Analysis,116,R,564
+gold,2017-09-07T17:08:57.617Z,Titanic: Machine Learning from Disaster,207,Python,557
+gold,2017-08-29T15:54:22.1Z,Iris Species,90,Python,556
+gold,2017-09-08T08:04:26.497Z,House Prices: Advanced Regression Techniques,197,Python,521
+gold,2017-06-03T13:40:10.833Z,Zillow Prize: Zillow’s Home Value Prediction (Zestimate),86,Python,511
+gold,2017-02-10T14:10:32.003Z,Data Science Bowl 2017,120,Python,469
+gold,2017-05-09T17:06:09.04Z,Titanic: Machine Learning from Disaster,238,Python,439
+gold,2017-04-21T05:50:08.587Z,House Prices: Advanced Regression Techniques,172,Python,431
+silver,2016-02-23T04:33:52.443Z,Digit Recognizer,138,Python,372
+gold,2016-10-16T14:59:31.497Z,Allstate Claims Severity,73,Python,350
+gold,2017-04-11T15:58:39.39Z,Data Science Bowl 2017,100,Python,340
+gold,2017-02-10T03:04:06.323Z,Two Sigma Connect: Rental Listing Inquiries,54,Python,325
+gold,2017-06-02T04:20:55.42Z,Instacart Market Basket Analysis,63,Python,314
+gold,2017-08-05T00:14:53.227Z,Weather data in New York City - 2016,103,R,302
+gold,2017-06-03T13:29:41.86Z,Mercedes-Benz Greener Manufacturing,63,Python,274
+gold,2015-12-13T23:23:13.337Z,Rossmann Store Sales,47,R,264
+gold,2017-05-13T15:15:59.62Z,Sberbank Russian Housing Market,69,R,262
+gold,2017-08-13T14:19:46.07Z,New York City Taxi with OSRM,79,Python,251
+gold,2017-08-29T16:04:52.53Z,Weather data in New York City - 2016,60,Python,247
+gold,2017-04-07T17:22:48.46Z,Data Science Bowl 2017,37,Python,243
+gold,2017-04-21T18:30:17.827Z,Planet: Understanding the Amazon from Space,22,Python,236
+gold,2016-04-23T13:47:30.16Z,Santander Customer Satisfaction,36,Python,223
+gold,2017-09-04T23:44:06.393Z,Digit Recognizer,65,Python,219
+gold,2016-10-09T19:48:58.947Z,Outbrain Click Prediction,21,Python,217
+gold,2017-04-07T19:19:14.44Z,Data Science Bowl 2017,89,Python,212
+gold,2016-07-12T10:55:25.343Z,TalkingData Mobile User Demographics,39,Python,211
+gold,2017-05-02T13:08:54.51Z,Sberbank Russian Housing Market,59,Python,202
+gold,2016-12-09T09:55:42.73Z,Two Sigma Financial Modeling Challenge,27,Python,197
+gold,2017-07-11T13:30:55.65Z,Titanic: Machine Learning from Disaster,104,Python,195
+gold,2017-04-14T22:37:24.827Z,Quora Question Pairs,35,Python,185
+gold,2015-08-31T13:29:30.993Z,Springleaf Marketing Response,29,R,184
+gold,2017-01-08T04:18:48.46Z,Two Sigma Financial Modeling Challenge,52,Python,181
+gold,2017-02-07T11:40:06.803Z,Two Sigma Financial Modeling Challenge,44,Python,178
+gold,2017-07-05T10:56:07.253Z,Personalized Medicine: Redefining Cancer Treatment,41,R,170
+gold,2016-12-22T05:45:00.38Z,Santander Product Recommendation,66,Python,169
+gold,2017-09-08T19:02:12.18Z,New York City Taxi Trip Duration,37,Python,169
+gold,2017-04-28T11:17:04.803Z,Quora Question Pairs,162,Python,168
+gold,2017-05-02T17:16:40.337Z,Titanic: Machine Learning from Disaster,45,Python,167
+silver,2017-01-07T22:25:14.51Z,House Prices: Advanced Regression Techniques,74,R,166
+gold,2016-07-17T10:34:02.3Z,TalkingData Mobile User Demographics,33,Python,165
+gold,2016-11-15T08:05:05.49Z,The Nature Conservancy Fisheries Monitoring,44,Python,164
+gold,2015-07-02T16:09:19.803Z,Caterpillar Tube Pricing,31,R,163
+gold,2016-04-04T14:24:15.527Z,Shelter Animal Outcomes,32,R,163
+gold,2017-01-20T13:04:19.573Z,Data Science Bowl 2017,48,Python,163
+gold,2017-07-23T20:32:01.717Z,Web Traffic Time Series Forecasting,42,R,163
+gold,2015-05-08T17:10:28.83Z,Otto Group Product Classification Challenge,14,R,161
+gold,2017-09-02T12:21:13.16Z,IMDB 5000 Movie Dataset,46,Python,161
+gold,2016-08-05T16:48:26.32Z,Predicting Red Hat Business Value,25,Python,156
+gold,2017-02-19T18:46:55.63Z,Two Sigma Connect: Rental Listing Inquiries,18,Python,153
+silver,2017-01-28T19:54:57.413Z,Titanic: Machine Learning from Disaster,40,Python,152
+gold,2016-06-10T22:52:41.003Z,Facebook V: Predicting Check Ins,36,R,151
+gold,2016-08-05T10:28:37.203Z,TalkingData Mobile User Demographics,77,Python,148
+silver,2016-09-04T18:20:50.547Z,Leaf Classification,47,Python,148
+gold,2017-04-12T21:00:51.973Z,Intel & MobileODT Cervical Cancer Screening,32,Python,146
+gold,2017-06-29T20:43:00.037Z,Mercedes-Benz Greener Manufacturing,65,R,146
+gold,2017-08-02T04:08:55.827Z,Web Traffic Time Series Forecasting,23,Python,145
+bronze,2016-12-17T09:03:25.71Z,Credit Card Fraud Detection,68,Python,144
+gold,2017-06-15T06:57:16.187Z,Instacart Market Basket Analysis,63,R,144
+gold,2017-09-03T12:46:21.373Z,Nutrition Facts for McDonald's Menu,54,Python,143
+gold,2017-05-06T21:22:46.71Z,Administrative divisions of Moscow,33,R,141
+gold,2016-08-11T10:38:24.403Z,Predicting Red Hat Business Value,42,R,140
+gold,2016-10-17T02:03:18.297Z,Allstate Claims Severity,18,R,139
+silver,2016-09-18T21:28:58.957Z,Titanic: Machine Learning from Disaster,50,R,137
+gold,2016-12-22T13:23:01.32Z,Santander Product Recommendation,38,R,137
+gold,2017-02-10T03:07:10.237Z,Two Sigma Connect: Rental Listing Inquiries,28,Python,137
+gold,2017-09-08T13:56:38.933Z,House Prices: Advanced Regression Techniques,54,Python,137
+silver,2016-07-28T18:32:59.487Z,European Soccer Database,39,R,136
+gold,2017-05-03T16:27:25.66Z,Quora Question Pairs,48,Python,136
+gold,2017-05-24T18:56:28.803Z,Zillow Prize: Zillow’s Home Value Prediction (Zestimate),30,Python,136
+silver,2015-11-16T18:36:20.87Z,2013 American Community Survey,35,R,131
+gold,2016-12-01T20:24:29.987Z,Two Sigma Financial Modeling Challenge,30,Python,130
+silver,2017-04-28T04:26:45.503Z,House Prices: Advanced Regression Techniques,46,Python,129
+gold,2017-09-07T22:10:50.743Z,World Bank Youth Unemployment Rates,59,Python,129
+gold,2017-01-30T21:25:33.057Z,Dstl Satellite Imagery Feature Detection,103,Python,128
+gold,2017-05-25T08:43:47.703Z,Quora Question Pairs,28,Python,127
+gold,2017-01-04T01:04:10.947Z,Two Sigma Financial Modeling Challenge,19,Python,126
+silver,2017-01-24T16:12:54.453Z,Human Resources Analytics,48,Python,125
+gold,2017-04-30T08:37:53.74Z,Sberbank Russian Housing Market,16,R,123
+gold,2015-06-06T08:10:55.447Z,Crowdflower Search Results Relevance,0,Python,122
+gold,2017-07-21T22:36:28.77Z,Planet: Understanding the Amazon from Space,34,Python,122
+gold,2016-09-07T21:40:00.187Z,House Prices: Advanced Regression Techniques,60,R,121
+silver,2017-05-15T09:54:27.097Z,"Homicide Reports, 1980-2014",100,R,121
+gold,2017-06-16T01:32:48.76Z,Mercedes-Benz Greener Manufacturing,54,Python,121
+gold,2016-05-12T01:46:06.043Z,Facebook V: Predicting Check Ins,16,R,120
+gold,2016-10-08T20:13:38.803Z,Bosch Production Line Performance,35,Python,119
+gold,2017-06-03T10:27:21.893Z,Mercedes-Benz Greener Manufacturing,81,Python,119
+gold,2016-06-15T22:51:16.307Z,Grupo Bimbo Inventory Demand,24,Python,118
+silver,2017-05-26T06:12:23.12Z,Digit Recognizer,44,Python,118
+silver,2016-09-14T11:08:32.32Z,Airplane Crashes Since 1908,37,Python,116
+gold,2017-05-25T09:51:41.747Z,Moscow Ring Roads,16,R,116
+gold,2016-12-04T10:17:30.717Z,Two Sigma Financial Modeling Challenge,28,Python,115
+gold,2017-05-02T19:42:50.813Z,Two Sigma Connect: Rental Listing Inquiries,34,Python,115
+gold,2017-09-09T15:21:55.257Z,Iris Species,25,Python,115
+silver,2016-10-12T08:18:59.383Z,Titanic: Machine Learning from Disaster,25,R,113
+gold,2017-06-12T06:30:13.587Z,Instacart Market Basket Analysis,58,Python,113
+gold,2016-07-19T09:22:02.053Z,Grupo Bimbo Inventory Demand,20,R,111
+silver,2016-08-30T18:29:26.027Z,Pokemon with stats,41,Python,111
+silver,2017-07-15T19:36:05.79Z,House Prices: Advanced Regression Techniques,54,R,111
+gold,2017-08-25T15:28:50.193Z,Google Cloud & YouTube-8M Video Understanding Challenge,21,Python,107
+gold,2016-11-14T15:12:59.11Z,The Nature Conservancy Fisheries Monitoring,84,Python,106
+bronze,2016-12-19T21:30:46.17Z,Titanic: Machine Learning from Disaster,46,Python,106
+gold,2017-08-14T04:42:03.363Z,Two Sigma Connect: Rental Listing Inquiries,69,Python,104
+silver,2017-09-08T14:51:36.797Z,Complete FIFA 2017 Player dataset (Global),24,Python,104
+gold,2016-02-19T16:09:45.207Z,Home Depot Product Search Relevance,7,R,103
+gold,2017-01-23T10:51:25.933Z,Dstl Satellite Imagery Feature Detection,24,Python,103
+bronze,2016-11-12T20:46:12.55Z,Human Resources Analytics,66,R,102
+gold,2016-08-03T20:40:14.24Z,Predicting Red Hat Business Value,13,R,101
+gold,2016-10-26T17:17:50.467Z,Allstate Claims Severity,45,Python,101
+gold,2017-05-02T12:41:04.99Z,Sberbank Russian Housing Market,46,Python,101
+gold,2017-06-26T21:23:15.42Z,Mercedes-Benz Greener Manufacturing,31,R,101
+bronze,2016-09-30T16:06:50.78Z,House Prices: Advanced Regression Techniques,40,Python,100
+silver,2017-09-08T08:23:20.64Z,World Development Indicators,26,Python,100
+gold,2017-07-26T09:52:07.19Z,Instacart Market Basket Analysis,20,Python,100
+gold,2016-09-24T20:44:33.953Z,Bosch Production Line Performance,16,Python,99
+gold,2017-01-24T22:23:13.17Z,Data Science Bowl 2017,19,Python,99
+gold,2017-03-08T08:22:39.08Z,Two Sigma Connect: Rental Listing Inquiries,56,R,99
+silver,2016-09-04T00:27:27.013Z,Dogs vs. Cats Redux: Kernels Edition,45,Python,98
+gold,2016-05-11T22:05:56.787Z,Draper Satellite Image Chronology,24,Python,97
+gold,2016-10-17T19:22:27.79Z,Outbrain Click Prediction,35,Python,97
+gold,2016-12-09T09:30:11.933Z,Two Sigma Financial Modeling Challenge,24,Python,97
+silver,2017-08-31T06:00:20.68Z,Iris Species,20,Python,97
+gold,2017-09-09T13:26:10.33Z,New York City Taxi Trip Duration,18,Python,97
+silver,2017-03-15T17:08:58.397Z,Leaf Classification,37,Python,96
+gold,2016-12-14T18:06:24.453Z,Two Sigma Financial Modeling Challenge,24,Python,96
+gold,2017-07-15T05:15:51.9Z,Personalized Medicine: Redefining Cancer Treatment,44,Python,96
+silver,2016-03-06T07:06:09.06Z,Hillary Clinton's Emails,13,Python,95
+gold,2017-04-30T17:49:17.313Z,Planet: Understanding the Amazon from Space,3,Python,95
+silver,2015-12-13T10:31:26.26Z,Airbnb New User Bookings,17,Python,94
+gold,2016-05-10T06:25:42.673Z,Expedia Hotel Recommendations,51,Python,94
+gold,2017-04-27T20:16:07.253Z,Quora Question Pairs,19,Python,94
+gold,2017-02-24T17:59:48.5Z,Two Sigma Financial Modeling Challenge,37,Python,93
+gold,2017-05-07T19:07:55.78Z,Sberbank Russian Housing Market,36,R,93
+silver,2017-06-19T12:02:42.37Z,Zillow Prize: Zillow’s Home Value Prediction (Zestimate),17,Python,93
+gold,2016-08-17T07:16:18.14Z,Predicting Red Hat Business Value,8,R,92
+silver,2017-02-21T05:25:14.75Z,Speed Dating Experiment,34,R,92
+gold,2017-07-25T08:13:59.74Z,Web Traffic Time Series Forecasting,13,Python,92
+gold,2016-08-04T12:24:16.45Z,Grupo Bimbo Inventory Demand,90,R,91
+gold,2015-10-29T18:29:23.093Z,Rossmann Store Sales,9,R,90
+gold,2016-08-26T22:22:15.937Z,Predicting Red Hat Business Value,66,Python,90
+gold,2016-10-13T02:35:15.49Z,Allstate Claims Severity,52,Python,89
+gold,2016-11-29T15:48:53.77Z,Two Sigma Financial Modeling Challenge,58,Python,89
+gold,2017-01-01T15:17:03.11Z,Santa's Uncertain Bags,40,Python,89
+gold,2017-02-11T20:48:32.34Z,Two Sigma Connect: Rental Listing Inquiries,25,R,89
+silver,2017-07-21T08:27:15.04Z,Personalized Medicine: Redefining Cancer Treatment,17,Python,89
+gold,2017-05-10T17:26:02.3Z,Planet: Understanding the Amazon from Space,12,Python,87
+silver,2017-09-01T20:20:25.96Z,Titanic: Machine Learning from Disaster,23,R,87
+gold,2017-07-29T03:59:56.257Z,Instacart Market Basket Analysis,62,Python,87
+silver,2016-07-08T08:44:26.213Z,2016 US Election,24,R,86
+silver,2017-07-12T19:13:16.833Z,Game of Thrones,35,Python,86
+silver,2016-09-28T04:48:58.787Z,2016 US Presidential Debates,27,R,86
+gold,2017-05-26T20:22:44.333Z,Moscow Ring Roads,9,R,86
+gold,2017-07-27T06:37:23.597Z,Carvana Image Masking Challenge,8,Python,86
+silver,2017-08-08T12:48:46.57Z,Passenger Screening Algorithm Challenge,6,Python,86
+silver,2016-07-24T23:56:41.75Z,Lending Club Loan Data,27,R,85
+silver,2016-11-10T07:38:48.31Z,"Ghouls, Goblins, and Ghosts... Boo! ",44,R,85
+silver,2017-08-09T14:34:43.197Z,Titanic: Machine Learning from Disaster,41,Python,85
+gold,2016-05-04T00:17:42.33Z,Expedia Hotel Recommendations,22,Python,84
+silver,2017-09-08T08:28:11.64Z,Kobe Bryant Shot Selection,12,Python,84
+,2015-04-09T20:47:11.663Z,Digit Recognizer,21,R,83
+gold,2016-07-11T21:52:06.39Z,TalkingData Mobile User Demographics,44,Python,83
+silver,2017-09-02T16:58:21.897Z,Video Game Sales with Ratings,22,Python,83
+silver,2016-12-29T14:52:45.777Z,Human Resources Analytics,18,R,83
+silver,2017-07-05T19:00:21.263Z,Instacart Market Basket Analysis,31,Python,83
+gold,2017-08-13T16:30:36.753Z,Web Traffic Time Series Forecasting,19,Python,83
+gold,2015-05-12T04:16:08.487Z,West Nile Virus Prediction,0,Python,82
+silver,2017-05-08T14:53:03.08Z,Two Sigma Connect: Rental Listing Inquiries,15,Python,82
+silver,2017-05-21T09:12:23.92Z,Instacart Market Basket Analysis,27,Python,80
+gold,2015-05-15T03:06:34.833Z,Crowdflower Search Results Relevance,1,Python,79
+gold,2016-08-16T07:49:11.81Z,Grupo Bimbo Inventory Demand,16,R,79
+silver,2016-11-11T21:50:25.91Z,Climate Change: Earth Surface Temperature Data,9,Python,79
+silver,2017-04-01T20:29:20.26Z,Quora Question Pairs,34,Python,79
+silver,2017-06-12T06:29:33.15Z,Sberbank Russian Housing Market,27,Python,78
+silver,2017-06-20T09:56:58.203Z,Titanic: Machine Learning from Disaster,26,R,78
+silver,2017-09-08T06:20:18.657Z,New York City Taxi with OSRM,47,Python,78
+silver,2017-02-09T13:54:57.06Z,Two Sigma Connect: Rental Listing Inquiries,30,R,77
+gold,2017-05-30T17:41:15.37Z,Mercedes-Benz Greener Manufacturing,23,Python,77
+gold,2017-08-30T15:23:18.447Z,Mercedes-Benz Greener Manufacturing,16,R,77
+gold,2016-07-15T12:19:26.78Z,Santa's Stolen Sleigh,8,R,76
+silver,2016-12-29T03:32:56.63Z,Global Terrorism Database,16,Python,76
+gold,2017-07-06T19:32:30.62Z,Intel & MobileODT Cervical Cancer Screening,15,Python,76
+gold,2017-04-16T19:14:34.167Z,Quora Question Pairs,20,Python,76
+gold,2017-05-21T00:51:40.603Z,Quora Question Pairs,17,Python,76
+silver,2017-05-28T22:53:04.937Z,Zillow Prize: Zillow’s Home Value Prediction (Zestimate),10,R,75
+gold,2017-07-08T10:18:22.35Z,Mercedes-Benz Greener Manufacturing,46,Python,75
+bronze,2015-11-19T10:52:28.423Z,Digit Recognizer,23,R,74
+gold,2016-05-25T17:34:53.36Z,Ultrasound Nerve Segmentation,17,Python,74
+gold,2016-07-22T02:27:13.54Z,TalkingData Mobile User Demographics,12,R,74
+silver,2016-10-11T21:26:01.697Z,Allstate Claims Severity,25,Python,74
+gold,2016-10-15T21:07:40.35Z,Allstate Claims Severity,96,Python,74
+silver,2017-09-09T07:01:02.623Z,Instacart Market Basket Analysis,14,Python,74
+silver,2016-08-02T08:48:21.88Z,Predicting Red Hat Business Value,32,Python,73
+bronze,2017-03-29T04:49:28.057Z,Credit Card Fraud Detection,36,Python,73
+gold,2017-05-02T14:08:34.54Z,Planet: Understanding the Amazon from Space,20,Python,73
+silver,2016-09-01T20:00:03.07Z,House Prices: Advanced Regression Techniques,33,R,72
+bronze,2015-11-19T02:46:44.267Z,Digit Recognizer,19,Python,71
+silver,2017-04-19T18:47:08.397Z,Iris Species,14,Python,71
+gold,2017-03-16T09:08:21.52Z,Two Sigma Connect: Rental Listing Inquiries,18,R,71
+silver,2017-05-02T14:13:36.723Z,Sberbank Russian Housing Market,23,Python,70
+gold,2016-06-11T09:27:03.857Z,Grupo Bimbo Inventory Demand,23,R,69
+gold,2016-09-16T21:17:03Z,Bosch Production Line Performance,13,Python,69
+silver,2016-10-06T00:24:38.783Z,Outbrain Click Prediction,10,Python,69
+gold,2017-03-02T19:21:23Z,Two Sigma Connect: Rental Listing Inquiries,39,Python,69
+gold,2017-05-26T14:29:39.94Z,Quora Question Pairs,43,Python,69
+silver,2017-07-27T08:51:38.85Z,Zillow Prize: Zillow’s Home Value Prediction (Zestimate),27,Python,69
+silver,2015-06-12T00:35:03.627Z,San Francisco Crime Classification,20,R,68
+gold,2015-10-08T14:21:06.187Z,Rossmann Store Sales,27,R,68
+silver,2016-12-28T18:09:59.393Z,Leaf Classification,30,Python,68
+silver,2017-04-04T22:39:02.847Z,NOAA Fisheries Steller Sea Lion Population Count,48,Python,68
+silver,2017-08-18T12:16:03.47Z,Titanic: Machine Learning from Disaster,22,Python,68
+silver,2017-06-01T18:53:31.56Z,Instacart Market Basket Analysis,31,Python,68
+silver,2017-09-08T23:27:07.163Z,Titanic: Machine Learning from Disaster,68,R,68
+silver,2017-07-06T17:44:40.557Z,NIPS 2017: Adversarial Learning Development Set,18,Python,68
+silver,2017-07-18T02:21:21.003Z,Zillow Prize: Zillow’s Home Value Prediction (Zestimate),43,Python,68
+silver,2015-06-15T22:28:27.097Z,Otto Group Product Classification Challenge,8,Python,67
+silver,2016-10-10T21:12:11.057Z,Allstate Claims Severity,27,R,67
+silver,2017-09-02T14:31:13.76Z,Indian Premier League,30,Python,67
+silver,2017-09-02T11:10:50.647Z,Titanic: Machine Learning from Disaster,62,R,67
+silver,2017-05-12T06:46:23.357Z,Quora Question Pairs,32,Python,67
+gold,2016-11-09T00:39:40.82Z,Allstate Claims Severity,101,Python,66
+silver,2016-06-10T12:34:59.337Z,Grupo Bimbo Inventory Demand,16,Python,65
+silver,2016-07-13T22:45:39.397Z,European Soccer Database,27,R,65
+gold,2016-10-10T21:45:17.717Z,Bosch Production Line Performance,23,R,65
+,2017-04-12T22:03:47.19Z,Data Science Bowl 2017,1,R,65
+bronze,2017-05-30T15:30:19.547Z,Breast Cancer Wisconsin (Diagnostic) Data Set,33,Python,65
+silver,2017-08-22T16:12:54.19Z,Street Network of New York in GraphML,28,Python,65
+silver,2017-06-01T05:32:54.657Z,Sberbank Russian Housing Market,24,R,64
+silver,2016-11-11T09:39:44.7Z,Santander Product Recommendation,18,R,63
+silver,2017-01-01T14:57:38.647Z,2015 Traffic  Fatalities,16,Python,63
+silver,2017-03-05T17:11:59.02Z,Dstl Satellite Imagery Feature Detection,43,Python,63
+gold,2017-05-28T04:57:44.407Z,Quora Question Pairs,75,Python,63
+silver,2015-06-02T18:44:20.17Z,West Nile Virus Prediction,8,R,62
+silver,2015-09-25T11:21:54.51Z,Springleaf Marketing Response,13,R,62
+silver,2017-09-06T22:31:52.927Z,"House Sales in King County, USA",15,Python,62
+silver,2017-08-17T18:14:32.907Z,Weather data in New York City - 2016,38,R,62
+bronze,2016-08-03T12:53:13.723Z,Titanic: Machine Learning from Disaster,37,Python,61
+bronze,2016-11-02T11:14:05.72Z,House Prices: Advanced Regression Techniques,16,Python,61
+silver,2017-04-30T16:04:40.44Z,Sberbank Russian Housing Market,29,Python,61
+silver,2017-09-07T07:52:08.71Z,IMDB 5000 Movie Dataset,10,Python,61
+silver,2016-05-13T05:22:07.383Z,Facebook V: Predicting Check Ins,14,Python,60
+silver,2016-06-05T06:59:51.81Z,How ISIS Uses Twitter,14,R,60
+silver,2016-12-23T14:26:35.357Z,Two Sigma Financial Modeling Challenge,22,Python,60
+gold,2017-01-09T12:55:58.227Z,Santa's Uncertain Bags,63,Python,60
+silver,2017-05-08T14:56:55.49Z,House Prices: Advanced Regression Techniques,22,Python,60
+gold,2015-07-23T00:28:43.997Z,Grasp-and-Lift EEG Detection,51,Python,59
+silver,2015-06-12T16:43:39.933Z,Crowdflower Search Results Relevance,1,R,58
+silver,2015-12-22T09:17:27.363Z,Santa's Stolen Sleigh,26,Python,58
+bronze,2016-01-22T22:58:00.02Z,San Francisco Crime Classification,9,R,58
+silver,2016-01-21T18:32:25.877Z,Home Depot Product Search Relevance,11,Python,58
+silver,2016-11-01T01:05:31.59Z,Emergency - 911 Calls,26,R,58
+silver,2017-08-17T17:19:18.95Z,Pokemon with stats,21,Python,58
+silver,2017-08-31T13:48:05.403Z,Digit Recognizer,2,Python,58
+silver,2015-09-04T16:21:06.947Z,Ocean Ship Logbooks (1750-1850),8,Python,57
+silver,2016-03-13T17:54:32.167Z,Home Depot Product Search Relevance,44,Python,57
+bronze,2016-03-26T19:17:21.51Z,Shelter Animal Outcomes,2,Python,57
+silver,2016-12-16T02:06:11.46Z,Allstate Claims Severity,28,Python,57
+bronze,2016-11-22T19:07:04.893Z,Uber Pickups in New York City,17,Python,57
+silver,2016-11-20T18:23:00.823Z,Santander Product Recommendation,31,Python,57
+silver,2016-11-22T12:50:53.677Z,The Nature Conservancy Fisheries Monitoring,16,Python,57
+silver,2017-05-19T20:46:20.26Z,Instacart Market Basket Analysis,11,R,57
+silver,2017-06-22T16:09:37.24Z,Passenger Screening Algorithm Challenge,22,Python,57
+bronze,2016-02-03T10:26:54.677Z,Amazon Fine Food Reviews,16,Python,56
+bronze,2016-10-09T20:32:07.903Z,Titanic: Machine Learning from Disaster,17,Python,56
+silver,2016-11-14T17:54:20.68Z,The Nature Conservancy Fisheries Monitoring,24,Python,56
+silver,2017-02-25T20:12:09.357Z,Gender Recognition by Voice,4,Python,56
+silver,2017-06-07T13:52:55.86Z,Sberbank Russian Housing Market,11,R,56
+silver,2017-05-25T11:28:29.437Z,Zillow Prize: Zillow’s Home Value Prediction (Zestimate),22,Python,56
+silver,2017-08-09T16:49:05.443Z,Instacart Market Basket Analysis,47,Python,56
+silver,2017-08-01T07:30:13.68Z,Carvana Image Masking Challenge,30,Python,56
+silver,2016-04-28T23:27:24.143Z,Kobe Bryant Shot Selection,6,R,55
+silver,2016-11-05T08:58:32.76Z,Melbourne University AES/MathWorks/NIH Seizure Prediction,26,Python,55
+silver,2016-09-26T04:33:48.687Z,Bosch Production Line Performance,18,Python,55
+silver,2016-09-12T20:37:58.227Z,Bosch Production Line Performance,24,R,55
+silver,2017-04-09T15:27:01.84Z,House Prices: Advanced Regression Techniques,27,Python,55
+silver,2017-09-04T22:20:23.113Z,Correlates of War: World Religions,21,Python,55
+silver,2017-03-18T22:30:10.657Z,Quora Question Pairs,19,Python,55
+silver,2017-03-28T04:58:48.493Z,Quora Question Pairs,16,Python,55
+silver,2017-04-18T21:32:57.977Z,Quora Question Pairs,5,Python,55
+silver,2015-11-18T21:54:50.727Z,Rossmann Store Sales,4,Python,54
+silver,2016-08-04T13:44:40.17Z,Predicting Red Hat Business Value,43,R,54
+silver,2016-09-19T06:44:00.36Z,House Prices: Advanced Regression Techniques,33,Python,54
+silver,2016-10-11T20:30:47.047Z,Bosch Production Line Performance,14,Python,54
+silver,2016-10-21T23:49:47.85Z,Allstate Claims Severity,13,R,54
+silver,2017-04-02T20:45:28.067Z,NOAA Fisheries Steller Sea Lion Population Count,7,Python,54
+silver,2017-05-01T17:52:51.793Z,Planet: Understanding the Amazon from Space,9,Python,54
+silver,2017-05-16T20:20:21.017Z,Instacart Market Basket Analysis,17,R,54
+silver,2016-09-01T01:50:38.31Z,House Prices: Advanced Regression Techniques,23,R,53
+silver,2016-10-27T11:00:34.257Z,Santander Product Recommendation,27,Python,53
+bronze,2016-11-27T22:10:59.697Z,Digit Recognizer,33,Python,53
+silver,2016-12-20T16:42:07.14Z,Two Sigma Financial Modeling Challenge,14,Python,53
+silver,2017-01-14T05:21:14.953Z,Data Science Bowl 2017,4,Python,53
+silver,2017-08-05T23:17:09.317Z,Zillow Prize: Zillow’s Home Value Prediction (Zestimate),29,Python,53
+silver,2015-06-30T23:23:09.513Z,San Francisco Crime Classification,4,R,52
+silver,2015-08-19T18:05:26.717Z,Liberty Mutual Group: Property Inspection Prediction,19,Python,52
+silver,2015-10-21T14:23:05.343Z,Rossmann Store Sales,10,R,52
+silver,2016-04-15T18:17:12.5Z,BNP Paribas Cardif Claims Management,33,Python,52
+silver,2016-05-13T09:06:18.667Z,Facebook V: Predicting Check Ins,8,Python,52
+silver,2016-08-17T01:14:19.04Z,Predicting Red Hat Business Value,15,Python,52
+silver,2017-06-29T21:36:08.987Z,Pokemon with stats,20,Python,52
+silver,2016-09-11T12:47:42.047Z,Bosch Production Line Performance,10,Python,52
+silver,2016-10-12T22:06:08.73Z,Allstate Claims Severity,57,R,52
+silver,2017-02-14T23:46:12.72Z,Two Sigma Connect: Rental Listing Inquiries,9,Python,52
+bronze,2015-06-23T10:19:14.94Z,San Francisco Crime Classification,8,Python,51
+bronze,2015-09-21T00:03:08.54Z,Hillary Clinton's Emails,8,R,51
+silver,2017-03-22T10:12:47.397Z,Outbrain Click Prediction,35,Python,51
+bronze,2016-10-12T15:58:40.497Z,Philadelphia Crime Data,10,Python,51
+silver,2017-01-02T18:24:15.18Z,Celebrity Deaths,21,Python,51
+silver,2017-03-05T22:13:39.723Z,March Machine Learning Mania 2017,22,R,51
+silver,2015-12-14T01:39:25.38Z,Santa's Stolen Sleigh,12,Python,50
+silver,2016-10-11T15:50:46.35Z,Allstate Claims Severity,22,Python,50
+silver,2017-02-18T21:42:00.22Z,Two Sigma Connect: Rental Listing Inquiries,9,R,50
+silver,2017-08-03T05:00:49.45Z,Two Sigma Connect: Rental Listing Inquiries,12,Python,50
+silver,2017-06-11T05:26:35.277Z,Planet: Understanding the Amazon from Space,5,Python,50
+silver,2017-06-15T21:10:23.617Z,Mercedes-Benz Greener Manufacturing,11,R,50
+silver,2016-05-05T16:01:18.187Z,Expedia Hotel Recommendations,7,Python,49
+silver,2016-07-10T18:09:14.343Z,Meta Kaggle,16,Python,49
+silver,2016-08-22T10:06:34.313Z,Predicting Red Hat Business Value,25,R,49
+bronze,2017-01-05T18:25:19.63Z,Demonetization in India Twitter Data,10,Python,49
+silver,2016-12-18T06:28:54.113Z,Dstl Satellite Imagery Feature Detection,6,Python,49
+bronze,2017-05-17T23:20:32.13Z,Human Resources Analytics,26,Python,49
+silver,2017-06-18T11:06:54.143Z,Mercedes-Benz Greener Manufacturing,25,R,49
+silver,2017-07-01T11:26:09.66Z,Sberbank Russian Housing Market,38,Python,49
+silver,2015-04-26T14:34:25.09Z,West Nile Virus Prediction,4,Python,48
+silver,2015-07-07T04:59:47.793Z,Liberty Mutual Group: Property Inspection Prediction,17,R,48
+silver,2016-05-16T20:07:06.403Z,Facebook V: Predicting Check Ins,20,Python,48
+bronze,2016-10-06T17:48:40.093Z,Daily News for Stock Market Prediction,27,Python,48
+silver,2016-10-17T19:21:43.087Z,Bosch Production Line Performance,5,Python,48
+silver,2016-12-01T01:07:56.193Z,Allstate Claims Severity,47,Python,48
+silver,2016-12-22T18:30:43.523Z,Dstl Satellite Imagery Feature Detection,6,Python,48
+silver,2017-03-19T04:11:08.977Z,Intel & MobileODT Cervical Cancer Screening,51,Python,48
+silver,2017-03-18T03:40:08.783Z,Quora Question Pairs,11,Python,48
+silver,2017-06-20T20:35:42.6Z,Moscow Ring Roads,11,R,48
+silver,2017-07-16T10:20:44.01Z,Web Traffic Time Series Forecasting,7,Python,48
+silver,2017-08-20T15:26:22.983Z,Web Traffic Time Series Forecasting,10,Python,48
+silver,2015-06-26T16:59:31.01Z,Crowdflower Search Results Relevance,11,R,47
+silver,2015-07-01T23:43:06.067Z,Grasp-and-Lift EEG Detection,14,Python,47
+bronze,2016-10-13T02:03:02.487Z,Forest Cover Type Prediction,7,Python,47
+silver,2016-10-05T20:50:13.333Z,Outbrain Click Prediction,8,R,47
+bronze,2017-07-17T17:55:29.363Z,Pima Indians Diabetes Database,15,R,47
+silver,2017-06-15T21:36:54.85Z,Amazon Reviews: Unlocked Mobile Phones,17,Python,47
+bronze,2017-07-30T20:27:28.43Z,Human Resources Analytics,11,Python,47
+silver,2017-05-03T20:17:29.65Z,Sberbank Russian Housing Market,37,Python,47
+silver,2017-05-23T11:56:36.873Z,Administrative divisions of Moscow,15,R,47
+silver,2017-06-07T10:16:31.467Z,Quora Question Pairs,20,Python,47
+silver,2017-07-26T18:39:34.7Z,Carvana Image Masking Challenge,5,Python,47
+silver,2015-08-18T07:40:12.44Z,Springleaf Marketing Response,20,R,46
+bronze,2015-10-21T18:11:25.967Z,2013 American Community Survey,8,R,46
+,2015-11-22T02:08:21.837Z,Titanic: Machine Learning from Disaster,19,R,46
+silver,2016-04-03T19:12:59.283Z,Santander Customer Satisfaction,21,Python,46
+silver,2016-06-17T06:32:21.857Z,World of Warcraft Avatar History,11,R,46
+silver,2017-05-19T00:25:33.893Z,Facebook V: Predicting Check Ins,22,R,46
+silver,2016-10-01T22:26:43.523Z,Melbourne University AES/MathWorks/NIH Seizure Prediction,38,Python,46
+silver,2016-10-13T08:55:08.217Z,Outbrain Click Prediction,13,R,46
+silver,2017-01-20T05:15:10.77Z,Santander Product Recommendation,17,Python,46
+silver,2017-05-26T13:44:26.48Z,House Prices: Advanced Regression Techniques,11,Python,46
+silver,2017-03-02T21:32:44.737Z,Two Sigma Financial Modeling Challenge,9,Python,46
+silver,2017-04-24T19:43:43.633Z,Two Sigma Connect: Rental Listing Inquiries,17,Python,46
+silver,2016-03-08T10:46:25.347Z,Santander Customer Satisfaction,20,Python,45
+silver,2016-08-06T15:11:28.633Z,Predicting Red Hat Business Value,29,R,45
+silver,2016-11-28T07:49:42.627Z,Allstate Claims Severity,42,R,45
+silver,2017-04-27T14:28:44.627Z,Meteorite Landings,16,Python,45
+silver,2017-07-25T13:27:34.62Z,Digit Recognizer,18,Python,45
+silver,2017-01-04T22:37:32.57Z,Dstl Satellite Imagery Feature Detection,3,R,45
+silver,2017-04-09T16:20:40.373Z,Leaf Classification,17,Python,45
+silver,2017-06-02T02:53:24.2Z,NOAA Fisheries Steller Sea Lion Population Count,25,Python,45
+silver,2017-08-29T06:42:54.903Z,20 Years of Games,16,Python,45
+silver,2017-08-05T06:53:14.903Z,Instacart Market Basket Analysis,17,R,45
+silver,2015-07-25T16:38:41.563Z,Liberty Mutual Group: Property Inspection Prediction,8,R,44
+bronze,2016-02-21T02:21:49.107Z,SF Salaries,13,R,44
+silver,2016-04-23T18:10:04.277Z,Kobe Bryant Shot Selection,17,Python,44
+silver,2016-05-20T16:16:44.653Z,Draper Satellite Image Chronology,8,R,44
+bronze,2016-11-09T02:08:37.097Z,Titanic: Machine Learning from Disaster,33,R,44
+silver,2017-01-10T22:32:59.793Z,Two Sigma Financial Modeling Challenge,14,Python,44
+silver,2017-07-18T09:36:28.463Z,Celebrity Deaths,21,R,44
+bronze,2017-02-20T10:51:46.23Z,House Prices: Advanced Regression Techniques,19,Python,44
+silver,2017-03-13T10:04:52.39Z,Google Cloud & YouTube-8M Video Understanding Challenge,13,Python,44
+silver,2017-03-18T17:41:03.63Z,Quora Question Pairs,10,Python,44
+silver,2017-03-17T19:02:43.74Z,Two Sigma Connect: Rental Listing Inquiries,17,Python,44
+bronze,2017-04-07T01:59:47.82Z,Titanic: Machine Learning from Disaster,28,R,44
+silver,2017-04-16T11:10:57.513Z,IBM HR Analytics Employee Attrition & Performance,21,Python,44
+bronze,2015-05-04T18:57:26.383Z,Bike Sharing Demand,4,R,43
+silver,2016-01-29T22:05:46.35Z,Prudential Life Insurance Assessment,35,R,43
+silver,2016-11-01T03:33:45.64Z,Allstate Claims Severity,16,Python,43
+silver,2016-11-15T21:49:12.35Z,The Nature Conservancy Fisheries Monitoring,28,Python,43
+bronze,2016-12-27T18:05:21.147Z,Top 500 Indian Cities,25,R,43
+silver,2017-01-07T21:45:29.87Z,"House Sales in King County, USA",24,R,43
+silver,2017-03-24T14:05:29.91Z,Intel & MobileODT Cervical Cancer Screening,21,Python,43
+silver,2017-04-29T21:51:42.423Z,Quora Question Pairs,27,Python,43
+silver,2017-09-07T19:19:18.937Z,"Aircraft Wildlife Strikes, 1990-2015",6,Python,43
+bronze,2017-08-20T01:29:46.177Z,Human Resources Analytics,15,Python,43
+bronze,2015-12-04T15:21:10.723Z,San Francisco Crime Classification,8,R,42
+silver,2015-08-25T05:10:40.967Z,Coupon Purchase Prediction,9,R,42
+silver,2015-11-21T15:44:56.533Z,Rossmann Store Sales,24,Python,42
+bronze,2016-01-04T19:01:51.95Z,Digit Recognizer,9,R,42
+silver,2016-05-19T06:39:15.95Z,Facebook V: Predicting Check Ins,11,R,42
+silver,2016-07-18T08:22:55.503Z,TalkingData Mobile User Demographics,42,R,42
+silver,2016-09-22T20:39:02.813Z,Bosch Production Line Performance,14,Python,42
+bronze,2016-10-15T11:18:02.653Z,House Prices: Advanced Regression Techniques,12,R,42
+bronze,2016-12-05T07:11:55.83Z,Breast Cancer Wisconsin (Diagnostic) Data Set,6,Python,42
+silver,2017-04-02T11:22:51.753Z,Two Sigma Connect: Rental Listing Inquiries,33,Python,42
+silver,2017-05-10T06:00:05.297Z,Invasive Species Monitoring,32,Python,42
+bronze,2017-08-25T14:44:20.943Z,Titanic: Machine Learning from Disaster,16,Python,42
+silver,2017-07-04T12:23:47.193Z,Mercedes-Benz Greener Manufacturing,27,R,42
+silver,2017-07-28T11:11:59.813Z,Carvana Image Masking Challenge,27,Python,42
+silver,2017-09-07T10:17:06.097Z,goodbooks-10k,7,R,42
+silver,2015-11-23T15:14:55.973Z,Prudential Life Insurance Assessment,15,R,41
+bronze,2016-05-30T13:49:09.24Z,101 Innovations - Research Tools Survey,3,R,41
+bronze,2016-09-03T17:46:29.58Z,IMDB 5000 Movie Dataset,38,R,41
+silver,2016-09-09T13:28:19.793Z,Bosch Production Line Performance,9,R,41
+silver,2016-11-26T07:54:30.83Z,Allstate Claims Severity,37,Python,41
+bronze,2017-01-19T19:58:33.607Z,House Prices: Advanced Regression Techniques,15,Python,41
+silver,2017-05-19T07:51:26.85Z,Dstl Satellite Imagery Feature Detection,7,Python,41
+silver,2017-05-02T02:14:44.607Z,Credit Card Fraud Detection,13,R,41
+silver,2017-03-25T06:40:32.123Z,Quora Question Pairs,18,Python,41
+silver,2017-04-10T17:28:29.137Z,Data Science Bowl 2017,11,Python,41
+silver,2017-06-26T07:37:57.307Z,NOAA Fisheries Steller Sea Lion Population Count,15,Python,41
+bronze,2017-04-24T06:35:16.09Z,Titanic: Machine Learning from Disaster,23,Python,41
+bronze,2017-08-18T01:42:22.337Z,Digit Recognizer,14,Python,41
+silver,2015-05-23T14:42:29.11Z,ECML/PKDD 15: Taxi Trajectory Prediction (I),0,Python,40
+silver,2015-12-08T04:18:23.567Z,Airbnb New User Bookings,30,Python,40
+silver,2016-02-02T12:24:35.827Z,Prudential Life Insurance Assessment,19,R,40
+silver,2016-02-13T10:50:13.12Z,BNP Paribas Cardif Claims Management,16,Python,40
+bronze,2016-11-11T18:13:05.66Z,Digit Recognizer,20,Python,40
+silver,2016-05-24T14:13:53.38Z,Ultrasound Nerve Segmentation,18,Python,40
+silver,2016-10-26T09:32:07.32Z,Bosch Production Line Performance,9,R,40
+bronze,2016-12-07T05:26:01.49Z,Credit Card Fraud Detection,29,R,40
+silver,2016-12-24T00:20:39.677Z,Santa's Uncertain Bags,23,R,40
+silver,2017-02-23T23:28:21.103Z,Transfer Learning on Stack Exchange Tags,23,Python,40
+bronze,2017-04-23T04:54:23.327Z,Bike Sharing Demand,11,Python,40
+silver,2017-04-01T11:58:51.313Z,NOAA Fisheries Steller Sea Lion Population Count,5,Python,40
+silver,2017-05-14T17:31:40.15Z,Sberbank Russian Housing Market,19,Python,40
+bronze,2017-08-19T12:38:19.63Z,Indian Premier League,24,R,40
+silver,2017-06-03T07:03:14.887Z,Mercedes-Benz Greener Manufacturing,2,Python,40
+silver,2017-06-05T11:45:21.797Z,Mercedes-Benz Greener Manufacturing,12,R,40
+bronze,2017-08-05T13:27:52.273Z,Titanic: Machine Learning from Disaster,24,Python,40
+silver,2017-09-09T03:54:23.627Z,Zillow Prize: Zillow’s Home Value Prediction (Zestimate),8,Python,40
+silver,2015-09-10T18:18:55.03Z,Coupon Purchase Prediction,22,R,39
+bronze,2015-10-27T14:27:06.323Z,Titanic: Machine Learning from Disaster,8,Python,39
+silver,2016-07-10T21:18:31.077Z,Integer Sequence Learning,11,Python,39
+bronze,2016-07-25T18:42:54.157Z,European Soccer Database,32,Python,39
+silver,2016-11-01T03:01:57.283Z,Outbrain Click Prediction,29,Python,39
+silver,2016-11-17T10:41:38.25Z,"Ghouls, Goblins, and Ghosts... Boo! ",15,Python,39
+bronze,2017-03-03T23:01:53.167Z,Global Terrorism Database,14,R,39
+silver,2017-01-13T05:27:13.78Z,Data Science Bowl 2017,18,Python,39
+silver,2017-06-01T15:25:19.86Z,Quora Question Pairs,25,Python,39
+silver,2017-08-31T20:52:06.043Z,Human Resources Analytics,16,Python,39
+silver,2015-08-18T16:36:30.43Z,Springleaf Marketing Response,22,Python,38
+bronze,2016-02-11T14:40:16.827Z,World Development Indicators,4,R,38
+silver,2016-04-16T07:56:41.237Z,BNP Paribas Cardif Claims Management,36,R,38
+silver,2016-04-12T09:02:24.023Z,Santander Customer Satisfaction,2,Python,38
+silver,2016-07-29T17:45:20.507Z,Shelter Animal Outcomes,15,Python,38
+silver,2016-04-28T14:43:04.78Z,State Farm Distracted Driver Detection,17,Python,38
+silver,2016-04-19T16:58:19.487Z,Expedia Hotel Recommendations,1,Python,38
+silver,2016-05-06T05:41:18.283Z,Avito Duplicate Ads Detection,11,R,38
+silver,2016-12-02T16:17:40.92Z,Two Sigma Financial Modeling Challenge,6,Python,38
+silver,2016-12-13T16:26:48.557Z,Two Sigma Financial Modeling Challenge,6,Python,38
+silver,2017-07-13T02:26:01.663Z,Planet: Understanding the Amazon from Space,10,Python,38
+silver,2017-05-19T10:06:16.77Z,Sberbank Russian Housing Market,13,Python,38
+silver,2017-06-29T01:22:48.353Z,NOAA Fisheries Steller Sea Lion Population Count,9,Python,38
+silver,2015-06-03T19:10:17.713Z,Crowdflower Search Results Relevance,3,Python,37
+silver,2015-08-13T09:06:05.81Z,Grasp-and-Lift EEG Detection,15,Python,37
+silver,2017-03-18T06:33:02.963Z,Meta Kaggle,10,R,37
+silver,2016-02-25T04:12:01.44Z,BNP Paribas Cardif Claims Management,4,Python,37
+silver,2016-03-03T01:35:09.437Z,Santander Customer Satisfaction,7,Python,37
+silver,2016-09-30T11:11:03.983Z,Bosch Production Line Performance,29,Python,37
+silver,2016-10-08T11:36:47.607Z,Outbrain Click Prediction,2,Python,37
+silver,2017-04-21T10:31:58.68Z,Two Sigma Connect: Rental Listing Inquiries,7,Python,37
+,2017-02-22T22:29:35.073Z,Dogs vs. Cats Redux: Kernels Edition,17,Python,37
+silver,2017-05-08T15:25:20.063Z,Sberbank Russian Housing Market,7,Python,37
+silver,2017-05-21T22:06:29.17Z,Instacart Market Basket Analysis,18,Python,37
+silver,2017-07-10T02:39:13.423Z,Mercedes-Benz Greener Manufacturing,18,Python,37
+silver,2017-08-14T06:29:19.317Z,KNYC Metars 2016,11,R,37
+silver,2017-07-30T02:57:35.743Z,Instacart Market Basket Analysis,24,R,37
+bronze,2016-01-02T19:56:39.687Z,Digit Recognizer,7,Python,36
+silver,2015-07-03T22:19:01.28Z,Caterpillar Tube Pricing,1,R,36
+silver,2015-08-30T16:12:13.26Z,Flavours of Physics: Finding τ  →  μμμ,10,Python,36
+bronze,2015-09-11T20:10:19.693Z,Hillary Clinton's Emails,12,R,36
+bronze,2016-02-10T14:10:21.427Z,Twitter US Airline Sentiment,5,R,36
+bronze,2016-01-29T20:09:45.167Z,US Baby Names,6,Python,36
+bronze,2016-06-08T14:26:52.75Z,Facebook V: Predicting Check Ins,12,Python,36
+silver,2016-07-25T09:55:46.023Z,TalkingData Mobile User Demographics,11,Python,36
+bronze,2016-11-28T10:11:50.977Z,Santander Product Recommendation,4,Python,36
+silver,2016-12-27T12:42:36.573Z,Two Sigma Financial Modeling Challenge,6,R,36
+silver,2017-02-14T09:18:54.247Z,Two Sigma Connect: Rental Listing Inquiries,9,Python,36
+silver,2017-02-25T20:41:24.807Z,Two Sigma Financial Modeling Challenge,6,Python,36
+bronze,2017-05-01T14:36:48.56Z,Digit Recognizer,16,Python,36
+silver,2017-04-26T14:36:34.987Z,Two Sigma Connect: Rental Listing Inquiries,18,R,36
+silver,2017-05-30T21:50:07.38Z,Zillow Prize: Zillow’s Home Value Prediction (Zestimate),25,Python,36
+bronze,2017-07-11T09:43:20.043Z,Mercedes-Benz Greener Manufacturing,7,R,36
+silver,2017-06-12T10:56:45.753Z,Planet: Understanding the Amazon from Space,24,Python,36
+silver,2017-07-26T07:02:00.68Z,Instacart Market Basket Analysis,18,Python,36
+silver,2015-09-25T14:59:12.703Z,Springleaf Marketing Response,8,R,35
+silver,2015-12-02T09:23:52.8Z,Prudential Life Insurance Assessment,5,R,35
+silver,2016-03-07T17:04:37.697Z,BNP Paribas Cardif Claims Management,10,R,35
+silver,2016-03-07T20:52:42.64Z,Santander Customer Satisfaction,19,Python,35
+silver,2016-04-19T11:23:58.653Z,BNP Paribas Cardif Claims Management,24,R,35
+silver,2016-11-01T08:28:02.58Z,Santander Product Recommendation,14,Python,35
+bronze,2016-12-05T13:16:34.457Z,Two Sigma Financial Modeling Challenge,7,Python,35
+silver,2017-02-13T07:44:35.183Z,Two Sigma Connect: Rental Listing Inquiries,8,Python,35
+bronze,2017-03-23T18:20:21.607Z,Breast Cancer Wisconsin (Diagnostic) Data Set,13,R,35
+silver,2017-03-19T22:24:31.34Z,Intel & MobileODT Cervical Cancer Screening,2,Python,35
+silver,2017-06-01T14:55:25.58Z,The Nature Conservancy Fisheries Monitoring,10,Python,35
+silver,2017-09-09T09:48:33.71Z,Planet: Understanding the Amazon from Space,10,Python,35
+bronze,2017-06-25T17:45:53.35Z,Titanic: Machine Learning from Disaster,12,R,35
+bronze,2017-06-25T19:14:29.96Z,Passenger Screening Algorithm Challenge,10,R,35
+silver,2017-07-06T23:42:16.553Z,Mercedes-Benz Greener Manufacturing,9,Python,35
+bronze,2017-08-22T07:16:54.38Z,Personalized Medicine: Redefining Cancer Treatment,11,Python,35
+silver,2015-08-18T06:17:31.453Z,Liberty Mutual Group: Property Inspection Prediction,11,Python,34
+bronze,2015-08-29T17:00:10.203Z,Digit Recognizer,5,Python,34
+silver,2015-11-12T15:11:08.937Z,Homesite Quote Conversion,5,R,34
+bronze,2016-06-07T15:10:47.85Z,2016 New Coder Survey,7,R,34
+silver,2016-06-08T15:52:25.69Z,Facebook V: Predicting Check Ins,27,Python,34
+bronze,2016-07-22T20:52:32.733Z,Zika Virus Epidemic,13,R,34
+silver,2016-09-02T03:25:22.973Z,Predicting Red Hat Business Value,18,Python,34
+silver,2016-10-12T05:34:17.233Z,Allstate Claims Severity,5,Python,34
+silver,2016-12-08T00:02:08.113Z,Two Sigma Financial Modeling Challenge,8,Python,34
+bronze,2017-01-31T04:19:47.28Z,Global Terrorism Database,11,Python,34
+silver,2017-02-23T17:35:51.58Z,NIPS Papers,2,Python,34
+silver,2017-02-17T14:04:03.413Z,Two Sigma Connect: Rental Listing Inquiries,12,Python,34
+bronze,2017-03-30T13:42:54.1Z,H-1B Visa Petitions 2011-2016,13,R,34
+bronze,2017-08-14T21:37:36.957Z,Human Resources Analytics,22,Python,34
+bronze,2017-07-07T20:44:25.467Z,Sberbank Russian Housing Market,18,R,34
+bronze,2017-06-25T17:36:43.707Z,Sberbank Russian Housing Market,16,Python,34
+silver,2017-06-27T04:39:01.093Z,Personalized Medicine: Redefining Cancer Treatment,7,Python,34
+silver,2017-06-30T19:20:15.093Z,Instacart Market Basket Analysis,3,R,34
+silver,2017-07-18T11:51:29.01Z,Web Traffic Time Series Forecasting,11,Python,34
+bronze,2017-09-09T15:16:52.43Z,Pima Indians Diabetes Database,13,Python,34
+silver,2015-04-23T03:41:13.02Z,West Nile Virus Prediction,0,R,33
+bronze,2015-08-06T04:53:49.65Z,May 2015 Reddit Comments,5,SQLite,33
+bronze,2015-08-14T10:51:51.177Z,Liberty Mutual Group: Property Inspection Prediction,3,Python,33
+silver,2016-03-06T03:13:38.117Z,Home Depot Product Search Relevance,22,Python,33
+silver,2016-02-15T03:45:11.74Z,March Machine Learning Mania 2016,9,R,33
+bronze,2016-08-13T22:39:29.663Z,Meta Kaggle,8,Python,33
+bronze,2017-09-09T01:48:01.15Z,Human Resources Analytics,5,Python,33
+bronze,2017-02-15T18:54:15.99Z,Star Cluster Simulations,18,R,33
+silver,2017-01-15T09:06:54.537Z,Data Science Bowl 2017,20,Python,33
+silver,2017-05-20T11:04:15.303Z,Dstl Satellite Imagery Feature Detection,8,Python,33
+silver,2017-03-17T14:00:56.77Z,Two Sigma Connect: Rental Listing Inquiries,5,Python,33
+bronze,2017-05-25T07:19:31.637Z,"Homicide Reports, 1980-2014",15,R,33
+silver,2017-06-03T08:44:08.353Z,Quora Question Pairs,3,Python,33
+silver,2017-07-04T07:08:34.137Z,Mercedes-Benz Greener Manufacturing,17,Python,33
+silver,2017-07-21T06:03:43.557Z,Planet: Understanding the Amazon from Space,17,Python,33
+bronze,2017-07-21T17:28:51.44Z,New York City Taxi Trip Duration,4,Python,33
+silver,2017-09-07T23:09:39.843Z,Web Traffic Time Series Forecasting,6,Python,33
+silver,2017-09-01T07:22:07.673Z,Web Traffic Time Series Forecasting,19,Python,33
+silver,2016-01-02T18:21:06.33Z,West Nile Virus Prediction,0,Python,32
+bronze,2015-06-13T05:16:36.76Z,San Francisco Crime Classification,8,Python,32
+silver,2015-07-10T23:10:17.827Z,Introducing Kaggle Scripts,3,Python,32
+silver,2015-12-11T09:55:43.537Z,Santa's Stolen Sleigh,4,Python,32
+bronze,2016-01-25T16:48:32.37Z,Open Food Facts,20,Python,32
+bronze,2016-04-08T15:15:39.853Z,US Baby Names,4,R,32
+silver,2016-07-06T18:24:01.89Z,Ultrasound Nerve Segmentation,12,Python,32
+silver,2016-09-08T23:32:42.797Z,Bosch Production Line Performance,9,R,32
+bronze,2017-08-19T06:21:25.187Z,Indian Premier League,18,Python,32
+bronze,2017-07-31T15:49:49.27Z,Digit Recognizer,8,Python,32
+bronze,2017-02-13T17:12:23.71Z,FiveThirtyEight,12,R,32
+bronze,2017-02-21T23:17:21.783Z,Data Science Bowl 2017,12,Python,32
+silver,2017-04-10T20:28:47.36Z,Two Sigma Connect: Rental Listing Inquiries,4,Python,32
+bronze,2017-08-16T06:41:03.457Z,Suicides in India,9,R,32
+silver,2017-08-12T16:21:50.123Z,Instacart Market Basket Analysis,23,Python,32
+silver,2015-08-04T22:55:23.22Z,Flavours of Physics: Finding τ  →  μμμ,5,Python,31
+bronze,2015-09-18T01:38:17.017Z,How Much Did It Rain? II,2,Python,31
+silver,2015-12-01T03:06:24.66Z,Santa's Stolen Sleigh,3,Python,31
+silver,2015-12-09T02:51:32.617Z,Airbnb New User Bookings,8,R,31
+silver,2016-07-31T16:00:38.86Z,TalkingData Mobile User Demographics,26,R,31
+silver,2016-11-20T09:11:02.503Z,Santander Product Recommendation,10,Python,31
+silver,2016-11-18T00:25:05Z,Allstate Claims Severity,39,R,31
+silver,2017-01-19T08:59:09.907Z,Death Metal,17,Python,31
+silver,2017-05-15T16:56:13.133Z,Intel & MobileODT Cervical Cancer Screening,28,Python,31
+bronze,2017-05-30T15:30:31.33Z,Human Resources Analytics,9,Python,31
+bronze,2017-08-08T13:24:14.207Z,Instacart Market Basket Analysis,27,Python,31
+bronze,2017-08-18T19:15:06.03Z,Zillow Prize: Zillow’s Home Value Prediction (Zestimate),9,Python,31
+silver,2017-09-04T15:49:37.51Z,"ACLED African Conflicts, 1997-2017",20,R,31
+,2015-04-02T23:43:12.173Z,Digit Recognizer,8,R,30
+,2015-04-15T18:33:17.61Z,Titanic: Machine Learning from Disaster,6,Python,30
+bronze,2015-04-18T00:20:54.3Z,Titanic: Machine Learning from Disaster,7,Python,30
+bronze,2015-06-13T21:40:28.913Z,Otto Group Product Classification Challenge,2,Python,30
+silver,2015-06-18T16:48:27.263Z,Crowdflower Search Results Relevance,2,Python,30
+silver,2015-08-21T16:35:50.813Z,Grasp-and-Lift EEG Detection,12,Python,30
+silver,2016-01-19T19:21:36.187Z,Home Depot Product Search Relevance,2,R,30
+silver,2016-02-04T01:41:02.09Z,Yelp Restaurant Photo Classification,1,Python,30
+silver,2016-05-02T22:24:37.897Z,Santander Customer Satisfaction,34,R,30
+silver,2016-05-19T10:54:56.487Z,Avito Duplicate Ads Detection,16,Python,30
+silver,2016-06-13T20:26:11.577Z,Grupo Bimbo Inventory Demand,18,R,30
+silver,2016-08-11T15:39:56.737Z,TalkingData Mobile User Demographics,16,Python,30
+bronze,2016-08-28T21:30:57.34Z,"House Sales in King County, USA",6,Python,30
+bronze,2016-09-18T16:15:27.66Z,Airplane Crashes Since 1908,5,R,30
+silver,2016-09-29T18:06:17.427Z,2016 US Presidential Debates,4,R,30
+bronze,2016-10-13T05:20:26.4Z,Pokemon with stats,4,Python,30
+bronze,2017-04-22T08:31:13.637Z,ATP Men's Tour,3,Python,30
+silver,2016-12-08T19:59:08.993Z,Two Sigma Financial Modeling Challenge,3,Python,30
+silver,2016-12-30T15:45:38.21Z,Two Sigma Financial Modeling Challenge,1,Python,30
+bronze,2017-04-12T08:25:42.667Z,Mushroom Classification,9,R,30
+silver,2016-12-31T15:45:06.06Z,Santa's Uncertain Bags,21,R,30
+bronze,2017-01-08T10:11:27.613Z,Iris Species,11,R,30
+bronze,2017-02-12T20:32:59.107Z,Dogs vs. Cats Redux: Kernels Edition,20,Python,30
+bronze,2017-08-28T12:23:07.603Z,Quora Question Pairs,7,Python,30
+silver,2017-05-26T11:18:58.49Z,Google Cloud & YouTube-8M Video Understanding Challenge,9,Python,30
+silver,2017-07-08T12:45:36.19Z,Personalized Medicine: Redefining Cancer Treatment,14,Python,30
+silver,2017-07-14T00:59:28.85Z,Web Traffic Time Series Forecasting,6,R,30
+bronze,2017-07-21T15:06:54.227Z,New York City Taxi Trip Duration,9,Python,30
+silver,2017-09-05T21:47:20.93Z,Text Normalization Challenge - English Language,3,Python,30
+bronze,2015-06-14T09:03:52.61Z,Digit Recognizer,3,R,29
+bronze,2015-07-10T13:22:51.717Z,Introducing Kaggle Scripts,1,R,29
+silver,2016-02-07T01:49:47.027Z,Prudential Life Insurance Assessment,52,Python,29
+bronze,2016-05-11T12:48:57.167Z,Kobe Bryant Shot Selection,14,Python,29
+bronze,2016-05-15T21:44:43.417Z,Titanic: Machine Learning from Disaster,9,Python,29
+silver,2016-05-31T15:00:58.633Z,Facebook V: Predicting Check Ins,30,Python,29
+bronze,2016-08-28T13:46:46.21Z,US Baby Names,1,Python,29
+bronze,2016-09-25T12:20:05.763Z,House Prices: Advanced Regression Techniques,21,R,29
+bronze,2016-10-28T22:52:38.76Z,US Consumer Finance Complaints,9,R,29
+bronze,2016-11-11T07:40:48.127Z,"Ghouls, Goblins, and Ghosts... Boo! ",13,Python,29
+bronze,2017-02-02T08:48:15.513Z,European Soccer Database,14,Python,29
+bronze,2016-12-06T16:18:24.18Z,Two Sigma Financial Modeling Challenge,6,Python,29
+bronze,2017-01-22T19:51:39.11Z,Student Alcohol Consumption,15,R,29
+bronze,2017-08-26T12:14:26.61Z,Titanic: Machine Learning from Disaster,10,Python,29
+bronze,2017-06-06T13:07:25.703Z,Glass Classification,20,R,29
+silver,2017-03-04T23:21:26.247Z,Two Sigma Financial Modeling Challenge,12,Python,29
+bronze,2017-04-07T15:03:57.993Z,Titanic: Machine Learning from Disaster,9,Python,29
+silver,2017-03-12T05:20:42.56Z,Two Sigma Connect: Rental Listing Inquiries,10,Python,29
+silver,2017-05-23T07:53:15.16Z,Sberbank Russian Housing Market,7,Python,29
+silver,2017-05-30T22:01:25.947Z,Mercedes-Benz Greener Manufacturing,4,Python,29
+silver,2017-06-02T08:17:38.2Z,Mercedes-Benz Greener Manufacturing,5,R,29
+bronze,2017-07-05T05:42:43.127Z,Personalized Medicine: Redefining Cancer Treatment,4,Python,29
+silver,2017-07-15T17:26:14.383Z,Instacart Market Basket Analysis,7,Python,29
+silver,2017-07-20T09:07:20.41Z,Planet: Understanding the Amazon from Space,8,Python,29
+bronze,2017-09-05T19:41:35.343Z,Web Traffic Time Series Forecasting,32,Python,29
+bronze,2017-08-09T14:20:08.5Z,Instacart Market Basket Analysis,6,R,29
+silver,2015-05-20T13:05:29.85Z,West Nile Virus Prediction,1,Python,28
+silver,2015-06-16T08:33:56.983Z,Crowdflower Search Results Relevance,1,R,28
+bronze,2015-07-21T01:17:48.61Z,Introducing Kaggle Scripts,19,Python,28
+bronze,2015-09-24T17:02:28.663Z,May 2015 Reddit Comments,4,Python,28
+bronze,2015-11-01T20:21:55.637Z,US Dept of Education: College Scorecard,14,R,28
+silver,2016-03-21T06:39:35.063Z,BNP Paribas Cardif Claims Management,27,Python,28
+silver,2016-02-12T16:21:28.647Z,BNP Paribas Cardif Claims Management,5,Python,28
+silver,2016-03-08T06:33:46.39Z,Home Depot Product Search Relevance,46,Python,28
+bronze,2016-04-30T16:37:50.437Z,World University Rankings,8,R,28
+silver,2016-08-26T00:00:02.15Z,Grupo Bimbo Inventory Demand,24,R,28
+bronze,2016-06-18T18:11:23.687Z,The Enron Email Dataset,6,Python,28
+,2016-09-25T13:19:38.093Z,House Prices: Advanced Regression Techniques,19,R,28
+silver,2016-10-18T06:33:51.803Z,Bosch Production Line Performance,10,R,28
+bronze,2016-10-20T10:30:25.463Z,World University Rankings,0,Python,28
+silver,2016-11-16T16:33:53.45Z,Allstate Claims Severity,48,Python,28
+bronze,2017-03-10T13:09:28.29Z,Global Terrorism Database,22,R,28
+bronze,2016-12-19T06:34:06.017Z,Human Resources Analytics,9,R,28
+silver,2016-12-21T05:44:40.61Z,Santa's Uncertain Bags,8,R,28
+bronze,2017-01-02T09:37:18.907Z,Dstl Satellite Imagery Feature Detection,9,Python,28
+silver,2017-01-06T12:07:08.95Z,Two Sigma Financial Modeling Challenge,34,Python,28
+silver,2017-03-01T16:01:29.593Z,Two Sigma Financial Modeling Challenge,22,Python,28
+silver,2017-03-20T22:49:43.05Z,Two Sigma Connect: Rental Listing Inquiries,5,Python,28
+silver,2017-04-23T22:57:50.907Z,Planet: Understanding the Amazon from Space,6,Python,28
+bronze,2017-05-04T22:49:28.47Z,Planet: Understanding the Amazon from Space,11,Python,28
+bronze,2017-09-02T21:57:56.72Z,Titanic: Machine Learning from Disaster,6,Python,28
+bronze,2017-08-06T15:18:41.59Z,City Lines,12,R,28
+bronze,2017-06-30T17:28:51.817Z,Titanic: Machine Learning from Disaster,23,Python,28
+bronze,2017-06-30T07:26:41.277Z,Personalized Medicine: Redefining Cancer Treatment,12,R,28
+silver,2017-07-05T23:36:57.387Z,Mercedes-Benz Greener Manufacturing,30,R,28
+bronze,2017-07-19T19:13:03.303Z,U.S. Commercial Aviation Industry Metrics,24,R,28
+,2017-09-09T05:18:23.32Z,Earn your 6-figure prize by soccer betting,2,Python,28
+,2015-11-21T09:02:15.553Z,Titanic: Machine Learning from Disaster,3,Python,27
+silver,2015-06-15T18:48:23.257Z,ICDM 2015: Drawbridge Cross-Device Connections,0,R,27
+silver,2015-07-28T00:13:41.463Z,Liberty Mutual Group: Property Inspection Prediction,7,R,27
+silver,2015-08-13T00:23:40.93Z,Grasp-and-Lift EEG Detection,58,Python,27
+bronze,2015-07-30T17:32:52.57Z,Caterpillar Tube Pricing,7,Python,27
+bronze,2015-08-20T02:47:36.85Z,2013 American Community Survey,1,R,27
+silver,2016-05-14T16:35:34.303Z,Expedia Hotel Recommendations,14,Python,27
+bronze,2016-08-06T16:45:35.717Z,Predicting Red Hat Business Value,41,Python,27
+bronze,2016-10-10T20:47:47.1Z,Pima Indians Diabetes Database,6,Python,27
+silver,2016-10-11T00:46:22.06Z,Allstate Claims Severity,11,R,27
+bronze,2016-10-29T20:13:00.287Z,Philadelphia Crime Data,13,R,27
+silver,2016-10-31T15:10:07.737Z,Allstate Claims Severity,14,Python,27
+bronze,2016-11-06T19:06:29.487Z,Outbrain Click Prediction,4,Python,27
+bronze,2017-02-08T11:19:41.31Z,Birds' Bones and Living Habits,8,Python,27
+bronze,2017-02-20T19:08:19.017Z,House Prices: Advanced Regression Techniques,7,Python,27
+bronze,2017-02-02T06:10:47.107Z,March Machine Learning Mania 2017,11,Python,27
+silver,2017-02-28T23:53:53.203Z,Two Sigma Connect: Rental Listing Inquiries,14,R,27
+bronze,2017-05-02T16:29:41.097Z,NOAA Fisheries Steller Sea Lion Population Count,2,Python,27
+silver,2017-04-18T19:29:29.67Z,Two Sigma Connect: Rental Listing Inquiries,4,Python,27
+bronze,2017-06-13T16:43:41.033Z,Planet: Understanding the Amazon from Space,4,Python,27
+bronze,2017-06-06T14:37:56.04Z,Instacart Market Basket Analysis,4,Python,27
+bronze,2017-08-25T17:11:20.053Z,IMDB 5000 Movie Dataset,12,R,27
+silver,2017-06-04T03:17:22.403Z,Sberbank Russian Housing Market,13,Python,27
+bronze,2017-08-13T17:20:48.04Z,Global Terrorism Database,14,R,27
+silver,2017-07-11T09:57:56.303Z,Mercedes-Benz Greener Manufacturing,8,R,27
+bronze,2017-07-18T19:00:52.467Z,Web Traffic Time Series Forecasting,1,Python,27
+silver,2017-07-24T17:00:00.24Z,New York City Taxi Trip Duration,4,R,27
+silver,2017-07-28T14:10:44.997Z,New York City Taxi Trip Duration,6,R,27
+bronze,2017-08-01T17:47:27.963Z,Invasive Species Monitoring,5,R,27
+silver,2015-06-05T12:49:11.383Z,West Nile Virus Prediction,0,R,26
+silver,2016-01-02T21:15:43.7Z,Caterpillar Tube Pricing,21,Python,26
+silver,2015-07-07T00:29:34Z,Liberty Mutual Group: Property Inspection Prediction,6,Python,26
+bronze,2015-08-30T02:24:08.527Z,Liberty Mutual Group: Property Inspection Prediction,3,Python,26
+bronze,2016-04-16T17:56:51.93Z,May 2015 Reddit Comments,3,Python,26
+bronze,2015-11-29T21:41:03.813Z,Hillary Clinton's Emails,5,R,26
+bronze,2016-02-01T15:54:17.777Z,Airbnb New User Bookings,5,Python,26
+silver,2016-04-18T18:41:50.24Z,Santander Customer Satisfaction,21,Python,26
+silver,2016-03-08T18:36:42.813Z,Santander Customer Satisfaction,22,R,26
+bronze,2016-08-29T01:00:26.163Z,Gender Recognition by Voice,4,Python,26
+bronze,2016-09-25T16:21:55.697Z,House Prices: Advanced Regression Techniques,8,Python,26
+silver,2016-10-13T19:52:56.81Z,Outbrain Click Prediction,24,Python,26
+silver,2016-10-16T01:04:51.147Z,Outbrain Click Prediction,24,Python,26
+bronze,2016-10-21T04:12:57.57Z,R Questions from Stack Overflow,1,R,26
+bronze,2016-11-07T13:49:58.64Z,Video Game Sales,10,Python,26
+bronze,2016-11-14T02:43:31.633Z,Philadelphia Crime Data,8,R,26
+silver,2016-11-27T04:22:58.947Z,Santander Product Recommendation,17,Python,26
+bronze,2016-11-16T04:18:57.033Z,The Nature Conservancy Fisheries Monitoring,2,Python,26
+bronze,2017-08-16T05:54:06.8Z,Melbourne Housing Market,0,Python,26
+silver,2017-02-12T11:54:23.39Z,Two Sigma Connect: Rental Listing Inquiries,7,R,26
+silver,2017-03-18T16:14:46.94Z,Quora Question Pairs,14,Python,26
+silver,2017-03-21T15:09:44.51Z,Quora Question Pairs,5,Python,26
+silver,2017-03-21T05:29:39.533Z,Quora Question Pairs,0,Python,26
+bronze,2017-04-08T20:41:56.747Z,Quora Question Pairs,14,Python,26
+silver,2017-03-27T07:12:35.673Z,Two Sigma Connect: Rental Listing Inquiries,7,Python,26
+bronze,2017-05-21T05:01:23.913Z,New York Stock Exchange,13,Python,26
+bronze,2017-05-18T05:36:46.99Z,Instacart Market Basket Analysis,5,R,26
+silver,2017-06-04T13:28:20.03Z,Mercedes-Benz Greener Manufacturing,8,Python,26
+bronze,2017-08-06T19:33:19.57Z,Zillow Prize: Zillow’s Home Value Prediction (Zestimate),4,Python,26
+silver,2017-07-27T16:21:38.08Z,Carvana Image Masking Challenge,2,Python,26
+bronze,2015-07-16T18:10:41.433Z,Coupon Purchase Prediction,2,R,25
+silver,2015-08-08T13:36:43.02Z,Liberty Mutual Group: Property Inspection Prediction,34,Python,25
+bronze,2016-09-06T08:38:09.49Z,2013 American Community Survey,11,R,25
+bronze,2015-10-18T22:37:54.99Z,What's Cooking?,7,R,25
+silver,2015-11-01T17:08:31.4Z,Rossmann Store Sales,5,R,25
+silver,2016-02-04T16:22:53.697Z,BNP Paribas Cardif Claims Management,30,Python,25
+bronze,2016-04-11T22:57:22.07Z,Death in the United States,9,R,25
+bronze,2016-04-16T13:03:25.313Z,State Farm Distracted Driver Detection,24,Python,25
+bronze,2016-08-02T12:01:04.527Z,State Farm Distracted Driver Detection,0,Python,25
+silver,2016-08-09T21:14:43.46Z,TalkingData Mobile User Demographics,3,Python,25
+silver,2017-09-05T04:10:35.6Z,2016 and 2017 Kitefoil Race Results,10,Python,25
+silver,2016-08-13T01:15:06.133Z,Grupo Bimbo Inventory Demand,9,Python,25
+bronze,2016-08-29T10:30:00.747Z,"House Sales in King County, USA",1,Python,25
+silver,2016-09-09T23:50:01.523Z,Bosch Production Line Performance,4,R,25
+bronze,2016-12-08T11:49:33.463Z,House Prices: Advanced Regression Techniques,4,Python,25
+bronze,2017-04-21T01:59:33.763Z,Iris Species,5,R,25
+silver,2016-12-01T20:12:59.643Z,Two Sigma Financial Modeling Challenge,10,R,25
+bronze,2016-12-10T23:37:48.167Z,Two Sigma Financial Modeling Challenge,4,Python,25
+bronze,2017-02-22T18:30:59.437Z,Digit Recognizer,22,Python,25
+silver,2016-12-18T20:45:58.673Z,Dstl Satellite Imagery Feature Detection,12,R,25
+silver,2016-12-31T02:12:07.157Z,Dstl Satellite Imagery Feature Detection,4,Python,25
+silver,2016-12-24T06:15:59.057Z,Santa's Uncertain Bags,9,Python,25
+silver,2017-01-02T10:19:07.34Z,Dstl Satellite Imagery Feature Detection,15,Python,25
+bronze,2017-01-06T20:03:22.22Z,Dstl Satellite Imagery Feature Detection,9,Python,25
+bronze,2017-01-13T17:41:24.553Z,Data Science Bowl 2017,13,Python,25
+bronze,2017-01-28T12:42:39.293Z,Data Science Bowl 2017,4,Python,25
+bronze,2017-02-28T05:25:12.813Z,Medical Appointment No Shows,14,Python,25
+bronze,2017-02-28T21:13:33.857Z,Two Sigma Connect: Rental Listing Inquiries,18,Python,25
+bronze,2017-03-24T04:30:33.483Z,Data Science Bowl 2017,4,Python,25
+bronze,2017-04-18T21:20:51.453Z,Two Sigma Connect: Rental Listing Inquiries,5,Python,25
+bronze,2017-04-13T13:29:57.487Z,Quora Question Pairs,5,Python,25
+bronze,2017-03-24T09:18:46.653Z,Intel & MobileODT Cervical Cancer Screening,5,Python,25
+bronze,2017-06-22T19:08:28.063Z,Two Sigma Connect: Rental Listing Inquiries,7,R,25
+bronze,2017-04-12T06:30:01.37Z,Quora Question Pairs,9,R,25
+bronze,2017-07-16T19:49:16.603Z,Sberbank Russian Housing Market,8,Python,25
+bronze,2017-05-02T18:08:45.223Z,Sberbank Russian Housing Market,7,Python,25
+silver,2017-06-07T05:15:40.42Z,Mercedes-Benz Greener Manufacturing,10,R,25
+silver,2017-06-17T20:33:22.87Z,Sberbank Russian Housing Market,12,Python,25
+bronze,2017-07-05T03:15:26.677Z,Mercedes-Benz Greener Manufacturing,9,Python,25
+bronze,2017-08-25T17:44:31.02Z,Climate Change: Earth Surface Temperature Data,2,Python,25
+bronze,2017-07-11T23:33:05.173Z,Instacart Market Basket Analysis,4,Python,25
+silver,2017-07-19T16:21:17.463Z,Web Traffic Time Series Forecasting,10,Python,25
+bronze,2017-07-22T02:04:56.13Z,New York City Taxi Trip Duration,13,Python,25
+bronze,2017-08-21T22:04:28.94Z,Zillow Prize: Zillow’s Home Value Prediction (Zestimate),5,Python,25
+silver,2017-07-30T12:14:54.94Z,Instacart Market Basket Analysis,11,Python,25
+silver,2015-06-22T03:44:39.307Z,Crowdflower Search Results Relevance,0,Python,24
+silver,2015-05-30T16:35:19.333Z,Crowdflower Search Results Relevance,0,R,24
+silver,2015-08-22T05:15:37.3Z,Grasp-and-Lift EEG Detection,48,Python,24
+bronze,2015-09-10T14:55:03.41Z,Ocean Ship Logbooks (1750-1850),3,R,24
+silver,2015-09-12T17:32:07.503Z,Coupon Purchase Prediction,4,R,24
+silver,2015-11-10T00:28:03.607Z,Homesite Quote Conversion,26,Python,24
+bronze,2016-07-29T17:46:24.92Z,Shelter Animal Outcomes,7,Python,24
+bronze,2016-12-28T11:36:07.137Z,World Development Indicators,12,Python,24
+bronze,2016-07-02T07:40:13.97Z,Integer Sequence Learning,7,R,24
+bronze,2016-08-11T19:20:29.98Z,Titanic: Machine Learning from Disaster,13,Python,24
+silver,2016-07-19T09:43:57.173Z,TalkingData Mobile User Demographics,19,Python,24
+bronze,2016-09-09T22:52:13.87Z,European Soccer Database,16,R,24
+bronze,2016-10-16T03:24:41.55Z,IMDB 5000 Movie Dataset,11,R,24
+silver,2016-10-26T03:16:29.313Z,Allstate Claims Severity,2,Python,24
+bronze,2016-11-17T18:52:07.46Z,Indian Premier League,9,Python,24
+,2017-02-12T16:30:48.21Z,IMDB 5000 Movie Dataset,8,Python,24
+bronze,2017-05-02T11:58:03.807Z,Global Terrorism Database,9,R,24
+bronze,2016-12-20T16:49:59.9Z,IMDB 5000 Movie Dataset,4,R,24
+bronze,2017-02-12T23:49:00.293Z,Mushroom Classification,15,Python,24
+bronze,2017-01-18T13:58:51.59Z,The Nature Conservancy Fisheries Monitoring,33,Python,24
+bronze,2017-02-01T23:44:48.257Z,"Significant Earthquakes, 1965-2016",6,Python,24
+bronze,2017-04-16T21:58:54.377Z,Two Sigma Connect: Rental Listing Inquiries,12,Python,24
+bronze,2017-02-22T01:38:12.643Z,Data Science Bowl 2017,8,R,24
+bronze,2017-04-19T13:54:30.83Z,Two Sigma Connect: Rental Listing Inquiries,2,Python,24
+bronze,2017-03-02T13:16:49.617Z,Crimes in Chicago,10,R,24
+,2017-03-13T21:35:50.25Z,Titanic: Machine Learning from Disaster,4,Python,24
+bronze,2017-03-14T21:35:56.923Z,The Nature Conservancy Fisheries Monitoring,23,Python,24
+bronze,2017-06-08T15:09:40.173Z,Sberbank Russian Housing Market,14,Python,24
+bronze,2017-06-27T16:11:25.867Z,Personalized Medicine: Redefining Cancer Treatment,6,Python,24
+bronze,2017-07-18T16:15:59.47Z,House Prices: Advanced Regression Techniques,11,Python,24
+silver,2017-08-01T13:16:47.657Z,Instacart Market Basket Analysis,12,Python,24
+bronze,2017-08-02T21:49:29.213Z,Carvana Image Masking Challenge,13,Python,24
+bronze,2017-08-05T04:12:20.443Z,UNHCR Refugee Data,9,R,24
+bronze,2017-08-22T01:55:04.14Z,Carvana Image Masking Challenge,0,Python,24
+bronze,2017-09-08T20:10:54.363Z,The Simpsons by the Data,15,R,24
+silver,2017-09-06T05:30:04.87Z,Carvana Image Masking Challenge,2,Python,24
+bronze,2015-04-26T01:56:52.863Z,Bike Sharing Demand,3,Python,23
+bronze,2015-05-11T20:16:38.273Z,Crowdflower Search Results Relevance,0,Python,23
+bronze,2017-05-14T11:54:30.393Z,US Dept of Education: College Scorecard,7,R,23
+bronze,2016-01-15T00:29:03.637Z,Homesite Quote Conversion,16,Python,23
+bronze,2016-02-10T14:13:54.623Z,Twitter US Airline Sentiment,5,R,23
+,2016-02-13T16:56:41.163Z,Titanic: Machine Learning from Disaster,29,Python,23
+silver,2016-02-13T22:21:13.4Z,BNP Paribas Cardif Claims Management,28,R,23
+bronze,2016-03-08T10:38:21.97Z,Airbnb New User Bookings,8,Python,23
+bronze,2016-02-28T18:16:51.933Z,San Francisco Crime Classification,3,R,23
+silver,2016-03-03T03:12:42.127Z,Santander Customer Satisfaction,14,Python,23
+bronze,2016-03-24T19:13:20.077Z,BNP Paribas Cardif Claims Management,18,Python,23
+bronze,2016-03-20T13:22:27.247Z,2016 March ML Mania Predictions,8,R,23
+bronze,2016-04-11T06:23:23.227Z,Shelter Animal Outcomes,3,R,23
+silver,2016-04-29T17:54:39.603Z,Expedia Hotel Recommendations,2,R,23
+silver,2016-08-07T06:44:30.783Z,Predicting Red Hat Business Value,10,R,23
+silver,2016-08-11T18:01:20.507Z,TalkingData Mobile User Demographics,28,Python,23
+silver,2016-09-11T09:19:10.89Z,Bosch Production Line Performance,15,R,23
+silver,2016-09-22T18:55:33.287Z,Bosch Production Line Performance,21,R,23
+bronze,2016-11-01T21:05:21.04Z,Dogs vs. Cats Redux: Kernels Edition,5,Python,23
+,2016-12-07T17:02:13.537Z,Human Resources Analytics,14,Python,23
+bronze,2017-01-19T19:50:34.28Z,Two Sigma Financial Modeling Challenge,1,Python,23
+bronze,2016-12-15T12:53:55.02Z,Global Terrorism Database,18,R,23
+bronze,2016-12-14T07:28:46.04Z,Allstate Claims Severity,7,Python,23
+bronze,2016-12-29T05:54:53.07Z,Two Sigma Financial Modeling Challenge,7,Python,23
+bronze,2017-01-13T15:40:24.29Z,Used cars database,18,R,23
+bronze,2017-04-19T16:51:07.327Z,Quora Question Pairs,7,Python,23
+bronze,2017-08-28T10:47:01.037Z,Complete FIFA 2017 Player dataset (Global),15,R,23
+bronze,2017-06-13T15:02:00.403Z,World Happiness Report 2016,12,R,23
+bronze,2017-06-17T19:57:54.66Z,Mercedes-Benz Greener Manufacturing,17,Python,23
+bronze,2017-06-13T00:01:32.68Z,Mercedes-Benz Greener Manufacturing,11,Python,23
+bronze,2017-07-22T00:59:04.827Z,New York City Taxi Trip Duration,3,Python,23
+bronze,2017-08-19T13:54:58.01Z,House Prices: Advanced Regression Techniques,5,Python,23
+bronze,2015-04-20T21:01:59.897Z,Otto Group Product Classification Challenge,1,R,22
+silver,2015-05-05T11:19:44.647Z,West Nile Virus Prediction,0,R,22
+bronze,2015-10-15T13:36:57.68Z,Rossmann Store Sales,7,R,22
+bronze,2015-12-15T03:51:37.323Z,Prudential Life Insurance Assessment,21,Python,22
+bronze,2016-01-25T01:42:21.363Z,Prudential Life Insurance Assessment,10,Python,22
+,2016-01-28T10:09:59.573Z,World Development Indicators,2,R,22
+bronze,2016-03-04T17:15:53.793Z,2016 US Election,6,Python,22
+bronze,2016-03-01T14:49:49.997Z,March Machine Learning Mania 2016,13,Python,22
+bronze,2017-02-02T22:45:08.2Z,Climate Change: Earth Surface Temperature Data,3,R,22
+bronze,2016-05-08T00:49:02.257Z,US Consumer Finance Complaints,2,R,22
+bronze,2016-05-01T11:58:45.967Z,Kobe Bryant Shot Selection,21,Python,22
+bronze,2016-06-08T19:19:53.137Z,Expedia Hotel Recommendations,11,Python,22
+bronze,2016-05-30T01:37:03.57Z,World of Warcraft Avatar History,14,R,22
+bronze,2016-09-11T04:28:30.947Z,Open Exoplanet Catalogue,5,R,22
+bronze,2016-11-03T10:57:23.28Z,2016 Election Polls,7,R,22
+bronze,2016-11-10T02:48:03.143Z,Iris Species,4,Python,22
+bronze,2016-12-04T14:54:53.573Z,Titanic: Machine Learning from Disaster,2,Python,22
+bronze,2016-11-20T19:24:17.05Z,The Nature Conservancy Fisheries Monitoring,4,Python,22
+bronze,2017-02-22T02:39:08.557Z,Two Sigma Financial Modeling Challenge,2,Python,22
+bronze,2016-12-09T18:11:47.03Z,Transfer Learning on Stack Exchange Tags,13,R,22
+bronze,2016-12-10T12:13:05.493Z,Two Sigma Financial Modeling Challenge,2,Python,22
+bronze,2016-12-29T01:30:36.783Z,Anime Recommendations Database,2,R,22
+bronze,2017-01-12T16:07:58.263Z,Titanic: Machine Learning from Disaster,13,Python,22
+bronze,2017-03-07T14:29:30.863Z,"SpaceX Missions, 2006-Present",4,R,22
+silver,2017-04-29T09:57:17.277Z,Intel & MobileODT Cervical Cancer Screening,3,Python,22
+bronze,2017-05-16T23:45:00.46Z,Sberbank Russian Housing Market,4,R,22
+bronze,2017-05-23T17:54:53.48Z,Sberbank Russian Housing Market,27,Python,22
+bronze,2017-06-02T12:18:46.637Z,Quora Question Pairs,6,Python,22
+bronze,2017-06-03T10:16:27.793Z,Mercedes-Benz Greener Manufacturing,9,Python,22
+bronze,2017-07-20T04:04:47.293Z,New York City Taxi Trip Duration,0,R,22
+bronze,2017-07-27T08:24:46.59Z,Carvana Image Masking Challenge,6,Python,22
+bronze,2017-08-25T16:05:46.78Z,Web Traffic Time Series Forecasting,13,Python,22
+silver,2015-05-03T01:54:24.727Z,West Nile Virus Prediction,1,Python,21
+bronze,2015-06-05T10:43:16.22Z,Avito Context Ad Clicks,0,Python,21
+bronze,2015-06-17T07:32:45.73Z,West Nile Virus Prediction,14,Python,21
+bronze,2015-06-07T22:08:48.977Z,San Francisco Crime Classification,2,R,21
+bronze,2015-06-19T12:34:24.237Z,Digit Recognizer,9,Python,21
+bronze,2015-07-18T19:05:34.1Z,Liberty Mutual Group: Property Inspection Prediction,4,Python,21
+bronze,2015-08-13T00:40:13.067Z,2013 American Community Survey,10,Python,21
+bronze,2015-08-11T13:27:05.79Z,May 2015 Reddit Comments,0,Python,21
+bronze,2015-10-15T13:12:59.06Z,Springleaf Marketing Response,12,R,21
+bronze,2015-10-18T19:53:25.657Z,Rossmann Store Sales,11,Python,21
+bronze,2016-02-11T13:47:37.803Z,Open Food Facts,2,Python,21
+bronze,2016-02-10T18:42:54.357Z,BNP Paribas Cardif Claims Management,60,R,21
+bronze,2016-04-15T14:46:08.62Z,State Farm Distracted Driver Detection,17,Python,21
+bronze,2016-05-13T11:47:21.43Z,Facebook V: Predicting Check Ins,12,Python,21
+bronze,2016-05-19T19:26:34.77Z,Ultrasound Nerve Segmentation,2,Python,21
+bronze,2016-06-06T22:32:30.227Z,Ultrasound Nerve Segmentation,35,Python,21
+bronze,2016-07-25T10:03:31.74Z,Airplane Crashes Since 1908,1,R,21
+bronze,2016-08-30T15:26:03.93Z,Leaf Classification,8,Python,21
+,2016-09-18T13:51:39.307Z,Japan Trade Statistics,10,Python,21
+bronze,2016-09-21T01:33:45.363Z,Kaggle Blog: Winners' Posts,5,R,21
+bronze,2016-09-23T18:18:18.463Z,IMDB 5000 Movie Dataset,10,R,21
+bronze,2016-10-21T18:58:30.387Z,Student Alcohol Consumption,6,R,21
+bronze,2016-10-21T20:33:19.547Z,House Prices: Advanced Regression Techniques,14,R,21
+bronze,2016-11-30T03:22:32.62Z,Melbourne University AES/MathWorks/NIH Seizure Prediction,4,Python,21
+bronze,2016-11-15T00:27:01.263Z,Allstate Claims Severity,45,Python,21
+bronze,2016-12-28T04:46:03.737Z,UFO Sightings,5,Python,21
+bronze,2017-05-05T10:11:13.83Z,NBA shot logs,2,Python,21
+bronze,2016-12-19T14:23:46.877Z,Crowdedness at the Campus Gym,3,Python,21
+bronze,2016-12-18T16:00:06.613Z,Two Sigma Financial Modeling Challenge,5,Python,21
+bronze,2017-03-27T06:11:10.8Z,Data Science Bowl 2017,5,Python,21
+bronze,2017-01-27T14:16:33.147Z,"Govt. of India Census, 2001 District-Wise",12,R,21
+bronze,2017-03-09T16:29:44.7Z,Aviation Accident Database & Synopses,22,R,21
+bronze,2017-02-21T03:53:12.997Z,Medical Appointment No Shows,4,R,21
+bronze,2017-04-10T07:24:04.817Z,Quora Question Pairs,11,Python,21
+bronze,2017-05-30T15:30:41.66Z,Credit Card Fraud Detection,12,Python,21
+bronze,2017-04-30T13:37:41.843Z,NOAA Fisheries Steller Sea Lion Population Count,9,Python,21
+bronze,2017-05-04T11:49:15.237Z,"Homicide Reports, 1980-2014",8,Python,21
+bronze,2017-04-17T21:28:53.577Z,League of Legends,3,R,21
+bronze,2017-04-19T21:44:24.397Z,Two Sigma Connect: Rental Listing Inquiries,0,Python,21
+bronze,2017-04-22T09:09:00.433Z,H-1B Visa Petitions 2011-2016,7,R,21
+bronze,2017-04-30T07:45:02.583Z,Planet: Understanding the Amazon from Space,10,Python,21
+bronze,2017-05-09T16:24:26.96Z,Invasive Species Monitoring,4,Python,21
+bronze,2017-06-01T08:41:09.957Z,Mercedes-Benz Greener Manufacturing,16,R,21
+bronze,2017-06-10T07:18:18.207Z,Instacart Market Basket Analysis,16,Python,21
+bronze,2017-08-25T07:53:55.423Z,Mercedes-Benz Greener Manufacturing,6,Python,21
+bronze,2017-08-12T10:19:30.143Z,Titanic: Machine Learning from Disaster,14,Python,21
+bronze,2017-07-23T23:27:30.593Z,Titanic: Machine Learning from Disaster,7,R,21
+bronze,2017-08-27T19:08:22.177Z,Weather data in New York City - 2016,8,Python,21
+bronze,2017-08-31T01:32:40.67Z,Zillow Prize: Zillow’s Home Value Prediction (Zestimate),22,R,21
+bronze,2017-08-16T12:39:35.623Z,Instacart Market Basket Analysis,5,Python,21
+,2017-08-24T13:00:16.647Z,Passenger Screening Algorithm Challenge,4,Python,21
+bronze,2017-09-09T13:41:56.083Z,2015 Flight Delays and Cancellations,8,Python,21
+bronze,2017-09-05T21:42:27.84Z,Text Normalization Challenge - Russian Language,0,Python,21
+bronze,2015-04-09T23:25:15.427Z,Bike Sharing Demand,0,R,20
+bronze,2015-06-01T01:51:53.76Z,San Francisco Crime Classification,0,Python,20
+bronze,2015-09-15T08:37:06.473Z,San Francisco Crime Classification,10,R,20
+bronze,2015-12-29T03:31:05.34Z,Homesite Quote Conversion,12,R,20
+bronze,2016-01-13T14:15:28.66Z,Iris Species,4,Python,20
+bronze,2016-01-29T16:17:13.977Z,Ocean Ship Logbooks (1750-1850),2,R,20
+bronze,2016-03-02T20:45:16.83Z,Santander Customer Satisfaction,4,R,20
+bronze,2016-03-21T21:39:18.66Z,Death in the United States,7,R,20
+bronze,2016-05-03T02:52:16.047Z,World University Rankings,0,R,20
+bronze,2016-04-16T20:32:35.027Z,Expedia Hotel Recommendations,20,R,20
+bronze,2016-05-18T13:51:39.363Z,Draper Satellite Image Chronology,9,Python,20
+bronze,2016-07-08T22:05:26.337Z,Lending Club Loan Data,14,Python,20
+bronze,2016-05-19T20:03:56.173Z,Facebook V: Predicting Check Ins,3,Python,20
+bronze,2016-05-20T14:11:09.843Z,Ultrasound Nerve Segmentation,6,Python,20
+bronze,2016-06-10T16:48:04.383Z,2016 US Election,0,R,20
+bronze,2016-07-14T14:21:00.05Z,TalkingData Mobile User Demographics,6,Python,20
+bronze,2016-07-17T16:29:21.237Z,TalkingData Mobile User Demographics,6,R,20
+,2016-07-18T03:32:45.607Z,Digit Recognizer,9,Python,20
+bronze,2016-07-30T03:46:51.39Z,Grupo Bimbo Inventory Demand,7,Python,20
+bronze,2016-08-11T10:15:50.473Z,Iris Species,8,R,20
+bronze,2016-09-07T00:25:38.143Z,Horses For Courses,14,Python,20
+bronze,2016-09-11T04:49:56.373Z,House Prices: Advanced Regression Techniques,5,Python,20
+,2016-10-08T07:12:53.54Z,Forest Cover Type Prediction,1,Python,20
+bronze,2016-10-11T21:37:43.82Z,European Soccer Database,5,Python,20
+bronze,2016-10-11T12:57:28.517Z,20 Years of Games,8,Python,20
+bronze,2016-10-20T11:13:55.393Z,Outbrain Click Prediction,18,Python,20
+bronze,2016-11-07T22:06:33.28Z,Video Game Sales,13,R,20
+bronze,2016-12-03T23:00:53.57Z,2015 Traffic  Fatalities,4,Python,20
+bronze,2016-12-02T08:30:51.33Z,Two Sigma Financial Modeling Challenge,4,Python,20
+bronze,2017-01-24T18:45:22.683Z,Water Consumption in a Median Size City,5,Python,20
+bronze,2016-12-16T22:07:47.007Z,House Prices: Advanced Regression Techniques,18,R,20
+bronze,2016-12-20T17:50:49.897Z,Santa's Uncertain Bags,3,Python,20
+bronze,2017-07-24T08:33:24.91Z,Breast Cancer Wisconsin (Diagnostic) Data Set,5,Python,20
+bronze,2017-02-28T07:08:04.393Z,Two Sigma Financial Modeling Challenge,0,Python,20
+bronze,2017-05-22T05:19:45.303Z,IMDB 5000 Movie Dataset,12,Python,20
+bronze,2017-01-13T00:27:49.763Z,Data Science Bowl 2017,5,R,20
+bronze,2017-01-14T01:58:19.353Z,Data Science Bowl 2017,4,Python,20
+bronze,2017-08-21T15:17:45.487Z,Used cars database,19,Python,20
+bronze,2017-02-16T11:14:55.597Z,House Prices: Advanced Regression Techniques,15,Python,20
+bronze,2017-03-13T10:50:33.41Z,FiveThirtyEight,9,Python,20
+bronze,2017-03-13T16:44:29.763Z,Digit Recognizer,6,Python,20
+bronze,2017-02-26T19:58:15.18Z,Glass Classification,5,Python,20
+bronze,2017-02-16T03:13:50.71Z,Two Sigma Connect: Rental Listing Inquiries,10,R,20
+bronze,2017-02-22T05:41:45Z,March Machine Learning Mania 2017,16,R,20
+bronze,2017-04-29T09:17:43.257Z,"Homicide Reports, 1980-2014",1,R,20
+bronze,2017-04-02T03:27:30.26Z,2017 March ML Mania Processed Predictions,8,R,20
+bronze,2017-04-20T07:31:07.057Z,Quora Question Pairs,4,Python,20
+bronze,2017-09-08T04:12:22.98Z,IBM HR Analytics Employee Attrition & Performance,10,Python,20
+bronze,2017-04-27T21:46:51.303Z,Sberbank Russian Housing Market,5,Python,20
+bronze,2017-05-11T17:32:33.987Z,Planet: Understanding the Amazon from Space,4,Python,20
+bronze,2017-07-10T23:36:38.46Z,Mercedes-Benz Greener Manufacturing,7,Python,20
+bronze,2017-07-18T14:01:19.38Z,Web Traffic Time Series Forecasting,3,Python,20
+bronze,2017-08-21T17:07:03.71Z,Oil price and share price of a few companies,2,Python,20
+bronze,2017-09-02T11:02:10.97Z,2016 Parties in New York,2,Python,20
+bronze,2017-09-06T12:32:10.173Z,Google Text Normalization Challenge,3,Python,20
+bronze,2015-05-30T08:12:20.51Z,ECML/PKDD 15: Taxi Trip Time Prediction (II),7,Python,19
+bronze,2015-06-10T08:30:09.15Z,San Francisco Crime Classification,11,Python,19
+bronze,2015-08-20T23:45:53.723Z,Introducing Kaggle Scripts,3,R,19
+bronze,2015-09-16T04:38:43Z,Hillary Clinton's Emails,2,R,19
+bronze,2015-09-29T14:03:47.297Z,What's Cooking?,0,Python,19
+bronze,2015-10-07T12:09:29.87Z,Rossmann Store Sales,17,Python,19
+bronze,2015-11-17T16:40:52.62Z,Rossmann Store Sales,16,R,19
+bronze,2015-12-04T07:29:04.173Z,Santa's Stolen Sleigh,3,R,19
+bronze,2015-12-13T00:19:53.56Z,US Dept of Education: College Scorecard,2,R,19
+bronze,2015-12-26T05:43:34.88Z,Santa's Stolen Sleigh,5,Python,19
+bronze,2016-03-31T05:59:54.763Z,Santander Customer Satisfaction,13,R,19
+bronze,2016-04-15T22:01:11.887Z,Expedia Hotel Recommendations,4,Python,19
+bronze,2016-06-18T20:13:42.063Z,Integer Sequence Learning,3,R,19
+bronze,2016-06-06T14:51:16.203Z,Expedia Hotel Recommendations,1,Python,19
+bronze,2016-07-19T19:58:34.19Z,TalkingData Mobile User Demographics,4,Python,19
+bronze,2016-10-13T13:47:08.98Z,Integer Sequence Learning,9,R,19
+bronze,2016-07-25T18:35:02.03Z,Ultrasound Nerve Segmentation,7,Python,19
+bronze,2016-08-01T10:10:29.14Z,Cheltenham's Facebook Groups,5,Python,19
+bronze,2016-08-02T07:16:33.387Z,Predicting Red Hat Business Value,2,Python,19
+bronze,2016-08-31T15:12:49.5Z,Predicting Red Hat Business Value,2,R,19
+bronze,2016-09-11T01:09:55.283Z,Melbourne University AES/MathWorks/NIH Seizure Prediction,10,R,19
+bronze,2016-09-24T20:17:10.057Z,House Prices: Advanced Regression Techniques,10,R,19
+,2016-09-14T07:19:18.213Z,Meta Kaggle,0,Python,19
+bronze,2016-10-09T03:19:44.123Z,Bosch Production Line Performance,21,Python,19
+,2017-02-16T10:07:33.41Z,European Soccer Database,16,Python,19
+,2016-10-18T12:58:43.69Z,Twitter US Airline Sentiment,4,Python,19
+bronze,2016-10-21T22:09:54.607Z,Python Questions from Stack Overflow,2,Python,19
+bronze,2016-10-30T14:18:02.34Z,Video Game Sales,4,R,19
+bronze,2016-11-24T19:11:00.223Z,Santander Product Recommendation,17,Python,19
+bronze,2016-11-18T08:30:45.397Z,The Nature Conservancy Fisheries Monitoring,11,R,19
+bronze,2017-01-02T10:49:14.807Z,Two Sigma Financial Modeling Challenge,8,Python,19
+bronze,2016-12-12T20:26:59.8Z,Extinct Languages,6,Python,19
+bronze,2017-01-24T16:12:50.22Z,Crowdedness at the Campus Gym,9,Python,19
+bronze,2016-12-21T11:36:15.803Z,Santa's Uncertain Bags,0,R,19
+bronze,2016-12-27T09:45:24.067Z,Santa's Uncertain Bags,16,Python,19
+bronze,2017-04-22T16:20:39.61Z,Celebrity Deaths,7,Python,19
+bronze,2017-01-14T09:23:30.867Z,Data Science Bowl 2017,4,Python,19
+bronze,2017-01-19T18:23:28.487Z,Two Sigma Financial Modeling Challenge,8,Python,19
+bronze,2017-01-20T09:31:49.203Z,"Govt. of India Census, 2001 District-Wise",4,R,19
+bronze,2017-03-31T20:36:05.733Z,Data Science Bowl 2017,12,R,19
+bronze,2017-02-22T10:08:27.09Z,March Machine Learning Mania 2017,8,Python,19
+bronze,2017-08-14T21:24:07.41Z,Volcanic Eruptions in the Holocene Period,13,Python,19
+bronze,2017-03-05T10:11:49.033Z,Two Sigma Financial Modeling Challenge,3,Python,19
+bronze,2017-03-15T07:37:09.837Z,Two Sigma Connect: Rental Listing Inquiries,14,Python,19
+bronze,2017-03-15T05:19:02.737Z,Nutrition Facts for McDonald's Menu,9,Python,19
