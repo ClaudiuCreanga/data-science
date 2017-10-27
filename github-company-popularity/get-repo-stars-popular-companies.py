@@ -2,7 +2,7 @@ import requests
 import csv
 
 data = []
-head = {'Authorization': 'token 9c24801c60ef8dfbfc4b69f40402b43bfd1cf0f5'}
+head = {'Authorization': 'token code'}
 
 def saveData(body, company):
     for item in body["items"]:
