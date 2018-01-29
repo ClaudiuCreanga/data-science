@@ -1,26 +1,42 @@
 import numpy as np
 import pandas as pd
 import bokeh.plotting as bk
+from bokeh.models import HoverTool
 
-np.random.seed(0)
 my_df = pd.DataFrame(
-    ["Signature 1A", "7", "11.7%", "Age"]
-    ["Signature 1B", "19", "60.7%", "Age"]
-    ["Signature 2", "16", "14.4%", "APOBEC"]
-    ["Signature 3", "3", "9.9%", "BRCA1/2 mutations"]
-    ["Signature 4", "5", "12.1%", "Smoking"]
-    ["Signature 5", "9", "14.4%"]
-    ["Signature 6", "9", "2.6%", "DNA MMR deficiency"]
-    ["Signature 7", "2", "5.0%", "Ultraviolet light (head and neck, melanoma)"]
-    ["Signature 8", "2", "2.0%", "(breast, medulloblastoma)"]
-    ["Signature 9", "2", "0.6%", "Immunoglobulin gene hypermutation (CLL, lymphoma B cell)"]
+    {
+        "Cancertypes": [7,19,16,3,5,9,9,2,2,2],
+        "Prevalence": [11,60,14,9,12,14,2,5,2,1],
+        "ProbableAssociation": ["Age","Age","APOBEC", "Smoking","Smoking","Smoking","Smoking","Smoking","Smoking","Smoking"],
+        "Signature": ["Signature 1A","Signature 1B","Signature 2","Signature 3","Signature 4","Signature 5","Signature 6","Signature 7","Signature 8","Signature 9"]
+    }
+)
+
+source = bk.ColumnDataSource(my_df)
+
+hover = HoverTool(
+    tooltips = [
+        ("Prevalence", "@Prevalence"),
+        ("Cancer types", "@Cancertypes"),
+        ("Probable Association", "@ProbableAssociation")
+    ]
 )
 
 p = bk.figure(
-    title = "Contribution from each signature",
-    tools="pan,box_zoom,reset,save"
+    title = "Operative mutational signatures",
+    tools=[hover],
+    x_axis_label = "Signatures",
+    y_axis_label = "Contribution from each signature",
+    x_range=list(my_df["Signature"].values),
+    plot_width=1000
 )
 
-p.vbar(my_df, width=0.2, top=my_df[0], color=["#e31a1c", "#6a3d9a", "#f78071", "#8cd3c7", "#edf8b1", "#2877b4", "#f67f04", "#666666", "#f1b6da"])
+p.vbar(
+    x="Signature",
+    width=0.4,
+    top="Prevalence",
+    source=source
+)
+
 bk.show(p)
 
