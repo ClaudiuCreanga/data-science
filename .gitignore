@@ -87,4 +87,4 @@ ENV/
 
 # Rope project settings
 .ropeproject
-*.vcf
+data/pg2017
