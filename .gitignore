@@ -89,3 +89,4 @@ ENV/
 .ropeproject
 data/pg2017
 MNIST-data/
+data/pg2017/*
