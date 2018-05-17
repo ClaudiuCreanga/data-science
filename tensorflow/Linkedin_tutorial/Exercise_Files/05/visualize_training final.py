@@ -34,7 +34,7 @@ X_scaled_testing = X_scaler.transform(X_testing)
 Y_scaled_testing = Y_scaler.transform(Y_testing)
 
 # Define model parameters
-RUN_NAME = "run 2 with 20 nodes"
+RUN_NAME = "run 1 with 50 nodes"
 learning_rate = 0.001
 training_epochs = 100
 
@@ -43,7 +43,7 @@ number_of_inputs = 9
 number_of_outputs = 1
 
 # Define how many neurons we want in each layer of our neural network
-layer_1_nodes = 20
+layer_1_nodes = 50
 layer_2_nodes = 100
 layer_3_nodes = 50
 
