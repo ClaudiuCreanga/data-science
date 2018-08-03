@@ -1,0 +1,2 @@
+model_checkpoint_path: "vn.params-2400"
+all_model_checkpoint_paths: "vn.params-2400"
