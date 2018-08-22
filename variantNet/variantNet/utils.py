@@ -45,7 +45,7 @@ def get_aln_array( aln_tensor_fn ):
 def get_training_array( aln_tensor_fn, variant_set_fn, mask_bed_fn ):
     base2num = dict(zip("ACGT",(0, 1, 2, 3)))
 
-    tree =  intervaltree.IntervalTree()
+    tree = intervaltree.IntervalTree()
     with open(mask_bed_fn) as f:
         for row in f:
             row = row.strip().split()

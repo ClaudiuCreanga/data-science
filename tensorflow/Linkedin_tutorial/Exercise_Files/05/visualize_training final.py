@@ -50,6 +50,8 @@ layer_3_nodes = 50
 # Section One: Define the layers of the neural network itself
 
 # Input Layer
+# variable sharing in tensorflowis a away to share variables in different parts of the code
+# without passing references to variables, so you don't have to always pass the reference to that variable
 with tf.variable_scope('input'):
     X = tf.placeholder(tf.float32, shape=(None, number_of_inputs), name="X")
 
