@@ -92,3 +92,7 @@ ENV/
 *.fasta
 *.fastq
 *.gbk
+data/pg2017
+MNIST-data/
+data/pg2017/*
+variantNet/testing_data

@@ -30,6 +30,7 @@ X_scaled_training = X_scaler.fit_transform(X_training)
 Y_scaled_training = Y_scaler.fit_transform(Y_training)
 print(X_scaled_training)
 
+
 # It's very important that the training and test data are scaled with the same scaler.
 X_scaled_testing = X_scaler.transform(X_testing)
 Y_scaled_testing = Y_scaler.transform(Y_testing)
