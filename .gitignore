@@ -87,3 +87,8 @@ ENV/
 
 # Rope project settings
 .ropeproject
+
+*.fa
+*.fasta
+*.fastq
+*.gbk
