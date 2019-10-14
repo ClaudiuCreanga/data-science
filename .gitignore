@@ -82,6 +82,8 @@ celerybeat-schedule
 venv/
 ENV/
 
+*logs
+
 # Spyder project settings
 .spyderproject
 
@@ -91,3 +93,6 @@ data/pg2017
 MNIST-data/
 data/pg2017/*
 variantNet/testing_data
+logins.py
+
+nytimes.csv

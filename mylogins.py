@@ -1,0 +1,1 @@
+nytimes_api_key = "A4ZHao1YlefXNcZvkTkBSrhtJjwo4y9C"
