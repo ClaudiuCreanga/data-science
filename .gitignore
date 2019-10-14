@@ -99,5 +99,5 @@ MNIST-data/
 data/pg2017/*
 variantNet/testing_data
 logins.py
-
+mylogins.py
 nytimes.csv
