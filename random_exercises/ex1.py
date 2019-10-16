@@ -324,4 +324,64 @@ def isPalindrome2( x: int) -> bool:
     reversed_str = to_str[::-1]
     return reversed_str == to_str
 
-print(isPalindrome(121))
+#print(isPalindrome(121))
+
+def reverseStringConstantSPace(s): # strings are immutable in python so it's not constant space
+    s = [i for i in s]
+    start = 0
+    end = len(s) - 1
+    while start < end:
+        s[start], s[end] = s[end], s[start]
+        start += 1
+        end += -1
+    return "".join(s)
+
+# rint(reverseStringConstantSPace("abcqdef"))
+
+def isPalindromeInt(x: int) -> bool:
+    y = 0
+    z = x
+    while x > 0:
+        last_number = x % 10
+        x = x // 10
+        y += last_number
+        y *= 10
+    y = y // 10
+    return y == z
+
+#print(isPalindromeInt(121))
+
+def removeDuplicates( nums: List[int]) -> int:
+    i = 1
+    while i < len(nums):
+        if nums[i] == nums[i-1]:
+            nums.pop(i)
+        else:
+            i += 1
+
+    return len(nums)
+
+#print(removeDuplicates([1,1,2]))
+
+def removeDuplicates2(nums):
+    if len(nums) == 0:
+        return 0
+    i = 0
+    for j in range(1, len(nums)):
+        if (nums[j] != nums[i]):
+            i += 1
+            nums[i] = nums[j]
+    return i + 1
+
+#print(removeDuplicates2([1,1,2]))
+
+def maxProfit(prices: List[int]) -> int:
+    profit = 0
+    for i in range(1, len(prices)):
+        if prices[i] > prices[i-1]:
+            profit += prices[i] - prices[i-1]
+    return profit
+
+print(maxProfit([7, 1, 5, 3, 6, 4]))
+
+
