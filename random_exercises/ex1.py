@@ -382,6 +382,63 @@ def maxProfit(prices: List[int]) -> int:
             profit += prices[i] - prices[i-1]
     return profit
 
-print(maxProfit([7, 1, 5, 3, 6, 4]))
+#print(maxProfit([7, 1, 5, 3, 6, 4]))
 
 
+def permutations(string, step = 0):
+
+    # if we've gotten to the end, print the permutation
+    if step == len(string):
+        print("".join(string))
+
+    # everything to the right of step has not been swapped yet
+    for i in range(step, len(string)):
+
+        # copy the string (store as array)
+        string_copy = [character for character in string]
+
+        # swap the current index with the step
+        string_copy[step], string_copy[i] = string_copy[i], string_copy[step]
+
+        # recurse on the portion of the string that has not been swapped yet (now it's index will begin with step + 1)
+        permutations(string_copy, step + 1)
+
+# print(permutations("ABCD"))
+
+def isValid(s: str) -> bool:
+    close = {
+        ")": "(",
+        "]": "[",
+        "}": "{"
+    }
+    if s == "":
+        return True
+
+    stack = []
+    for x in range(len(s)):
+        if s[x] == "(" or s[x] == "{" or s[x] == "[":
+            stack.append(s[x])
+        else:
+            if not len(stack):
+                return False
+            last_item = stack.pop()
+            if close[s[x]] != last_item:
+                return False
+    return len(stack) == 0
+
+#print(isValid("]"))
+
+def twoSuma(a, t):
+    seen = {}
+    result = []
+    for i in range(len(a)):
+        temp = t - a[i]
+        if temp not in seen:
+            seen[a[i]] = i
+        else:
+            result.append((seen[temp], i))
+    return result
+
+# print(twoSuma([2, 7, 11, 15, 8, 6, 1],9))
+
+# anagrams and palindrom
