@@ -432,7 +432,7 @@ def twoSuma(a, t):
     seen = {}
     result = []
     for i in range(len(a)):
-        temp = t - a[i]
+        temp = t - a[i].lower()
         if temp not in seen:
             seen[a[i]] = i
         else:
@@ -440,5 +440,48 @@ def twoSuma(a, t):
     return result
 
 # print(twoSuma([2, 7, 11, 15, 8, 6, 1],9))
+
+def isPalindrome3( s: str) -> bool:
+    j = len(s) - 1
+    i = 0
+    while i < len(s) // 2:
+        if not s[i].isalnum():
+            i += 1
+            continue
+        if not s[j].isalnum():
+            j -= 1
+            continue
+        if s[i].lower() != s[j].lower():
+            return False
+        j -= 1
+        i += 1
+    return True
+
+#print(isPalindrome3("A man, a plan, a canal: Panama"))
+
+
+def validPalindrome5(s: str) -> bool:
+    i, j, edited = 0, len(s) - 1, False
+    while i < j:
+        if s[i] != s[j]:
+            if edited:
+                return False
+            edited = True
+            i += 1
+        i += 1
+        j -= 1
+    return True
+
+def validPalindrome4(s: str) -> bool:
+    L = len(s)
+    for i in range(L//2+1):
+        if (s[i] != s[-i-1]):
+            return s[i+1:L-i] == s[i+1:L-i][::-1] or s[i:L-i-1] == s[i:L-i-1][::-1]
+    return True
+
+print(validPalindrome5("abba"))
+print(validPalindrome5("abcba"))
+print(validPalindrome4("abcdba"))
+
 
 # anagrams and palindrom
