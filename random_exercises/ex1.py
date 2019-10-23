@@ -479,9 +479,24 @@ def validPalindrome4(s: str) -> bool:
             return s[i+1:L-i] == s[i+1:L-i][::-1] or s[i:L-i-1] == s[i:L-i-1][::-1]
     return True
 
-print(validPalindrome5("abba"))
-print(validPalindrome5("abcba"))
-print(validPalindrome4("abcdba"))
+def validPalindromeRec(s):
+
+    def rec(start = 0, end = len(s) - 1, skipOnce = False):
+        while start < end:
+            if s[start] != s[end]:
+                if not skipOnce:
+                    return rec(start + 1, end, True) or rec(start, end - 1, True)
+                else:
+                    return False
+            start += 1
+            end -= 1
+        return True
+
+    return rec()
+
+print(validPalindromeRec("abba"))
+print(validPalindromeRec("abcba"))
+print(validPalindromeRec("ebcdba"))
 
 
 # anagrams and palindrom
