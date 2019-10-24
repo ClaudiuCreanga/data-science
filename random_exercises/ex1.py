@@ -494,9 +494,37 @@ def validPalindromeRec(s):
 
     return rec()
 
-print(validPalindromeRec("abba"))
-print(validPalindromeRec("abcba"))
-print(validPalindromeRec("ebcdba"))
+def validPalindromeWhy(s):
+    start = 0
+    end = len(s) - 1
+    while start < end:
+        if s[start] != s[end]:
+            return s[start + 1:len(s) // 2] == s[len(s)//2 + 1: end + 1][::-1] \
+                   or s[start: len(s)//2] == s[len(s)//2: end][::-1]
+        start += 1
+        end -= 1
 
+    return True
+
+# print(validPalindromeWhy("abba"))
+# print(validPalindromeWhy("abcba"))
+# print(validPalindromeWhy("ebcdba"))
+# print(validPalindromeWhy("abcdedcba"))
+#print(validPalindromeWhy("abcdedcb"))
+
+def searchBinary(nums: List[int], target: int) -> int:
+    def search(a):
+        middle = len(a) // 2
+        if a[middle] == target:
+            return middle
+        elif a[middle] < target:
+            return search(a[middle:])
+        else:
+            return search(a[:middle])
+
+    return search(nums)
+
+#print(searchBinary([1,3,5,6], 5))
+print(searchBinary([1,3,5,6, 8, 9, 10, 12], 10))
 
 # anagrams and palindrom
