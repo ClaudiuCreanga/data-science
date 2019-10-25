@@ -578,19 +578,24 @@ def findRadius2(houses: List[int], heaters: List[int]) -> int:
         if r >= l:
             middle = (l + r) // 2
             if heaters[middle] == t:
-                return 0
+                return False
             elif heaters[middle] < t:
                 return binary_search(l, middle -1, t)
             else:
                 return binary_search(middle + 1, r, t)
         else:
-
-    for i in range(houses):
-        binary_search(0, len(heaters) - 1, houses[i])
+            return (r + l) // 2 + 1
 
 
-# print(findRadius([1,2,3,4], [1,4]))
-# print(findRadius([1,2,3],[2]))
+    for i in range(len(houses)):
+        item = binary_search(0, len(heaters) - 1, houses[i])
+        if item:
+            dist = min([abs(houses[i] - heaters[item - 1]), abs(houses[i] - heaters[item])])
+            radius = max(dist, radius)
+    return radius
+
+print(findRadius2([1,2,3,4], [1,4]))
+print(findRadius2([1,2,3],[2]))
 # print(findRadius([1,2,3,4,5,6,7],[2]))
 # print(findRadius([1,2,3,4,5,6,7],[2,5]))
 # print(findRadius([1,2,3,4,5,6],[2,5]))
