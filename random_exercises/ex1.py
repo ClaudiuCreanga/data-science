@@ -665,5 +665,20 @@ def rotate2(M):
     return M
 print(rotate2([[1,2,3], [6,7,8], [9,4,2]]))
 
+def zero(M):
+    row, col = [], []
+    for i in range(len(M)):
+        for j in range(len(M[0])):
+            if M[i][j] == 0:
+                row.append(i)
+                col.append(j)
+    for i in range(len(row)):
+        for j in range(len(M[0])):
+            M[row[i]][j] = 0
+        for x in range(len(M)):
+            M[x][col[i]] = 0
+    return M
+
+print(zero([[1,1,1,1,1,1,1,1,1], [0,1,1,1,1,1,1,1,1], [1,1,1,1,1,1,1,1,1], [1,1,1,1,1,1,1,1,1]]))
 
 # anagrams and palindrom
