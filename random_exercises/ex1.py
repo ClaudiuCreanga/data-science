@@ -636,4 +636,34 @@ def compress(s):
 # print(compress("aaabccccc"))
 # print(compress(""))
 
+def rotate(M):
+    result = [[0, 0, 0] for x in range(len(M))]
+    column = len(M)
+    for i in range(len(M)):
+        row = 0
+        column -= 1
+        for j in range(len(M)):
+            result[row][column] = M[i][j]
+            row += 1
+    return result
+
+print(rotate([[1,2,3], [6,7,8], [9,4,2]]))
+
+def rotate2(M):
+    n = len(M)
+    for i in range(n // 2):
+        first = i
+        last = n - 1 - i
+        for i in range(i, last):
+            offset = i - first
+            top = M[first][i]
+            M[first][i] = M[last-offset][first]
+            M[last-offset][first] = M[last][last-offset]
+            M[last][last-offset] = M[i][last]
+            M[i][last] = top
+
+    return M
+print(rotate2([[1,2,3], [6,7,8], [9,4,2]]))
+
+
 # anagrams and palindrom
