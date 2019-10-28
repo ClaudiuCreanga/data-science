@@ -432,7 +432,7 @@ def twoSuma(a, t):
     seen = {}
     result = []
     for i in range(len(a)):
-        temp = t - a[i]
+        temp = t - a[i].lower()
         if temp not in seen:
             seen[a[i]] = i
         else:
@@ -440,6 +440,170 @@ def twoSuma(a, t):
     return result
 
 # print(twoSuma([2, 7, 11, 15, 8, 6, 1],9))
+
+def isPalindrome3( s: str) -> bool:
+    j = len(s) - 1
+    i = 0
+    while i < len(s) // 2:
+        if not s[i].isalnum():
+            i += 1
+            continue
+        if not s[j].isalnum():
+            j -= 1
+            continue
+        if s[i].lower() != s[j].lower():
+            return False
+        j -= 1
+        i += 1
+    return True
+
+#print(isPalindrome3("A man, a plan, a canal: Panama"))
+
+
+def validPalindrome5(s: str) -> bool:
+    i, j, edited = 0, len(s) - 1, False
+    while i < j:
+        if s[i] != s[j]:
+            if edited:
+                return False
+            edited = True
+            i += 1
+        i += 1
+        j -= 1
+    return True
+
+def validPalindrome4(s: str) -> bool:
+    L = len(s)
+    for i in range(L//2+1):
+        if (s[i] != s[-i-1]):
+            return s[i+1:L-i] == s[i+1:L-i][::-1] or s[i:L-i-1] == s[i:L-i-1][::-1]
+    return True
+
+def validPalindromeRec(s):
+
+    def rec(start = 0, end = len(s) - 1, skipOnce = False):
+        while start < end:
+            if s[start] != s[end]:
+                if not skipOnce:
+                    return rec(start + 1, end, True) or rec(start, end - 1, True)
+                else:
+                    return False
+            start += 1
+            end -= 1
+        return True
+
+    return rec()
+
+def validPalindromeWhy(s):
+    start = 0
+    end = len(s) - 1
+    while start < end:
+        if s[start] != s[end]:
+            return s[start + 1:len(s) // 2] == s[len(s)//2 + 1: end + 1][::-1] \
+                   or s[start: len(s)//2] == s[len(s)//2: end][::-1]
+        start += 1
+        end -= 1
+
+    return True
+
+# print(validPalindromeWhy("abba"))
+# print(validPalindromeWhy("abcba"))
+# print(validPalindromeWhy("ebcdba"))
+# print(validPalindromeWhy("abcdedcba"))
+#print(validPalindromeWhy("abcdedcb"))
+
+def searchBinary(nums: List[int], target: int) -> int:
+    def search(a, l, r):
+        if r >= l:
+            middle = (l + r) // 2
+            if a[middle] == target:
+                return middle
+            elif a[middle] < target:
+                return search(a, middle + 1, r)
+            else:
+                return search(a, l, middle - 1)
+        else:
+            return (r + l) // 2 + 1
+
+    return search(nums, 0, len(nums) - 1)
+
+def searchBinaryItirative(nums, target):
+    l = 0
+    r = len(nums) - 1
+    while l <= r:
+        middle = (l + r) // 2
+        if nums[middle] == target:
+            return middle
+        elif nums[middle] < target:
+            l = middle + 1
+        else:
+            r = middle - 1
+    return -1
+
+
+#print(searchBinaryItirative([1,3,5,6], 6))
+# print(searchBinary([1,3,5,6, 8, 9, 10, 12], 10))
+# print(searchBinary([1,3,5,6, 8, 9, 10, 12, 13], 13))
+# print(searchBinary([1,3,5,6, 8, 9, 10, 12, 13], 1))
+# print(searchBinary([1,3,5,6, 8, 9, 10, 12, 13], 8))
+# print(searchBinary([1,3,5,6, 8, 9, 10, 12, 13], 90))
+
+def findRadius(houses: List[int], heaters: List[int]) -> int:
+    houses.sort()
+    heaters.sort()
+    radius = 0
+    j = 0
+    def get_current_radius(i):
+        nonlocal j
+        dist = abs(houses[i] - heaters[j])
+        if j + 1 < len(heaters):
+            dist2 = abs(houses[i] - heaters[j + 1])
+            if dist2 < dist:
+                dist = dist2
+                j += 1
+                return get_current_radius(i)
+        return dist
+
+
+    for i in range(len(houses)):
+        current_radius = get_current_radius(i)
+        radius = current_radius if current_radius > radius else radius
+
+    return radius
+
+def findRadius2(houses: List[int], heaters: List[int]) -> int:
+    heaters.sort()
+    radius = 0
+    def binary_search(l, r, t):
+        if r >= l:
+            middle = (l + r) // 2
+            if heaters[middle] == t:
+                return False
+            elif heaters[middle] < t:
+                return binary_search(l, middle -1, t)
+            else:
+                return binary_search(middle + 1, r, t)
+        else:
+            return (r + l) // 2 + 1
+
+
+    for i in range(len(houses)):
+        item = binary_search(0, len(heaters) - 1, houses[i])
+        if item:
+            dist = min([abs(houses[i] - heaters[item - 1]), abs(houses[i] - heaters[item])])
+            radius = max(dist, radius)
+    return radius
+
+print(findRadius2([1,2,3,4], [1,4]))
+print(findRadius2([1,2,3],[2]))
+# print(findRadius([1,2,3,4,5,6,7],[2]))
+# print(findRadius([1,2,3,4,5,6,7],[2,5]))
+# print(findRadius([1,2,3,4,5,6],[2,5]))
+# print(findRadius([2,3,1,4,6,5],[5, 2]))
+#print(findRadius([1,2,3],[1,2,3]))
+#print(findRadius([999,999,999,999,999],[499,500,500,501]))
+
+# anagrams and palindrom
 
 def checkTwoSOneEditAway(A:str, B:str) -> bool:
     if abs(len(A) - len(B)) > 1:
