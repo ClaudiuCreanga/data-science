@@ -548,30 +548,7 @@ def searchBinaryItirative(nums, target):
 # print(searchBinary([1,3,5,6, 8, 9, 10, 12, 13], 8))
 # print(searchBinary([1,3,5,6, 8, 9, 10, 12, 13], 90))
 
-def findRadius(houses: List[int], heaters: List[int]) -> int:
-    houses.sort()
-    heaters.sort()
-    radius = 0
-    j = 0
-    def get_current_radius(i):
-        nonlocal j
-        dist = abs(houses[i] - heaters[j])
-        if j + 1 < len(heaters):
-            dist2 = abs(houses[i] - heaters[j + 1])
-            if dist2 < dist:
-                dist = dist2
-                j += 1
-                return get_current_radius(i)
-        return dist
-
-
-    for i in range(len(houses)):
-        current_radius = get_current_radius(i)
-        radius = current_radius if current_radius > radius else radius
-
-    return radius
-
-def findRadius2(houses: List[int], heaters: List[int]) -> int:
+def findRadius2(houses: List[int], heaters: List[int]) -> int: # O: HeLogHe + HoLogHe
     heaters.sort()
     radius = 0
     def binary_search(l, r, t):
@@ -580,28 +557,37 @@ def findRadius2(houses: List[int], heaters: List[int]) -> int:
             if heaters[middle] == t:
                 return False
             elif heaters[middle] < t:
-                return binary_search(l, middle -1, t)
-            else:
                 return binary_search(middle + 1, r, t)
+            else:
+                return binary_search(l, middle - 1, t)
         else:
             return (r + l) // 2 + 1
 
-
     for i in range(len(houses)):
         item = binary_search(0, len(heaters) - 1, houses[i])
-        if item:
-            dist = min([abs(houses[i] - heaters[item - 1]), abs(houses[i] - heaters[item])])
-            radius = max(dist, radius)
+        if item is not False:
+            if item < len(heaters) - 1:
+                hi = heaters[item]
+            else:
+                hi = heaters[-1]
+            if item > 0:
+                low = heaters[item - 1]
+            else:
+                low = heaters[0]
+            new_radius = min([abs(houses[i] - low), abs(hi - houses[i])])
+            radius = max(new_radius, radius)
+
     return radius
 
-print(findRadius2([1,2,3,4], [1,4]))
-print(findRadius2([1,2,3],[2]))
-# print(findRadius([1,2,3,4,5,6,7],[2]))
-# print(findRadius([1,2,3,4,5,6,7],[2,5]))
-# print(findRadius([1,2,3,4,5,6],[2,5]))
-# print(findRadius([2,3,1,4,6,5],[5, 2]))
-#print(findRadius([1,2,3],[1,2,3]))
-#print(findRadius([999,999,999,999,999],[499,500,500,501]))
+print(findRadius2([1,5], [10]))
+# print(findRadius2([1,2,3,4], [1,4]))
+# print(findRadius2([1,2,3],[2]))
+# print(findRadius2([1,2,3,4,5,6,7],[2]))
+# print(findRadius2([1,2,3,4,5,6,7],[2,5]))
+# print(findRadius2([1,2,3,4,5,6],[2,5]))
+# print(findRadius2([2,3,1,4,6,5],[5, 2]))
+# print(findRadius2([1,2,3],[1,2,3]))
+# print(findRadius2([999,999,999,999,999],[499,500,500,501]))
 
 # anagrams and palindrom
 
@@ -647,7 +633,7 @@ def compress(s):
 
     return s if len(s) <= len(s2) else s2
 
-print(compress("aaabccccc"))
-print(compress(""))
+# print(compress("aaabccccc"))
+# print(compress(""))
 
 # anagrams and palindrom
