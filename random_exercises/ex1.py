@@ -540,6 +540,20 @@ def searchBinaryItirative(nums, target):
             r = middle - 1
     return -1
 
+def searchBinaryLoHi(nums, target):
+    low = 0
+    hi = len(nums) - 1
+    while low <= hi:
+        middle = (low + hi) // 2 # low + (hi - lo) // 2 to avoid overflow
+        if nums[middle] == target:
+            return middle
+        elif nums[middle] < target:
+            low = middle + 1
+        else:
+            hi = middle - 1
+    return (low + hi) // 2 + 1
+
+print(searchBinaryLoHi([1,3,5,6, 8, 9, 12], 2))
 
 #print(searchBinaryItirative([1,3,5,6], 6))
 # print(searchBinary([1,3,5,6, 8, 9, 10, 12], 10))
@@ -579,7 +593,7 @@ def findRadius2(houses: List[int], heaters: List[int]) -> int: # O: HeLogHe + Ho
 
     return radius
 
-print(findRadius2([1,5], [10]))
+# print(findRadius2([1,5], [10]))
 # print(findRadius2([1,2,3,4], [1,4]))
 # print(findRadius2([1,2,3],[2]))
 # print(findRadius2([1,2,3,4,5,6,7],[2]))
@@ -600,7 +614,7 @@ def checkTwoSOneEditAway(A:str, B:str) -> bool:
                 return A[i+1:] == B[i:] or A[i+1:] == B[i+1:] or A[i] == B[i+1:]
 
     return True
-#
+
 # print(checkTwoSOneEditAway("pale", "ple"))
 # print(checkTwoSOneEditAway("pales", "pale"))
 # print(checkTwoSOneEditAway("pale", "bale"))
@@ -647,7 +661,7 @@ def rotate(M):
             row += 1
     return result
 
-print(rotate([[1,2,3], [6,7,8], [9,4,2]]))
+# print(rotate([[1,2,3], [6,7,8], [9,4,2]]))
 
 def rotate2(M):
     n = len(M)
@@ -663,7 +677,7 @@ def rotate2(M):
             M[i][last] = top
 
     return M
-print(rotate2([[1,2,3], [6,7,8], [9,4,2]]))
+# print(rotate2([[1,2,3], [6,7,8], [9,4,2]]))
 
 def zero(M):
     row, col = [], []
@@ -679,6 +693,6 @@ def zero(M):
             M[x][col[i]] = 0
     return M
 
-print(zero([[1,1,1,1,1,1,1,1,1], [0,1,1,1,1,1,1,1,1], [1,1,1,1,1,1,1,1,1], [1,1,1,1,1,1,1,1,1]]))
+# print(zero([[1,1,1,1,1,1,1,1,1], [0,1,1,1,1,1,1,1,1], [1,1,1,1,1,1,1,1,1], [1,1,1,1,1,1,1,1,1]]))
 
 # anagrams and palindrom
