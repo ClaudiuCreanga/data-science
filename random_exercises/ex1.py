@@ -264,7 +264,7 @@ def bonetrousle(n, k, b):
         result[index] += q
         if index > len(result) - r - 1 and index <= len(result) - 1:
             result[index] += 1
-    print(len(set(result)) == b)
+
     return result
 
 
@@ -336,7 +336,7 @@ def reverseStringConstantSPace(s): # strings are immutable in python so it's not
         end += -1
     return "".join(s)
 
-# rint(reverseStringConstantSPace("abcqdef"))
+# print(reverseStringConstantSPace("abcqdef"))
 
 def isPalindromeInt(x: int) -> bool:
     y = 0
@@ -403,7 +403,61 @@ def permutations(string, step = 0):
         # recurse on the portion of the string that has not been swapped yet (now it's index will begin with step + 1)
         permutations(string_copy, step + 1)
 
-# print(permutations("ABCD"))
+#print(permutations("ABCD"))
+
+def permutations2(s):
+
+    def perm(s, l, r):
+        if l == r:
+            print("".join(s))
+
+        for i in range(l, r+1):
+            s[l], s[i] = s[i], s[l]
+            perm(s, l+1, r)
+            s[l], s[i] = s[i], s[l]
+
+
+    return perm(list(s), 0, len(s) - 1)
+
+# print(permutations2("ABCD"))
+
+def permute3(nums: List[int]) -> List[List[int]]:
+    result = []
+
+    def perm(a, k=0):
+        if k == len(a):
+            result.append([b for b in a])
+        else:
+            for i in range(k, len(a)):
+                a[k], a[i] = a[i], a[k]
+                perm(a, k + 1)
+                a[k], a[i] = a[i], a[k]  # backtrack or else do the modification in a copy of the list
+
+    perm(nums)
+    return result
+
+print(permute3([0,1,2]))
+
+def findIfpermutationIsPalindrom(s):
+    v = {}
+    for c in s:
+        if c in v:
+            v[c] = not v[c]
+        else:
+            v[c] = False
+
+    middle = False
+    for a,b in v.items():
+        if not b:
+            if not middle:
+                middle = True
+            else:
+                return False
+
+    return True
+
+#print(findIfpermutationIsPalindrom("tactcoaa"))
+
 
 def isValid(s: str) -> bool:
     close = {
@@ -510,7 +564,7 @@ def validPalindromeWhy(s):
 # print(validPalindromeWhy("abcba"))
 # print(validPalindromeWhy("ebcdba"))
 # print(validPalindromeWhy("abcdedcba"))
-#print(validPalindromeWhy("abcdedcb"))
+# print(validPalindromeWhy("abcdedcb"))
 
 def searchBinary(nums: List[int], target: int) -> int:
     def search(a, l, r):
@@ -553,9 +607,9 @@ def searchBinaryLoHi(nums, target):
             hi = middle - 1
     return (low + hi) // 2 + 1
 
-print(searchBinaryLoHi([1,3,5,6, 8, 9, 12], 2))
+# print(searchBinaryLoHi([1,3,5,6, 8, 9, 12], 2))
 
-#print(searchBinaryItirative([1,3,5,6], 6))
+# print(searchBinaryItirative([1,3,5,6], 6))
 # print(searchBinary([1,3,5,6, 8, 9, 10, 12], 10))
 # print(searchBinary([1,3,5,6, 8, 9, 10, 12, 13], 13))
 # print(searchBinary([1,3,5,6, 8, 9, 10, 12, 13], 1))
@@ -694,5 +748,50 @@ def zero(M):
     return M
 
 # print(zero([[1,1,1,1,1,1,1,1,1], [0,1,1,1,1,1,1,1,1], [1,1,1,1,1,1,1,1,1], [1,1,1,1,1,1,1,1,1]]))
+
+def rotateS(s1, s2):
+    i = 0
+    while i < len(s2):
+        temp = s2[0]
+        s2 = s2[1:]
+        s2 += temp
+        if s2 == s1:
+            return True
+        i += 1
+    return False
+
+def rotateS2(s1, s2):
+    for i in range(len(s2)):
+        s2 += s2[i]
+        if s1 in s2:
+            return True
+    return False
+
+
+def rotateS3(s1, s2):
+    s1 += s1
+    if s2 in s1:
+        return True
+    return False
+
+#print(rotateS3("waterbottle", "erbottlewat"))
+
+def calendarConflict(cal):
+    conflicts = []
+    temp_conflicts = [cal[0][2]]
+    end = cal[0][1]
+    for i in range(1, len(cal)):
+        if cal[i][0] >= end:
+            if len(temp_conflicts) > 1:
+                conflicts.append(temp_conflicts)
+            temp_conflicts = []
+        end = max(end, cal[i][1])
+        temp_conflicts.append(cal[i][2])
+    if len(temp_conflicts) > 1:
+        conflicts.append(temp_conflicts)
+
+    return conflicts
+
+#print(calendarConflict([[1,2,"a"], [2,4, "b"], [3,5, "c"], [7,9, "d"]]))
 
 # anagrams and palindrom
