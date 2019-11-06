@@ -794,4 +794,68 @@ def calendarConflict(cal):
 
 #print(calendarConflict([[1,2,"a"], [2,4, "b"], [3,5, "c"], [7,9, "d"]]))
 
+class StackMin():
+
+    def __init__(self):
+        self.data = []
+        self.current_min = None
+
+    def push(self, d):
+        if self.current_min:
+            self.data.append((d, self.current_min))
+            if d < self.current_min:
+                self.current_min = d
+        else:
+            self.current_min = d
+            self.data.append((d, None))
+
+    def remove(self):
+        item = self.data.pop()
+        if item[0] == self.current_min:
+            self.current_min = item[1]
+
+# da = StackMin()
+# print(da.current_min)
+# da.push(3)
+# print(da.current_min)
+# da.push(2)
+# print(da.current_min)
+# da.push(7)
+# print(da.current_min)
+# da.push(1)
+# print(da.current_min)
+# da.remove()
+# print(da.current_min)
+# da.remove()
+# print(da.current_min)
+# da.remove()
+# print(da.current_min)
+# da.remove()
+# print(da.current_min)
+
+
+def SortStack(l):
+
+    l2 = []
+    temp = []
+    while len(l) != len(l2):
+        min = float("inf")
+        while len(l):
+            item = l.pop()
+            if item < min:
+                temp.append(min)
+                min = item
+            else:
+                temp.append(item)
+
+        l2.append(min)
+
+        while len(temp):
+            l.append(temp.pop())
+
+    return l2
+
+print(SortStack([3,4,1,2,5,2]))
+
+
 # anagrams and palindrom
