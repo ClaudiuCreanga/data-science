@@ -858,4 +858,16 @@ def SortStack(l):
 print(SortStack([3,4,1,2,5,2]))
 
 
+def KnapsackProblem(weight, items):
+    combinations = [0 for x in range(weight + 1)]
+    print(combinations)
+    for w,v in items.items():
+        for x in range(len(combinations)):
+            if w <= x:
+                combinations[x] = max(combinations[x], combinations[x - w] + v)
+
+    return combinations[-1]
+
+print(KnapsackProblem(5, {5: 60, 3: 50, 4: 70, 2: 30}))
+
 # anagrams and palindrom
