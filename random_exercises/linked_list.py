@@ -96,4 +96,19 @@ def sort(l: LinkedList):
     return newl
 
 da = sort(myList)
-da.print_list()
+#da.print_list()
+
+def reverse_list(node):
+    reversed = None
+    while node:
+        next = reversed
+        reversed = Node(node.get_data())
+        reversed.set_next(next)
+        node = node.get_next()
+    return reversed
+
+a = reverse_list(myList.root)
+print(a)
+
+
+
