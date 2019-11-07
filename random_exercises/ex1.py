@@ -436,7 +436,7 @@ def permute3(nums: List[int]) -> List[List[int]]:
     perm(nums)
     return result
 
-print(permute3([0,1,2]))
+# print(permute3([0,1,2]))
 
 def findIfpermutationIsPalindrom(s):
     v = {}
@@ -855,8 +855,18 @@ def SortStack(l):
 
     return l2
 
-print(SortStack([3,4,1,2,5,2]))
+#print(SortStack([3,4,1,2,5,2]))
 
+def coin_change(amount, coins):
+    combinations = [0 for x in range(amount + 1)]
+    combinations[0] = 1
+    for coin in coins:
+        for x in range(1, len(combinations)):
+            if x >= coin:
+                combinations[x] += combinations[x-coin] # so the trick is to take the previous row value + the value from the column - coin
+    return combinations[amount]
+
+# print(coin_change(12, [1,2,5]))
 
 def KnapsackProblem(weight, items):
     combinations = [0 for x in range(weight + 1)]
