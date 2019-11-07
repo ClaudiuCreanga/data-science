@@ -183,7 +183,7 @@ def dfs_find(root, item):
 def find_preorder(postorder):
     pass
 
-print(find_preorder(["D","E","B","F","C","A"]))
+#print(find_preorder(["D","E","B","F","C","A"]))
 
 
 def construct_bst_preorder(preorder):
@@ -236,7 +236,7 @@ def binaryTreePathsGood( root) -> List[str]:
     dfs(root)
     return paths
 
-print(binaryTreePathsGood(root))
+#print(binaryTreePathsGood(root))
 
 def binaryTreePathsGood2( root) -> List[str]:
     paths = []
@@ -253,4 +253,58 @@ def binaryTreePathsGood2( root) -> List[str]:
     dfs(root)
     return paths
 
-print(binaryTreePathsGood2(root))
+#print(binaryTreePathsGood2(root))
+
+def main(root):
+    result = []
+    current_level = [root]
+    while len(current_level): # sort of bfs
+        next_level = []
+        for x in current_level:
+            if x.left:
+                next_level.append(x.left)
+            if x.right:
+                next_level.append(x.right)
+        result.append([x.val for x in current_level if x])
+        current_level = next_level
+    return result
+
+# mda = main(graph_find)
+# for x in mda:
+#     print("new list")
+#     for i in x:
+#         print(i)
+
+def getLevelUtil(node, data, level):
+    if (node == None):
+        return 0
+
+    if (node.val == data):
+        return level
+
+    downlevel = getLevelUtil(node.left,
+                             data, level + 1)
+    if (downlevel != 0):
+        return downlevel
+
+    downlevel = getLevelUtil(node.right,
+                             data, level + 1)
+    return downlevel
+
+# graph_find = Node(5)
+# graph_find.left = Node(2)
+# graph_find.right = Node(8)
+# graph_find.left.left = Node(1)
+# graph_find.left.right = Node(4)
+# graph_find.right.left = Node(6)
+#print(getLevelUtil(graph_find, 4, 1))
+
+def find_level(node, t, l, found = 0):
+    if node:
+        if node.val == t:
+            print(l)
+        find_level(node.left, t, l + 1, found)
+        find_level(node.right, t, l + 1, found)
+
+
+#print(find_level(graph_find, 4, 1))
