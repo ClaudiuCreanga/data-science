@@ -878,6 +878,25 @@ def KnapsackProblem(weight, items):
 
     return combinations[-1]
 
-print(KnapsackProblem(5, {5: 60, 3: 50, 4: 70, 2: 30}))
+# print(KnapsackProblem(5, {5: 60, 3: 50, 4: 70, 2: 30}))
+
+def levenstein_distance(a,b): # we need to use a matrix, can't do it with a single row
+    combinations = [[0 for x in range(len(a) + 1)] for i in range(len(b) + 1)]
+    combinations[0] = [x for x in range(len(a) + 1)]
+    print(combinations[0])
+    for i in range(1, len(b) + 1):
+        for j in range(len(a) + 1):
+            if j == 0:
+                edits = combinations[i-1][0] + 1
+            else:
+                edits = min(combinations[i][j-1], combinations[i-1][j-1], combinations[i-1][j])
+                if a[j-1] != b[i-1]:
+                    edits += 1
+            combinations[i][j] = edits
+
+        print(combinations[i])
+
+    return combinations[len(b)][len(a)]
+print(levenstein_distance("benyam", "ephrem"))
 
 # anagrams and palindrom
