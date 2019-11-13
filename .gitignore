@@ -101,3 +101,4 @@ variantNet/testing_data
 logins.py
 mylogins.py
 nytimes.csv
+.mypy_cache/

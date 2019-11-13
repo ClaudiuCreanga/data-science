@@ -897,6 +897,146 @@ def levenstein_distance(a,b): # we need to use a matrix, can't do it with a sing
         print(combinations[i])
 
     return combinations[len(b)][len(a)]
-print(levenstein_distance("benyam", "ephrem"))
+#print(levenstein_distance("benyam", "ephrem"))
+from collections import defaultdict
+
+
+class Graph:
+    def __init__(self, vertices):
+        self.graph = defaultdict(list)  # dictionary containing adjacency List
+        self.V = vertices  # No. of vertices
+
+    # function to add an edge to graph
+    def addEdge(self, u, v):
+        self.graph[u].append(v)
+
+    def topologicalSortUtil(self, v, visited, stack):
+
+        # Mark the current node as visited.
+        visited[v] = True
+
+        # Recur for all the vertices adjacent to this vertex
+        for i in self.graph[v]:
+            if visited[i] == False:
+                self.topologicalSortUtil(i, visited, stack)
+
+                # Push current vertex to stack which stores result
+        stack.insert(0, v)
+
+    def topological_sort(self):
+        # Mark all the vertices as not visited
+        visited = [False] * self.V
+        stack = []
+
+        # Call the recursive helper function to store Topological
+        # Sort starting from all vertices one by one
+        for i in range(self.V):
+            if visited[i] == False:
+                self.topologicalSortUtil(i, visited, stack)
+
+                # Print contents of stack
+        return stack
+
+g= Graph(6)
+g.addEdge(5, 2)
+g.addEdge(5, 0)
+g.addEdge(4, 0)
+g.addEdge(4, 1)
+g.addEdge(2, 3)
+g.addEdge(3, 1)
+#print(g.topological_sort())
+graph = {
+    'a': ['b', 'c'],
+    'b': ['d'],
+    'c': ['d'],
+    'd': ['e'],
+    'e': []
+}
+def iterative_topological_sort(graph, start):
+    seen = set()
+    stack = []    # path variable is gone, stack and order are new
+    order = []    # order will be in reverse order at first
+    q = [start]
+    while q:
+        v = q.pop()
+        if v not in seen:
+            seen.add(v)
+            q.extend(graph[v])
+
+            while stack and v not in graph[stack[-1]]: # check that the current value is not a dependence of the last item in stack
+                order.append(stack.pop())
+            stack.append(v)
+
+    return stack + order[::-1]
+
+def recursive_topological_sort(graph, node):
+    result = []
+    seen = set()
+
+    def recursive_helper(node):
+        for neighbor in graph[node]:
+            if neighbor not in seen:
+                seen.add(neighbor)
+                recursive_helper(neighbor)
+        result.append(node)
+
+    recursive_helper(node)
+    return result
+print(recursive_topological_sort(graph, "a"))
+
+
+def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
+    '''
+    Use defaultdict to build a graph based on prerequisites information, try to find a loop in this graph
+    Assign 3 states for each course 0, 1, 2. 0 for not visited, 1 for visiting and 2 for visited
+    During DFS search, if we meet a course that with state == 1, then there is a loop. If we meet a course with state == 0, call DFS on new course.
+    At each course, the graphy stores all possible next move (prerequisites).
+    Time: O(n)
+    Space: O(n)
+    '''
+    def DFS(start, my_dict, course_state):
+        course_state[start] = 1
+        for pre_course in my_dict[start]:
+            if course_state[pre_course] == 1:
+                return True
+            if course_state[pre_course] == 0:
+                if DFS(pre_course, my_dict, course_state):
+                    return True
+        course_state[start] = 2
+        return False
+
+    if not numCourses or not prerequisites:
+        return True  # Assume no course to take returns True
+
+    my_dict = defaultdict(list)
+    for p in prerequisites:
+        my_dict[p[0]].append(p[1])
+
+    # Init states for all courses
+    course_state = [0] * numCourses
+
+    for n in range(numCourses):
+        if course_state[n] == 0:  # Call DFS from this node and look for a loop
+            loop = DFS(n, my_dict, course_state)
+            if loop:
+                return False
+    return True
+# analyze this one
+
+fiblist = [0,1]
+def fib_dp(n):
+    if n<0:
+        print("Incorect")
+    if n <= len(fiblist):
+        return fiblist[n-1]
+    else:
+        temp = fib_dp(n-1) + fib_dp(n-2)
+        fiblist.append(temp)
+        return temp
+
+#print(fib_dp(8))
+
+
+
 
 # anagrams and palindrom
