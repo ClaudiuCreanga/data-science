@@ -982,7 +982,7 @@ def recursive_topological_sort(graph, node):
 
     recursive_helper(node)
     return result
-print(recursive_topological_sort(graph, "a"))
+#print(recursive_topological_sort(graph, "a"))
 
 
 def canFinish(self, numCourses: int, prerequisites: List[List[int]]) -> bool:
@@ -1090,6 +1090,544 @@ def threeSum(nums: List[int]) -> List[List[int]]:
     return res
 
 
+def floodFill(image: List[List[int]], sr: int, sc: int, newColor: int) -> List[List[int]]:
+    r = len(image)
+    c = len(image[0])
+    original_color = image[sr][sc]
+    visited = set()
 
+    def dfs(x, y):
+        if x < 0 or y < 0:
+            return
+        if x >= r or y >=c:
+            return
+
+        if image[x][y] == original_color:
+            image[x][y] = newColor
+            if (x,y) not in visited:
+                visited.add((x,y))
+                dfs(x-1, y)
+                dfs(x+1, y)
+                dfs(x, y-1)
+                dfs(x, y+1)
+
+    dfs(sr, sc)
+    return image
+
+
+#print(floodFill([[1,1,1],[1,1,0],[1,0,1]], 1, 1, 2))
+
+def articulation_point():
+    pass
+
+def triple_step(n):
+    """how many possible ways you can run up the stairs n if you can hop 1,2 or 3 at a time. O(3**n)"""
+    if n < 0:
+        return 0
+    if n == 0:
+        return 1
+    return triple_step(n-1) + triple_step(n-2) + triple_step(n-3)
+
+items = []
+def triple_step_dp(n):
+    """how many possible ways you can run up the stairs n if you can hop 1,2 or 3 at a time."""
+    if n < 0:
+        return 0
+    if n == 0:
+        return 1
+    if n <= len(items):
+        return items[n-1]
+    else:
+        temp = triple_step_dp(n-1) + triple_step_dp(n-2) + triple_step_dp(n-3)
+        items.append(temp)
+        return temp
+
+#print(triple_step_dp(5))
+
+def robot_grid(grid):
+    """exponential big O. O(2**r+c) because each point has 2 possibilities"""
+    success = False
+
+    def rec(current):
+        nonlocal success
+        if success:
+            return
+        r = current[0]
+        c = current[1]
+        if current == (0,0):
+            success = True
+            return
+
+        if grid[r][c] != 'X' and r >= 0 and c >= 0:
+            rec((r-1, c))
+            rec((r, c-1))
+
+    rec((len(grid)-1,len(grid[0]) - 1))
+
+    return success
+
+def robot_grid_dp(grid): # do this to save the good path
+    """Big O r*c because we don't visit any cells twice"""
+    success = False
+    visited = set()
+
+    def rec(current):
+        nonlocal success
+        if success or current in visited:
+            return
+        r = current[0]
+        c = current[1]
+        if current == (0,0):
+            success = True
+            return
+
+        if grid[r][c] != 'X' and r >= 0 and c >= 0:
+            visited.add((r,c))
+            rec((r-1, c))
+            rec((r, c-1))
+
+    rec((len(grid)-1,len(grid[0]) - 1))
+
+    return success
+
+# print(robot_grid_dp([[0, "X", 0, 0, 0],
+#                       [0, 0, 0, 0, 0],
+#                       [0, 0, 0, 0, 0],
+#                       ["X", 0, 0, 0, 0],
+#                       [0, 0, 0, 0, 0]]))
+
+def magic_index(A):
+
+    def binary_search(A, l, r):
+        if l <= r:
+            middle = l + (r-l) // 2
+
+            if A[middle] == middle:
+                return True
+            elif A[middle] < middle:
+                return binary_search(A, middle + 1, r)
+            else:
+                return binary_search(A, l, middle - 1)
+        else:
+            return False
+
+    return binary_search(A, 0, len(A) - 1)
+
+#print(magic_index([-2, -1, 1, 2, 5, 6]))
+
+def magic_index_duplicates(A):
+    def magic_fast(A, l, r):
+
+        if l<=r:
+            middle = l + (r-l) // 2
+            if A[middle] == middle:
+                return True
+
+            left = magic_fast(A, l, min(middle - 1, A[middle]))
+            if left >= 0:
+                return left
+            right = magic_fast(A, max(middle+1, A[middle]), r)
+            return right
+        else:
+            return -1
+
+    return magic_fast(A, 0, len(A) - 1)
+
+
+#print(magic_index_duplicates([-10, -5, 2, 2, 2,3,4, 7, 9, 12]))
+def subsets_set(S):
+    '''all subssets of a set. here we must be careful to use a deep copy of lists, even the items in the list should be copied over'''
+    def rec(S, result, index=0):
+        if index < len(S):
+            temp = list(result)
+            item = S[index]
+            for subset in temp:
+                new = subset[:]
+                new.append(item)
+                result.append(new)
+            return rec(S, result, index+1)
+        else:
+            return result
+
+    return rec(S, [[]])
+
+#print(subsets_set([1,2,3,4,5]))
+
+def hanoi_tower(n, source, dest, util):
+    if n == 1:
+        print("Move disk 1 from rod", source, "to rod", dest)
+        return
+    hanoi_tower(n - 1, source, util, dest)
+    print("Move disk", n, "from rod", source, "to rod", dest)
+    hanoi_tower(n - 1, util, dest, source)
+
+#print(hanoi_tower(4, "A", "C", "B"))
+
+def permutations_without_dups(S, step = 0, result=[]):
+    if step == len(S):
+        result.append("".join(S))
+    else:
+        for i in range(step, len(S)):
+            temp = [x for x in S]
+            temp[i], temp[step] = temp[step], temp[i]
+            permutations_without_dups(temp, step+1)
+
+    return result
+
+def permutations_without_dups2(S,l,r,result=[]):
+    if l==r:
+        result.append("".join(S))
+    else:
+        for i in range(l, r+1):
+            S[i], S[l] = S[l], S[i]
+            permutations_without_dups2(S, l+1, r, result)
+            S[l], S[i] = S[i], S[l]
+
+
+    return result
+
+#print(permutations_without_dups2(list("abcd"), 0, len("abcd") - 1))
+
+def all_valid_paran(n,result, current=2 ):
+    if current <= n:
+        new = set()
+        for x in result:
+            for i in range(len(x)):
+                if x[i] == "(":
+                    s = x[:i+1] + "()" + x[i+1:]
+                    new.add(s)
+            new.add("()" + x)
+        return all_valid_paran(n, new, current+1)
+
+    else:
+        return set(result)
+qresult = set()
+qresult.add("()")
+
+#print(all_valid_paran(3 ,qresult))
+
+def paintFill(A, target, newcolor):
+    existing_color = A[target[0]][target[1]]
+    visited = set()
+    def dfs(r,c):
+        if r >= 0 and c >= 0 and r < len(A) and c < len(A):
+            if A[r][c] == existing_color and (r,c) not in visited:
+                A[r][c] = newcolor
+                visited.add((r,c))
+                dfs(r-1,c)
+                dfs(r,c-1)
+                dfs(r+1, c)
+                dfs(r,c+1)
+    dfs(target[0], target[1])
+    return A
+
+# print(paintFill([[1,1,1],
+#                  [1,1,0],
+#                  [1,0,1]], (1, 1), 2))
+
+def coin_change2(n: int, coins: List[int]) -> int:
+    combinations = [[0 for x in range(n + 1)] for x in range(len(coins) + 1)]
+    combinations[0][0] = 1
+    for r in range(len(combinations)):
+        if r == 0:
+            continue
+        coin = coins[r - 1]
+        for c in range(len(combinations[0])):
+            if c == 0:
+                combinations[r][c] = 1
+            else:
+                if c - coin >= 0:
+                    combinations[r][c] = combinations[r-1][c] + combinations[r][c - coin]
+                else:
+                    combinations[r][c] = combinations[r - 1][c]
+
+    return combinations[r][c]
+
+
+def coin_change3(n, coins):
+    pass
+
+#print(coin_change3(50, [1, 5, 10, 25]))
+
+def minimum_amount_coins(amount, coins):
+    if amount < 0:
+        return -1
+    coins = sorted(coins)
+    d = [amount + 1] * (amount + 1)
+    d[0] = 0
+    for i in range(amount + 1):
+        for j in coins:
+            if j <= i:
+                d[i] = min(d[i], d[i - j] + 1)
+            else:
+                break
+    return -1 if d[-1] > amount else d[-1]
+#print(minimum_amount_coins(11, [5,2,1]))
+
+
+def coinChange(coins: List[int], amount: int):
+    minimum = float("Inf")
+
+    def dfs(amount, changes):
+        nonlocal minimum
+        if amount == 0:
+            minimum = min(changes, minimum)
+        elif amount > 0:
+            for coin in coins:
+                dfs(amount - coin, changes+1)
+        else:
+            return
+
+    dfs(amount, 0)
+    if minimum == float("Inf"):
+        return -1
+    return minimum
+
+#print(coinChange([5,2,1], 10))
+
+def NQueen(n):
+
+    def isValid(placements):
+        row = len(placements) - 1
+        for i in range(row):
+            diff = abs(placements[i] - placements[row])
+            if diff == 0 or diff == row - i:
+                return False
+        return True
+
+    def solve(n, r, placements):
+        if r == n:
+            return placements
+        else:
+            for c in range(n):
+                placements.append((r, c))
+                if isValid(placements):
+                    solve(n, r+1, placements)
+                placements.pop()
+
+    def driver(n):
+        return solve(n, 0, [])
+
+    return driver(n)
+
+#print(NQueen(4))
+
+def knap2(weight, items):
+    combinations = [0 for x in range(weight + 1)]
+    for item in items:
+        for i in range(len(combinations)):
+            if i - item["weight"] >= 0:
+                combinations[i] = max(combinations[i], combinations[i-item["weight"]] + item["value"])
+    return combinations[-1]
+
+# print(knap2(5, [
+#     {"weight": 5, "value": 60},
+#     {"weight": 3, "value": 50},
+#     {"weight": 4, "value": 70},
+#     {"weight": 2, "value": 30}
+# ]))
+
+def quicksort(array=[12,4,5,6,7,3,1,15]):
+    """Sort the array by using quicksort."""
+
+    less = []
+    equal = []
+    greater = []
+
+    if len(array) > 1:
+        pivot = array[0]
+        for x in array:
+            if x < pivot:
+                less.append(x)
+            elif x == pivot:
+                equal.append(x)
+            elif x > pivot:
+                greater.append(x)
+        # Don't forget to return something!
+        return quicksort(less)+equal+quicksort(greater)  # Just use the + operator to join lists
+    # Note that you want equal ^^^^^ not pivot
+    else:  # You need to handle the part at the end of the recursion - when you only have one element in your array, just return the array.
+        return array
+#print(quicksort())
+
+
+def search_rotated_array(A, t):
+    def binary(A, t, l, r):
+        if l <= r:
+            m = l + (r-l) // 2
+            if A[m] == t:
+                return m
+            if A[m] > A[l]:
+                if t < A[m] and t >= A[l]:
+                    return binary(A, t, l, m - 1)
+                else:
+                    return binary(A, t, m+1, r)
+            else:
+                if t <= A[r] and t > A[m]:
+                    return binary(A, t, m+1, r)
+                else:
+                    return binary(A, t, l, m - 1)
+        else:
+            return -1
+    return binary(A, t, 0, len(A) - 1)
+
+#print(search_rotated_array([3,1], 1))
+
+def search_no_size(reader, target):
+    """
+    :type reader: ArrayReader
+    :type target: int
+    :rtype: int
+    """
+    a = 2
+    while reader.get(a) != 2147483647:
+        if reader.get(a) == target:
+            return a
+        elif reader.get(a) > target:
+            break
+        else:
+            a *= 2
+
+    def binary(reader, t, l, r):
+        if l <= r:
+            m = l + (r - l) // 2
+            item = reader.get(m)
+            if item == t:
+                return m
+            elif item == -1 or item > t:
+                return binary(reader, target, l, m - 1)
+            elif item < t:
+                return binary(reader, target, m + 1, r)
+        else:
+            return -1
+
+    return binary(reader, target, a // 2, a)
+class Readera:
+    data = [-1,0,3,5,9,12]
+    def get(self, d):
+        if d > len(self.data):
+            return 2147483647
+        if d not in self.data:
+            return -1
+        else:
+            return self.data.index(d)
+
+
+# reader = Readera()
+# print(search_no_size(reader,9))
+
+def sparse_search(a, t):
+    def binary(a, t, l, r):
+        if l <= r:
+            m = l + (r - l) // 2
+            item = a[m]
+            if item == "":
+                ml = m -1
+                mr = m +1
+                if a[ml] < 0 or a[mr] > len(a) - 1:
+                    return -1
+                if a[ml] != "":
+                    return binary(a, t, ml, m - 1)
+
+            if item == t:
+                return m
+            elif item > t:
+                return binary(a, t, l, m - 1)
+            else:
+                return binary(a, t, m + 1, r)
+        else:
+            return -1
+
+    return binary(a, t, 0, len(a) - 1)
+
+#print(sparse_search(["", "at", "", "", "ball"], "ball"))
+
+def subset_sum(nums):
+    stack = [(0, 0)]
+    visited = {}
+    fullSum = sum(nums)
+
+    if fullSum % 2:
+        return False
+
+    while len(stack):
+        index, sumNumbers = stack.pop()
+
+        if index >= len(nums) or 2 * sumNumbers > fullSum:
+            continue
+        elif 2 * sumNumbers == fullSum:
+            return True
+
+        if (index, sumNumbers) not in visited:
+            visited[(index, sumNumbers)] = True
+        else:
+            continue
+
+        stack.append((index + 1, sumNumbers))
+        stack.append((index + 1, sumNumbers + nums[index]))
+
+    return False
+
+#print(subset_sum(( [1, 5, 11, 5])))
+
+def numIslands(grid: List[List[str]]) -> int:
+    visited = set()
+    islands = 0
+
+    def dfs(r, c):
+        if r < 0 or c < 0:
+            return
+        if r >= len(grid) or c >= len(grid[0]):
+            return
+        if (r, c) not in visited:
+            visited.add((r, c))
+            if grid[r][c] == "1":
+                dfs(r + 1, c)
+                dfs(r, c + 1)
+                dfs(r - 1, c)
+                dfs(r, c - 1)
+
+    for r in range(len(grid)):
+        for c in range(len(grid[0])):
+            if (r,c) not in visited and grid[r][c] == "1":
+                islands += 1
+                dfs(r, c)
+    return islands
+
+#print(numIslands([["1","1","1"],["0","1","0"],["1","1","1"]]))
+
+
+def numIslands2(m: int, n: int, positions: List[List[int]]) -> List[int]:
+    visited = set()
+    result = []
+
+    def dfs(r, c):
+        if r < 0 or c < 0:
+            return
+        if r >= m or c >= n:
+            return
+        if (r, c) not in visited:
+            visited.add((r, c))
+            if grid[r][c] == "1":
+                dfs(r + 1, c)
+                dfs(r, c + 1)
+                dfs(r - 1, c)
+                dfs(r, c - 1)
+
+    grid = [[0 for x in range(n)] for x in range(m)]
+    for r, c in positions:
+        if r < m and c < n:
+            grid[r][c] = "1"
+        islands = 0
+        visited = set()
+        for r in range(m):
+            for c in range(n):
+                if (r, c) not in visited and grid[r][c] == "1":
+                    islands += 1
+                    dfs(r, c)
+        result.append(islands)
+    return result
+
+#print(numIslands2(1,2, [[0,1],[0,0]]))
 
 # anagrams and palindrom
