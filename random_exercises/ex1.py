@@ -1630,4 +1630,195 @@ def numIslands2(m: int, n: int, positions: List[List[int]]) -> List[int]:
 
 #print(numIslands2(1,2, [[0,1],[0,0]]))
 
+def isMatch( text, pattern):
+    dp = [[False] * (len(pattern) + 1) for _ in range(len(text) + 1)]
+
+    dp[-1][-1] = True
+    for i in range(len(text), -1, -1):
+        for j in range(len(pattern) - 1, -1, -1):
+            first_match = i < len(text) and pattern[j] in {text[i], '.'}
+            if j+1 < len(pattern) and pattern[j+1] == '*':
+                dp[i][j] = dp[i][j+2] or first_match and dp[i+1][j]
+            else:
+                dp[i][j] = first_match and dp[i+1][j+1]
+
+    return dp[0][0]
+# print(isMatch("mississippi","mis*is*p*."))
+
+def videoStitching(clips: List[List[int]], T: int) -> int:
+    result = 0
+    temp = 0
+    while temp < T:
+        candidates = []
+        for item in clips:
+            if item[0] <= temp:
+                if item[1] > temp:
+                    candidates.append(item[1])
+        if not len(candidates) and temp < T:
+            return -1
+        else:
+            temp = max(candidates)
+        result += 1
+
+    return result
+
+#print(videoStitching([[0,2],[4,6],[8,10],[1,9],[1,5],[5,9]], 10))
+
+def add_binary_nums(x, y):
+    max_len = max(len(x), len(y))
+
+    x = x.zfill(max_len)
+    y = y.zfill(max_len)
+
+    # initialize the result
+    result = ''
+
+    # initialize the carry
+    carry = 0
+
+    # Traverse the string
+    for i in range(max_len - 1, -1, -1):
+        r = carry
+        r += 1 if x[i] == '1' else 0
+        r += 1 if y[i] == '1' else 0
+        result = ('1' if r % 2 == 1 else '0') + result
+        carry = 0 if r < 2 else 1  # Compute the carry.
+
+    if carry != 0: result = '1' + result
+
+    return result.zfill(max_len)
+
+#print(add_binary_nums('1101', '100'))
+
+def lcs(a,b,result):
+    if not a or not b:
+        return result
+    A = a[-1]
+    B = b[-1]
+    if A==B:
+        return lcs(a[:-1], b[:-1], result+1)
+    else:
+        return max(lcs(a[:-1], b, result), lcs(a, b[:-1], result))
+
+#print(lcs("saab", "sazb", 0))
+
+def number_to_bin(num):
+    if num>1:
+        number_to_bin(num//2)
+    print(num%2)
+#number_to_bin(16)
+
+def multiply(n, m):
+    ans = 0
+    count = 0
+    while (m):
+        # check for set bit and left
+        # shift n, count times
+        if (m % 2 == 1):
+            ans += n << count
+
+            # increment of place value (count)
+        count += 1
+        m = int(m / 2)
+
+    return ans
+#print(multiply(3,4))
+def longestOnes(A: List[int], K: int) -> int:
+    j = 0
+    for i in range(len(A)):
+        if A[i] != 1:
+            K -= 1
+        if K < 0:
+            if A[j] == 0:
+                K += 1
+            j += 1
+    return i - j + 1
+#print(longestOnes([1,1,1,0,0,0,1,1,1,1,0],2))
+
+def task_scheduler(tasks, n):
+    map = {}
+    for task in tasks:
+        if task in map:
+            map[task] += 1
+        else:
+            map[task] = 1
+
+    priority_queue = list(map.values())
+    result = 0
+    count = 0
+    while count < len(tasks):
+        biggest = priority_queue.pop()
+
+
+def leastInterval(tasks, n):
+    if n == 0:
+        return len(tasks)
+    import collections
+    map = collections.defaultdict(int)
+    for task in tasks:
+        map[task] += 1
+    s = sorted(list(map.values()), reverse=True)
+    gaps = s[0] - 1
+    slots = gaps * n
+    for i in range(1, len(s)):
+        slots -= min(s[i], gaps)
+
+    return max(slots + len(tasks), len(tasks))
+
+#print(leastInterval(["A","A","A","B","B","B"],2))
+import collections
+
+def criticalConnections2(connections: List[List[int]], n) -> List[List[int]]:
+
+    graph = collections.defaultdict(list)
+    unique = set()
+    for c in connections:
+        graph[c[0]].append(c[1])
+        unique.add(c[0])
+        unique.add(c[1])
+
+    def dfs(edges):
+        stack = [edges[0][0]]
+        graph = collections.defaultdict(list)
+        for c in edges:
+            graph[c[0]].append(c[1])
+            graph[c[1]].append(c[0])
+        visited = set()
+        while stack:
+            item = stack.pop()
+            visited.add(item)
+            for x in graph[item]:
+                if x not in visited:
+                    stack.append(x)
+
+        return visited
+
+    final = []
+    temp = [x for x in connections]
+    n = len(temp)
+    for i in range(n):
+        item = temp.pop(i)
+        result = dfs(temp)
+        if result != unique:
+            final.append(item)
+        temp.insert(i, item)
+    return final
+
+#print(criticalConnections2([[0,1],[1,2],[2,0],[1,3]], 4))
+def a():
+    result = set()
+    def dfs(node, graph):
+        nonlocal result
+        if node != None:
+            result.add(node)
+            for x in graph[node]:
+                if x not in result:
+                    dfs(x, graph)
+    da = [[0,1],[1,2],[2,0],[1,3]]
+    graph = collections.defaultdict(list)
+    for c in da:
+        graph[c[0]].append(c[1])
+    dfs(0, graph)
+    return result
+print(a())
 # anagrams and palindrom
