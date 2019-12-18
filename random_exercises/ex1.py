@@ -1820,5 +1820,93 @@ def a():
         graph[c[0]].append(c[1])
     dfs(0, graph)
     return result
-print(a())
+#print(a())
+
+
+def shortestToChar(S: str, C: str) -> List[int]:
+    result = []
+    for i in range(len(S)):
+        if S[i] == C:
+            result.append(0)
+        else:
+            m = i - 1
+            n = i + 1
+            temp = False
+            while m >= 0:
+                if S[m] == C:
+                    temp = abs(i - m)
+                    break
+                m -= 1
+            while n < len(S):
+                if S[n] == C:
+                    if not temp:
+                        temp = abs(i - n)
+                    else:
+                        temp = min(temp, abs(i - n))
+                    break
+                n += 1
+            result.append(temp)
+    return result
+
+def shortestToChar2(S: str, C: str) -> List[int]:
+    result = []
+    left = float("Inf")
+    right = S.index(C)
+    for i, c in enumerate(S):
+        if c == C:
+            result.append(0)
+            left = i
+            try:
+                right = S[i + 1:].index(C) + i
+            except:
+                right = float("Inf")
+        else:
+            result.append(min(abs(i - left), abs(i - right)))
+
+    return result
+
+#print(shortestToChar2("loveleetcode", "e"))
+
+def shortestSubarray(A: List[int], K: int) -> int:
+    i = 0
+    j = 0
+    result = float("Inf")
+    while i < len(A) and j < len(A):
+        if sum(A[i:j]) == K:
+            result = min(abs(i - j), result)
+            i += 1
+        elif sum(A[i:j]) < K:
+            j += 1
+        elif sum(A[i:j]) > K:
+            i += 1
+
+    for x in range(i, len(A)):
+        if sum(A[i:]) == K:
+            result = min(abs(i - len(A)), result)
+
+    return -1 if result == float("Inf") else result
+
+#print(shortestSubarray([48,99,37,4,-31],140))
 # anagrams and palindrom
+
+def productExceptSelf(nums: List[int]) -> List[int]:
+    result = [1 for x in nums]
+    left = 1
+    right = 1
+    for i, n in enumerate(nums):
+        result[i] *= left
+        left *= n
+        result[~i] *= right
+        right *= nums[~i]
+    return result
+
+#print(productExceptSelf([1,2,3,4]))
+
+def loopbothways(n):
+    i = 0
+    while i < len(n) // 2:
+        print(n[i])
+        print(n[~i])
+        i += 1
+
+print(loopbothways([1,2,3,4,5,6]))
