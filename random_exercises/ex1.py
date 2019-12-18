@@ -1900,7 +1900,7 @@ def productExceptSelf(nums: List[int]) -> List[int]:
         right *= nums[~i]
     return result
 
-#print(productExceptSelf([1,2,3,4]))
+print(productExceptSelf([2,3,4,5]))
 
 def loopbothways(n):
     i = 0
@@ -1909,4 +1909,4 @@ def loopbothways(n):
         print(n[~i])
         i += 1
 
-print(loopbothways([1,2,3,4,5,6]))
+#print(loopbothways([1,2,3,4,5,6]))
