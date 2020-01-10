@@ -1900,7 +1900,7 @@ def productExceptSelf(nums: List[int]) -> List[int]:
         right *= nums[~i]
     return result
 
-print(productExceptSelf([2,3,4,5]))
+#print(productExceptSelf([2,3,4,5]))
 
 def loopbothways(n):
     i = 0
@@ -1910,3 +1910,43 @@ def loopbothways(n):
         i += 1
 
 #print(loopbothways([1,2,3,4,5,6]))
+
+def isValidSudoku(board: List[List[str]]) -> bool:
+    row = 0
+    while row < 9:
+        seen = set()
+        for n in board[row]:
+            if n in seen and n != ".":
+                return False
+            seen.add(n)
+        row += 1
+
+    col = 0
+    while col < 9:
+        seen = set()
+        for n in range(9):
+            item = board[n][col]
+            if item in seen and item != ".":
+                return False
+            seen.add(item)
+        col += 1
+
+    row = 0
+    col = 0
+    for _ in range(3):
+        for _ in range(3):
+            seen = set()
+            for i in range(3):
+                for j in range(3):
+                    v = board[row + i][col + j]
+                    if v in seen and v != ".":
+                        return False
+                    seen.add(v)
+            col += 3
+            if col == 9:
+                col = 0
+        row += 3
+
+    return True
+
+#print(isValidSudoku([["7","3",".",".","7",".",".",".","."],["6",".",".","1","9","5",".",".","."],[".","9","8",".",".",".",".","6","."],["8",".",".",".","6",".",".",".","3"],["4",".",".","8",".","3",".",".","1"],["7",".",".",".","2",".",".",".","6"],[".","6",".",".",".",".","2","8","."],[".",".",".","4","1","9",".",".","5"],[".",".",".",".","8",".",".","7","9"]]))
