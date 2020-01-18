@@ -1820,5 +1820,20 @@ def a():
         graph[c[0]].append(c[1])
     dfs(0, graph)
     return result
-print(a())
+#print(a())
+
+seen = set()
+def isHappy(n: int) -> bool:
+    if n == 1:
+        return True
+    elif n in seen:
+        return False
+    seen.add(n)
+    s = str(n)
+    res = 0
+    for x in s:
+        res += int(x)**2
+    res = int(res)
+    return isHappy(res)
+print(isHappy(10))
 # anagrams and palindrom
