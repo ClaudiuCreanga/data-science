@@ -1838,6 +1838,7 @@ def isHappy(n: int) -> bool:
 print(isHappy(10))
 # anagrams and palindrom
 
+<<<<<<< Updated upstream
 def shortestToChar(S: str, C: str) -> List[int]:
     result = []
     for i in range(len(S)):
@@ -1965,3 +1966,12 @@ def isValidSudoku(board: List[List[str]]) -> bool:
     return True
 
 #print(isValidSudoku([["7","3",".",".","7",".",".",".","."],["6",".",".","1","9","5",".",".","."],[".","9","8",".",".",".",".","6","."],["8",".",".",".","6",".",".",".","3"],["4",".",".","8",".","3",".",".","1"],["7",".",".",".","2",".",".",".","6"],[".","6",".",".",".",".","2","8","."],[".",".",".","4","1","9",".",".","5"],[".",".",".",".","8",".",".","7","9"]]))
+
+def turnpike_reconstruction_problem(D):
+    length = len(D) + 1
+    #TODO
+
+#print(turnpike_reconstruction_problem([1, 2, 2, 2, 3, 3, 3, 4, 5, 5, 5, 6, 7, 8, 10]))
+
+def dijkstra_shortest_path(G, start, end):
+    pass
