@@ -1838,7 +1838,6 @@ def isHappy(n: int) -> bool:
 print(isHappy(10))
 # anagrams and palindrom
 
-<<<<<<< Updated upstream
 def shortestToChar(S: str, C: str) -> List[int]:
     result = []
     for i in range(len(S)):
