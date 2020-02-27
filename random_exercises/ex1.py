@@ -1835,7 +1835,7 @@ def isHappy(n: int) -> bool:
         res += int(x)**2
     res = int(res)
     return isHappy(res)
-print(isHappy(10))
+#print(isHappy(10))
 # anagrams and palindrom
 
 def shortestToChar(S: str, C: str) -> List[int]:
@@ -1973,4 +1973,47 @@ def turnpike_reconstruction_problem(D):
 #print(turnpike_reconstruction_problem([1, 2, 2, 2, 3, 3, 3, 4, 5, 5, 5, 6, 7, 8, 10]))
 
 def dijkstra_shortest_path(G, start, end):
+    # Dijkstra doesn't take into account the direction towards the goal which is quite bad.
+    # that's why A* is better
+    pass
+
+
+class DNode:
+    def __init__(self, v, w, prev = None):
+        self.v = v
+        self.w = w
+        self.prev = prev
+
+    def __lt__(self, other):
+        return self.v < other.v
+
+def findCheapestPrice(n: int, flights: List[List[int]], src: int, dst: int, K: int) -> int:
+    G = defaultdict(list)
+    for edge in flights:
+        G[edge[0]].append(DNode(edge[1], edge[2]))
+    from heapq import heappush, heappop
+    priority_queue = [(0, DNode(src, 0))]
+    while priority_queue:
+        top = heappop(priority_queue)
+        if top[1].v == dst:
+            break
+        for city in G[top[1].v]:
+            city.prev = top[1]
+            heappush(priority_queue, (city.w + top[1].w, city))
+
+    result = []
+    top = top[1]
+    while top.prev != None:
+        result.append(top.v)
+        top = top.prev
+    result.append(top.v)
+
+    return result[::-1]
+
+#print(findCheapestPrice(3, [[0,1,100],[1,2,100],[0,2,500]], 0, 2, 1))
+print(findCheapestPrice(3, [["S","A",5],["S","B",3],["A","D",1], ["A", "G", 5], ["B", "G", 3], ["G", "H", 2], ["H", "E", 1], ["A", "E", 1]], "S", "E", 1))
+
+
+def a_shortest_path(G, start, end):
+    # A* which has information of the direction you need to go
     pass
