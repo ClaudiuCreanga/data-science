@@ -1972,10 +1972,30 @@ def turnpike_reconstruction_problem(D):
 
 #print(turnpike_reconstruction_problem([1, 2, 2, 2, 3, 3, 3, 4, 5, 5, 5, 6, 7, 8, 10]))
 
-def dijkstra_shortest_path(G, start, end):
+def dijkstra_shortest_path(flights, start, end):
     # Dijkstra doesn't take into account the direction towards the goal which is quite bad.
     # that's why A* is better
-    pass
+    G = defaultdict(list)
+    for edge in flights:
+        G[edge[0]].append(DNode(edge[1], edge[2]))
+    from heapq import heappush, heappop
+    priority_queue = [(0, DNode(start, 0))]
+    while priority_queue:
+        top = heappop(priority_queue)
+        if top[1].v == end:
+            break
+        for city in G[top[1].v]:
+            city.prev = top[1]
+            heappush(priority_queue, (city.w + top[1].w, city))
+
+    result = []
+    top = top[1]
+    while top.prev != None:
+        result.append(top.v)
+        top = top.prev
+    result.append(top.v)
+
+    return result[::-1]
 
 
 class DNode:
@@ -1993,25 +2013,63 @@ def findCheapestPrice(n: int, flights: List[List[int]], src: int, dst: int, K: i
         G[edge[0]].append(DNode(edge[1], edge[2]))
     from heapq import heappush, heappop
     priority_queue = [(0, DNode(src, 0))]
+    found = False
     while priority_queue:
         top = heappop(priority_queue)
         if top[1].v == dst:
+            found = True
             break
         for city in G[top[1].v]:
             city.prev = top[1]
             heappush(priority_queue, (city.w + top[1].w, city))
-
-    result = []
+    if not found:
+        return -1
+    result = 0
+    stops = 0
     top = top[1]
     while top.prev != None:
-        result.append(top.v)
+        stops += 1
+        result += top.w
         top = top.prev
-    result.append(top.v)
+    stops += 1
+    result += top.w
 
-    return result[::-1]
+    if stops - 2  > K:
+        return -1
+    return result
 
 #print(findCheapestPrice(3, [[0,1,100],[1,2,100],[0,2,500]], 0, 2, 1))
-print(findCheapestPrice(3, [["S","A",5],["S","B",3],["A","D",1], ["A", "G", 5], ["B", "G", 3], ["G", "H", 2], ["H", "E", 1], ["A", "E", 1]], "S", "E", 1))
+#print(findCheapestPrice(3, [["S","A",5],["S","B",3],["A","D",1], ["A", "G", 5], ["B", "G", 3], ["G", "H", 2], ["H", "E", 1], ["A", "E", 1]], "S", "E", 7))
+
+
+def findCheapestPrice1(n, flights, src, dst, K):
+    from collections import defaultdict
+    import heapq
+    g = defaultdict(dict)
+    for source, dest, cost in flights: g[source][dest] = cost
+    priority_queue = [(0, src, K+1)]
+    while priority_queue:
+        cost, source, stops = heapq.heappop(priority_queue)
+        if source == dst:
+            return cost
+        if stops:
+            for neighbour, new_cost in g[source].items():
+                heapq.heappush(priority_queue, (cost + new_cost, neighbour, stops-1))
+    return -1
+
+print(findCheapestPrice1(5, [[0,1,5],[1,2,5],[0,3,2],[3,1,2],[1,4,1],[4,2,1]], 0, 2, 2))
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 def a_shortest_path(G, start, end):
