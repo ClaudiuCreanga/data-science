@@ -362,3 +362,53 @@ def lastStoneWeight2(stones: List[int]) -> int:
 # print(lastStoneWeight2([2,7,4,1,8,1]))
 
 
+class TreeNode:
+    def __init__(self, x):
+        self.val = x
+        self.left = None
+        self.right = None
+
+
+def maxDepthBinaryTree(root) -> int:
+    if not root:
+        return -1
+    else:
+        left_height = maxDepthBinaryTree(root.left)
+        right_height = maxDepthBinaryTree(root.right)
+
+        return max(left_height, right_height) + 1
+
+
+def diameterOfBinaryTree(root: TreeNode) -> int:
+    if not root:
+        return -1
+    else:
+        rootDiameter = maxDepthBinaryTree(root.left) + maxDepthBinaryTree(root.right) + 1
+        leftDiameter = diameterOfBinaryTree(root.left)
+        rightDiameter = diameterOfBinaryTree(root.right)
+
+        return max(rootDiameter, leftDiameter, rightDiameter)
+
+
+def diameterOfBinaryTree2(root: TreeNode) -> int:
+    ans = 0
+    def depth(root: TreeNode) -> int:
+        nonlocal ans
+        if not root:
+            return 0
+        left, right = depth(root.left), depth(root.right)
+        ans = max(ans, left+right)
+        return 1 + max(left, right)
+
+    depth(root)
+    return ans
+
+
+# root = TreeNode(1)
+# root.left = TreeNode(2)
+# root.right = TreeNode(3)
+# root.left.left = TreeNode(4)
+# root.left.right = TreeNode(5)
+# print(diameterOfBinaryTree2(root))
+
+
