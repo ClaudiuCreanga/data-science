@@ -412,3 +412,84 @@ def diameterOfBinaryTree2(root: TreeNode) -> int:
 # print(diameterOfBinaryTree2(root))
 
 
+def checkValidString(s: str) -> bool:
+    possibilities = ["(", ")", ""]
+    l = list(s)
+    d = len(l)
+    def check(l, start, count):
+        for i in range(start, d):
+            if count < 0 or count > d - i:
+                return False
+            if l[i] == "":
+                continue
+            elif l[i] == "(":
+                count += 1
+            elif l[i] == ")":
+                count -= 1
+            else:
+                for j, p in enumerate(possibilities):
+                    l[i] = p
+                    if check(l, i, count):
+                        return True
+                l[i] = "*"  # Backtracking
+        if count == 0:
+            return True
+        else:
+            return False
+
+    return check(l, 0, 0)
+
+
+def checkValidString2(s: str) -> bool:
+    cmin = cmax = 0
+    for x in s:
+        if x == "(":
+            cmin += 1
+            cmax += 1
+        elif x == ")":
+            cmin -= 1
+            cmax -= 1
+        else:
+            cmin = max(cmin-1, 0)
+            cmax += 1
+        if cmax < 0:
+            return False
+    return cmin == 0
+
+
+# print(checkValidString(""))
+# print(checkValidString("()"))
+# print(checkValidString("())"))
+# print(checkValidString("(*))"))
+# print(checkValidString("(*)"))
+# print(checkValidString("(((***"))
+# print(checkValidString2("(((((*(()((((*((**(((()()*)()()()*((((**)())*)*)))))))(())(()))())((*()()(((()((()*(())*(()**)()(())"))
+
+
+def numIslands(grid: List[List[str]]) -> int:
+    islands = 0
+    visited = set()
+
+    def dfs(r, c):
+        if -1 < r < len(grid) and -1 < c < len(grid[r]):
+            if (r, c) not in visited:
+                visited.add((r, c))
+                if grid[r][c] == "1":
+                    dfs(r + 1, c)
+                    dfs(r - 1, c)
+                    dfs(r, c + 1)
+                    dfs(r, c - 1)
+
+    for r in range(len(grid)):
+        for c in range(len(grid[r])):
+            if (r, c) not in visited:
+                if grid[r][c] == "1":
+                    islands += 1
+                    dfs(r, c)
+                else:
+                    visited.add((r, c))
+
+    return islands
+
+#print(numIslands([["1","1","1","1","0"],["1","1","0","1","0"],["1","1","0","0","0"],["0","0","0","0","0"]]))
+# print(numIslands([["1","1","1"],["0","1","0"],["1","1","1"]]))
