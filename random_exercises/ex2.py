@@ -491,5 +491,45 @@ def numIslands(grid: List[List[str]]) -> int:
 
     return islands
 
-#print(numIslands([["1","1","1","1","0"],["1","1","0","1","0"],["1","1","0","0","0"],["0","0","0","0","0"]]))
+# print(numIslands([["1","1","1","1","0"],["1","1","0","1","0"],["1","1","0","0","0"],["0","0","0","0","0"]]))
 # print(numIslands([["1","1","1"],["0","1","0"],["1","1","1"]]))
+
+
+def minPathSum(grid: List[List[int]]) -> int:  #dijkstra, big O NlogN (from ElogV in a graph)
+    import heapq
+    pq = [(grid[0][0], 0, 0)]
+    heapq.heapify(pq)
+    m = len(grid) - 1
+    n = len(grid[0]) - 1
+    visited = set()
+    while pq:
+        w, r, c = heapq.heappop(pq)
+        if r == m and c == n:
+            return w
+        visited.add((r,c))
+        if r+1 <= m and (r+1, c) not in visited:
+            heapq.heappush(pq, (w + grid[r+1][c], r + 1, c))
+        if c+1 <= n and (r, c+1) not in visited:
+            heapq.heappush(pq, (w + grid[r][c+1], r, c+1))
+        if c-1>= 0 and (r, c-1) not in visited:  # if you want it to move left
+            heapq.heappush(pq, (w + grid[r][c-1], r, c-1))
+
+
+#print(minPathSum([[1,3,1],[1,1,1],[4,2,1]]))
+
+
+def minPathSum2(grid: List[List[int]]) -> int:  #dp
+    p = [grid[0][0]]
+    for i, x in enumerate(grid[0][1:]):
+        p.append(x + p[i])
+    for r in grid[1:]:
+        for c, v in enumerate(r):
+            if c > 0:
+                p[c] = min(p[c], p[c-1]) + v
+            else:
+                p[c] += v
+
+    return p[-1]
+
+
+#print(minPathSum2([[1,3,1],[1,5,1],[4,2,1]]))
