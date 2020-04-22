@@ -533,3 +533,77 @@ def minPathSum2(grid: List[List[int]]) -> int:  #dp
 
 
 #print(minPathSum2([[1,3,1],[1,5,1],[4,2,1]]))
+
+
+def productExceptSelf(nums: List[int]) -> List[int]:
+    output = [1 for x in nums]
+    left = 1
+    right = 1
+    for i, x in enumerate(nums):
+        output[~i] *= right
+        right *= nums[~i]
+        output[i] *= left
+        left *= x
+
+    return output
+
+#print(productExceptSelf([1,2,3,4]))
+
+
+class BinaryMatrix(object):
+   def get(self, x: int, y: int) -> int:
+       m = [[0,0],[1,1]]
+       return m[x][y]
+
+   def dimensions(self) -> list:
+       return [2, 2]
+
+
+def leftMostColumnWithOne(binaryMatrix: 'BinaryMatrix') -> int:
+    m, n = binaryMatrix.dimensions()
+    def binary_search(l, r, i, cur_min):
+        if l <= r:
+            mid = l + (r - l) // 2
+            item = binaryMatrix.get(i, mid)
+            if item == 1:
+                return binary_search(l, mid - 1, i, mid)
+            else:
+                return binary_search(mid+1, r, i, cur_min)
+        else:
+            return cur_min
+
+    result = []
+    for i in range(m):
+        result.append(binary_search(0, n-1, i, float("Inf")))
+
+    m = min(result)
+    if m == float("Inf"):
+        return -1
+    return m  # MlogN
+
+
+# b = BinaryMatrix()
+# print(leftMostColumnWithOne(b))
+
+
+def leftMostColumnWithOne2(binaryMatrix: 'BinaryMatrix') -> int:
+    m, n = binaryMatrix.dimensions()
+    i = 0
+    j = n - 1
+    while i < m or j > 0:
+        cur = binaryMatrix.get(i, j)
+        if cur == 0:
+            i += 1
+            if i == m:
+                break
+        else:
+            if j == 0:
+                return 0
+            j -= 1
+    if j == n - 1:
+        return -1
+    return j + 1
+
+
+b = BinaryMatrix()
+print(leftMostColumnWithOne2(b))
