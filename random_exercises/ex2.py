@@ -605,5 +605,73 @@ def leftMostColumnWithOne2(binaryMatrix: 'BinaryMatrix') -> int:
     return j + 1
 
 
-b = BinaryMatrix()
-print(leftMostColumnWithOne2(b))
+# b = BinaryMatrix()
+# print(leftMostColumnWithOne2(b))
+
+
+def bstFromPreorder(preorder: List[int]) -> TreeNode:  # TO REDO
+    stack = [TreeNode(preorder[0])]
+    for value in preorder[1:]:
+        if value < stack[-1].val:
+            stack[-1].left = TreeNode(value)
+            stack.append(stack[-1].left)
+        else:
+            while stack and stack[-1].val < value:
+                last = stack.pop()
+            last.right = TreeNode(value)
+            stack.append(last.right)
+    return stack[0]
+
+
+# print(bstFromPreorder([8,5,1,7,10,12]))
+
+
+def search(nums: List[int], target: int) -> int:
+    def binary(l, r, n, t):
+        if l <= r:
+            m = l + (r - l) // 2
+            v = n[m]
+            if v == t:
+                return m
+            vl = n[l]
+            vr = n[r]
+            if v > vl:
+                if t == vl:
+                    return l
+                if vl < t < v:
+                    return binary(l+1, m-1, n, t)
+                return binary(m+1, r, n, t)
+            else:
+                if t == vr:
+                    return r
+                if v < t < vr:
+                    return binary(m+1, r-1, n, t)
+                return binary(l, m-1, n, t)
+        return -1
+
+    if nums and nums[0] > target > nums[-1]:
+        return -1
+    return binary(0, len(nums) - 1, nums, target)
+
+#print(search([4,5,6,7,0,1,2], 0))
+# print(search([4,5,6,7,8,1,2,3], 8))
+
+
+def subarraySum(nums: List[int], k: int) -> int:
+    cur = res = 0
+    cache = {0:1}
+    for v in nums:
+        cur += v
+        res += cache.get(cur-k, 0)
+        cache[cur] = cache.get(cur, 0) + 1
+
+    return res
+
+
+# print(subarraySum([1,1,1], 2))
+# print(subarraySum([1,2,1], 3))
+# print(subarraySum([1,2,1], 4))
+# print(subarraySum([1,2,1,1], 4))
+# print(subarraySum([1,2,1,-1], 4))
+# print(subarraySum([1,-2,1,1], 4))
+# print(subarraySum([1,-2,1,4], 4))
