@@ -675,3 +675,61 @@ def subarraySum(nums: List[int], k: int) -> int:
 # print(subarraySum([1,2,1,-1], 4))
 # print(subarraySum([1,-2,1,1], 4))
 # print(subarraySum([1,-2,1,4], 4))
+
+class DNode:
+    def __init__(self, v, prev = None, next = None):
+        self.val = v
+        self.prev = prev
+        self.next = next
+
+
+class LRUCache:
+
+    def __init__(self, capacity: int):
+        self.c = capacity
+        self.data: Dict[int, DNode] = {}
+        self.head = DNode((0,0))
+        self.tail = DNode((0,0))
+        self.head.next = self.tail
+        self.tail.prev = self.head
+
+    def get(self, key: int) -> int:
+        if key in self.data:
+            n = self._remove(key)
+            self._add(n)
+            return self.data[key].val[1]
+        return -1
+
+    def put(self, key: int, value: int) -> None:
+        if key in self.data:
+            self._remove(key)
+        n = DNode((key, value))
+        self._add(n)
+        if len(self.data) > self.c:
+            k = self.head.next.val[0]
+            self._remove(k)
+
+    def _add(self, n: DNode) -> None:
+        self.data[n.val[0]] = n
+        prevNode = self.tail.prev
+        prevNode.next = n
+        n.next = self.tail
+        n.prev = prevNode
+        self.tail.prev = n
+
+    def _remove(self, key: int) -> DNode:
+        n = self.data.pop(key)
+        previousNode = n.prev
+        nextNode = n.next
+        previousNode.next = nextNode
+        nextNode.prev = previousNode
+
+        return n
+
+
+# obj = LRUCache(2)
+# obj.put(2,1)
+# obj.put(2,2)
+# param_1 = obj.get(2)
+# print(param_1)
+# obj.put(1,1)
