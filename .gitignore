@@ -102,3 +102,4 @@ logins.py
 mylogins.py
 nytimes.csv
 .mypy_cache/
+data/illumina
