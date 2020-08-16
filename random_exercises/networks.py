@@ -78,3 +78,38 @@ def networkDelayTime(times: List[List[int]], N: int, K: int) -> int:
 # print(networkDelayTime([[1,2,1],[2,3,2],[1,3,4]], 3, 1))
 # print(networkDelayTime([[1,2,1]], 2, 2))
 # print(networkDelayTime([[1,2,1],[2,3,7],[1,3,4],[2,1,2]], 3, 1))
+
+
+def canJump2(nums: List[int]) -> bool:
+    n = len(nums)
+    if n < 2:
+        return True
+    G = defaultdict(list)
+    for index, value in enumerate(nums):
+        i = 1
+        while i <= value and index + i < n:
+            G[index].append((index + i, nums[index + i]))
+            i += 1
+    target = n - 1
+    q = [(-nums[0], 0)]
+    while q:
+        w, i = heappop(q)
+        if i == target:
+            return True
+        for item, weight in G[i]:
+            heappush(q, (-weight-item, item))
+
+    return False
+
+
+def canJump(nums: List[int]) -> bool:
+    m, i = 0, 0
+    while i <= m:
+        m = max(m, i + nums[i])
+        if m >= len(nums) - 1: return True
+        i += 1
+    return False
+
+
+print(canJump([2, 3, 1, 1, 4]))
+print(canJump([3,2,1,0,4]))

@@ -733,3 +733,15 @@ class LRUCache:
 # param_1 = obj.get(2)
 # print(param_1)
 # obj.put(1,1)
+
+def canJump(nums: List[int]) -> bool:
+    G = defaultdict(list)
+    for index, value in enumerate(nums):
+        i = 1
+        while i <= value and index + i < len(nums):
+            G[index].append(nums[index + i])
+    return G
+
+
+print(canJump([2, 3, 1, 1, 4]))
+print(canJump([3,2,1,0,4]))
