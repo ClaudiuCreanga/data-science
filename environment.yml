@@ -1,0 +1,10 @@
+name: exercises
+channels:
+  - conda-forge
+  - defaults
+prefix: /Users/ccreanga/anaconda3/envs/exercises
+dependencies:
+  - python >= 3.6
+  - numpy >= 1.14
+  - pandas >= 1.0.3
+  - pip=19.3.1
