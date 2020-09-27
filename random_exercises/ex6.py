@@ -268,39 +268,57 @@ def solution_escape3(map):
     return answer
 
 
+#
+# print(solution_escape3([
+#    [0, 1, 0, 1, 0, 0, 0],
+#    [0, 0, 0, 1, 0, 1, 0]
+# ]
+# )) # 10
+#
+# print(solution_escape3([
+#                        [0, 1, 1, 0],
+#                        [0, 0, 0, 1],
+#                        [1, 1, 0, 0],
+#                        [1, 1, 1, 0]
+# ])) # 7
+#
+# print(solution_escape3([
+#                        [0, 0],
+#                        [0, 0],
+# ])) # 3
+# print(solution_escape3([
+#                        [0, 0],
+#                        [0, 0],
+#                        [0, 0],
+# ])) # 4
+#
+# print(solution_escape3([
+#                        [0, 1, 1, 0],
+#                        [0, 0, 0, 1],
+#                        [1, 1, 0, 0],
+# ])) # 6
+#
+# print(solution_escape3([[0, 0, 0, 0, 0, 0],
+#                        [1, 1, 1, 1, 1, 0],
+#                        [0, 0, 0, 0, 0, 0],
+#                        [0, 1, 1, 1, 1, 1],
+#                        [0, 1, 1, 1, 1, 1],
+#                        [0, 0, 0, 0, 0, 0]])) # 11
 
-print(solution_escape3([
-   [0, 1, 0, 1, 0, 0, 0],
-   [0, 0, 0, 1, 0, 1, 0]
-]
-)) # 10
+def to_bin(x):
+    result = ""
+    for i in range(10):
+        if x & (1 << i) == 0:
+            result += "0"
+        else:
+            result += "1"
+    return result[::-1]
 
-print(solution_escape3([
-                       [0, 1, 1, 0],
-                       [0, 0, 0, 1],
-                       [1, 1, 0, 0],
-                       [1, 1, 1, 0]
-])) # 7
-
-print(solution_escape3([
-                       [0, 0],
-                       [0, 0],
-])) # 3
-print(solution_escape3([
-                       [0, 0],
-                       [0, 0],
-                       [0, 0],
-])) # 4
-
-print(solution_escape3([
-                       [0, 1, 1, 0],
-                       [0, 0, 0, 1],
-                       [1, 1, 0, 0],
-])) # 6
-
-print(solution_escape3([[0, 0, 0, 0, 0, 0],
-                       [1, 1, 1, 1, 1, 0],
-                       [0, 0, 0, 0, 0, 0],
-                       [0, 1, 1, 1, 1, 1],
-                       [0, 1, 1, 1, 1, 1],
-                       [0, 0, 0, 0, 0, 0]])) # 11
+# print(to_bin(13))
+#
+# def bit_sum(n, s):
+#     for mask in range(1<<n):
+#         sum_subset = 0
+#         for j in range(n):
+#             if mask & (1 << i):
+#                 sum_subset +=
