@@ -95,3 +95,42 @@ def countAndSay(n: int) -> str:
 # print(countAndSay(2)) # 11
 # print(countAndSay(3)) # 21
 # print(countAndSay(4)) # 1211
+
+def numberOfSubarrays(nums: List[int], k: int) -> int:
+    # Given an array of integers nums and an integer k. A continuous subarray is called nice if there are k odd numbers on it.
+    # Return the number of nice sub-arrays.
+    def at_most_k_elements(nums, k):
+        j = ans = 0
+        for i in range(len(nums)):
+            k -= nums[i] & 1
+            while k < 0:
+                k += nums[j] & 1
+                j += 1
+            ans += i - j + 1
+
+        return ans
+
+    return at_most_k_elements(nums, k) - at_most_k_elements(nums, k - 1)
+
+# print(numberOfSubarrays([2044,96397,50143], 1)) # 3
+# print(numberOfSubarrays([1], 1)) # 1
+# print(numberOfSubarrays([1,1,2,1,1], 3)) # 2
+# print(numberOfSubarrays([2,4,6], 1)) # 0
+# print(numberOfSubarrays([2,2,2,1,2,2,1,2,2,2], 2)) # 16
+
+def subArraySum(nums):
+    result = 0
+    n = len(nums)
+    for i in range(n):
+        # For ith index the number of occurrences are = (n-i)*(i+1)
+        result += nums[i]*(n-i)*(i+1)
+
+    return result
+
+# print(subArraySum([1,2,3,4]))
+
+def subArrayNumber(nums):
+    n = len(nums)
+    return (n * (n+1)) // 2
+
+# print(subArrayNumber([1,2,3]))

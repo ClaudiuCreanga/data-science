@@ -74,3 +74,59 @@ def countAndSay(n: int) -> str:
 print(countAndSay(1)) # 1
 print(countAndSay(3)) # 21
 print(countAndSay(4)) # 1211
+
+
+def numberOfSubarrays(nums: List[int], k: int) -> int:
+    # Given an array of integers nums and an integer k. A continuous subarray is called nice if there are k odd numbers on it.
+    # Return the number of nice sub-arrays.
+    pass
+
+print(numberOfSubarrays([1,1,2,1,1], 3)) # 2
+print(numberOfSubarrays([2,4,6], 1)) # 0
+print(numberOfSubarrays([2,2,2,1,2,2,1,2,2,2], 2)) # 16
+
+
+def subarraysWithKDistinct(A: List[int], K: int) -> int:
+    # Given an array A of positive integers, call a (contiguous, not necessarily distinct) subarray of A good if the number of different integers in that subarray is exactly K
+    pass
+
+
+print(subarraysWithKDistinct([1,2,1,2,3], 2)) # 7
+print(subarraysWithKDistinct([1,2,1,3,4], 3)) # 3
+
+
+def shortestSubarray(A: List[int], K: int) -> int:
+    # Return the length of the shortest, non-empty, contiguous subarray of A with sum at least K
+    pass
+
+print(shortestSubarray([-28,81,-20,28,-29], 89)) #3
+print(shortestSubarray([84,-37,32,40,95], 167)) #3
+print(shortestSubarray([1], 1)) #1
+print(shortestSubarray([1, 2], 4)) #-1
+print(shortestSubarray([15, 20, 7, 8, 50], 40)) #1
+print(shortestSubarray([15, 20, 7, 8, 50], 4)) #1
+print(shortestSubarray([1, 2, -1, 2, 3], 4)) #2
+print(shortestSubarray([2,-1,2], 3)) #3
+
+
+def numSubarraysWithSum(A: List[int], S: int) -> int:
+    # In an array A of 0s and 1s, how many non-empty subarrays have sum S?
+    pass
+
+print(numSubarraysWithSum([1,0,1,0,1], 2)) # 4
+print(numSubarraysWithSum([0,0,0,0,0], 0)) # 15
+
+
+def findMin(nums: List[int]) -> int:
+    # Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand. find the minimum element
+    pass
+
+print(findMin([3,4,5,1,2] )) #1
+print(findMin([4,5,6,7,0,1,2])) #0
+
+
+def twoSum(numbers: List[int], target: int) -> List[int]:
+    # Given an array of integers that is already sorted in ascending order, find two numbers such that they add up to a specific target number.
+    pass
+
+print(twoSum([2,7,11,15], 9)) # 1,2

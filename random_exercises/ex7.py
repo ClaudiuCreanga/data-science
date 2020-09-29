@@ -135,7 +135,5 @@ def minSubArrayLen2(s: int, A: List[int]) -> int:
     return res % (len(A) + 1)
 
 
-
-
 print(minSubArrayLen2(7, [2,3,1,2,4,3])) # 2
 print(minSubArrayLen2(4, [1,4,4])) # 1
