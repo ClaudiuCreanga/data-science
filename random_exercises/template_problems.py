@@ -61,6 +61,8 @@ def balancedString(s: str) -> int:
     # minimum length of string that replaces the substring to be balanced
     pass
 
+print(balancedString("WWEQERQWQWWRWWERQWEQ")) # 4
+print(balancedString("QWQQEEER")) #2
 print(balancedString("QWER")) #0
 print(balancedString("QQER")) #1
 print(balancedString("QQQR")) #2
@@ -130,3 +132,46 @@ def twoSum(numbers: List[int], target: int) -> List[int]:
     pass
 
 print(twoSum([2,7,11,15], 9)) # 1,2
+
+
+def mySqrt(x: int) -> int:
+    # Implement int sqrt(int x).
+    pass
+
+print(mySqrt(8))
+
+
+def searchRange(nums: List[int], target: int) -> List[int]:
+    # Given an array of integers nums sorted in ascending order, find the starting and ending position of a given target value.
+    pass
+
+print(searchRange([5,7,7,8,8,10], 8)) #3, 4
+
+
+def myPow(x: float, n: int) -> float:
+    # Implement pow(x, n), which calculates x raised to the power n (i.e. xn).
+    pass
+
+print(myPow(2, 10)) # 1024
+print(myPow(2, -2)) # 0.25
+
+
+def hIndex(citations: List[int]) -> int:
+    # find the h index of a researcher
+    pass
+
+print([0,1,3,5,6]) # 3
+
+
+class RecentCounter:
+    def __init__(self):
+        pass
+
+    def ping(self, t: int) -> int:
+        pass
+
+obj = RecentCounter()
+print(obj.ping(1))
+print(obj.ping(100))
+print(obj.ping(3001))
+print(obj.ping(3002))

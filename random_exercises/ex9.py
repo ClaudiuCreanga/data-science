@@ -28,16 +28,16 @@ def subarraysWithKDistinct(A: List[int], K: int) -> int:
 
 class Window:
     def __init__(self):
-        count = {}
-        size = 0
+        self.count = {}
+        self.size = 0
 
     def add(self, x):
-        count[x] = count.get(x, 0) + 1
-        if count[x] == 1: size += 1
+        self.count[x] = self.count.get(x, 0) + 1
+        if self.count[x] == 1: self.size += 1
 
     def remove(self, x):
-        count[x] = count.get(x) - 1
-        if count[x] == 0: size -= 1
+        self.count[x] = self.count.get(x) - 1
+        if self.count[x] == 0: self.size -= 1
 
 
 def subarraysWithKDistinct2(A: List[int], K: int) -> int:
@@ -178,6 +178,7 @@ def shortestSubarray(A: List[int], K: int) -> int:
 
 def findMin(nums: List[int]) -> int:
     # Suppose an array sorted in ascending order is rotated at some pivot unknown to you beforehand. find the minimum element
+    # TODO
     pass
     def binary_search(l, h):
         m = l + (h-l) // 2
@@ -188,20 +189,18 @@ def findMin(nums: List[int]) -> int:
 
     return binary_search(0, len(nums))
 
-print(findMin([3,4,5,1,2])) #1
-print(findMin([3,4,5,6,7,0,1,2])) #0
-print(findMin([1,2,3,4,5,6,7,0])) #0
-print(findMin([7,8,1,2,3,4])) #1
+# print(findMin([3,4,5,1,2])) #1
+# print(findMin([3,4,5,6,7,0,1,2])) #0
+# print(findMin([1,2,3,4,5,6,7,0])) #0
+# print(findMin([7,8,1,2,3,4])) #1
 
 def twoSum(numbers: List[int], target: int) -> List[int]:
     # Given an array of integers that is already sorted in ascending order, find two numbers such that they add up to a specific target number.
     count = {}
     for i, x in enumerate(numbers):
-        count[target - x] = i
-
-    for i, x in enumerate(numbers):
         if x in count and i != count[x]:
             return [min(count[x], i) +1, max(count[x], i) + 1]
+        count[target - x] = i
 
     #
     # def binary_search(l, h):
@@ -212,6 +211,156 @@ def twoSum(numbers: List[int], target: int) -> List[int]:
     #         else:
     #             return
 
-print(twoSum([2,7,11,15], 9)) # 1,2
-print(twoSum([2,3,4], 6)) # 1,3
-print(twoSum([-1,0], -1)) # 1,2
+def twoSum(numbers: List[int], target: int) -> List[int]:
+    # Given an array of integers that is already sorted in ascending order, find two numbers such that they add up to a specific target number.
+    l, h = 0, len(numbers) - 1
+    while l < h:
+        s = numbers[l] + numbers[h]
+        if s == target:
+            return [l+1, h+1]
+        elif s < target:
+            l += 1
+        else:
+            h -= 1
+
+
+def twoSum(numbers: List[int], target: int) -> List[int]:
+    # Given an array of integers that is already sorted in ascending order, find two numbers such that they add up to a specific target number.
+    # O(nlogn)
+    for i in range(len(numbers)):
+        dif = target - numbers[i]
+        l, h = i+1, len(numbers) - 1
+        while l <= h:
+            m = l + (h-l) // 2
+            if numbers[m] == dif:
+                return [i+1, m+1]
+            elif numbers[m] < dif:
+                l = m+1
+            else:
+                h = m-1
+
+# print(twoSum([2,7,11,15], 9)) # 1,2
+# print(twoSum([2,3,4], 6)) # 1,3
+# print(twoSum([-1,0], -1)) # 1,2
+
+def mySqrt(x: int) -> int:
+    # Implement int sqrt(int x).
+    # the intuition here is that sqrt(x) is always smaller or equall to x/2
+    # if it's not smaller than the high point becomes the middle - 1
+    ans, l, h = 0, 1, x
+    while l <= h:
+        m = l + (h - l) // 2
+        if m <= x / m:
+            l = m + 1
+            ans = m
+        else:
+            h = m - 1
+    return ans
+
+# print(mySqrt(0))
+# print(mySqrt(1))
+# print(mySqrt(64))
+
+def searchRange(nums: List[int], target: int) -> List[int]:
+    # Given an array of integers nums sorted in ascending order, find the starting and ending position of a given target value.
+    def binary_search(l, h, direction = "None"):
+        if l <= h:
+            m = l + (h - l) // 2
+            if nums[m] == target:
+                if direction == "left":
+                    if m - 1 >= 0 and nums[m-1] == target:
+                        return binary_search(l, m-1, direction)
+                    return m
+                elif direction == "right":
+                    if m+1 < len(nums) and nums[m+1] == target:
+                        return binary_search(m+1, len(nums) - 1, direction)
+                return m
+            elif nums[m] < target:
+                return binary_search(m + 1, h, direction)
+            else:
+                return binary_search(l, m - 1, direction)
+
+        return -1
+
+    item = binary_search(0, len(nums) - 1)
+    if item == -1:
+        return [-1, -1]
+    else:
+        return [binary_search(0, item, "left"), binary_search(item, len(nums) - 1, "right")]
+
+def searchRange(nums: List[int], target: int) -> List[int]:
+    # Given an array of integers nums sorted in ascending order, find the starting and ending position of a given target value.
+    def binary_search_left(left, right):
+        if left <= right:
+            m = left + (right - left) // 2
+            if target > nums[m]: left = m + 1
+            else: right = m - 1
+        return left
+
+    def binary_search_right(left, right):
+        if left <= right:
+            m = left + (right - left) // 2
+            if target >= nums[m]: left = m + 1
+            else: right = m - 1
+        return right
+
+    left, right = binary_search_left(0, len(nums) - 1), binary_search_right(0, len(nums) - 1)
+    return [left, right] if left <= right else [-1, -1]
+
+
+# print(searchRange([1,3,3,3,3,3,3,3,3,4], 3)) #1, 8
+# print(searchRange([3,3,3], 3)) #0, 2
+# print(searchRange([0], 1)) #-1, -1
+# print(searchRange([5,7,7,8,8,10], 8)) #3, 4
+
+
+def myPow(x: float, n: int) -> float:
+    # Implement pow(x, n), which calculates x raised to the power n (i.e. xn).
+    if n == 0: return 1
+    if n < 0: x, n = 1.0 / x, -n
+    if n % 2 == 0: return myPow(x, n // 2) * myPow(x, n // 2)
+    else: return x * myPow(x, n // 2) * myPow(x, n // 2)
+
+    temp = myPow(x, int(n / 2))
+
+    if (n % 2 == 0):
+        return temp * temp
+    else:
+        return x * temp * temp
+
+        #
+    # result = 1.0
+    # if n < 0:
+    #     x, n = 1.0 / x, -n
+    # while n:
+    #     if n & 1:
+    #         result *= x
+    #     x, n = x * x, n >> 1
+    # return result
+
+
+# print(myPow(2, -2)) # 0.25
+# print(myPow(2, 10)) # 1024
+
+
+def hIndex(citations: List[int]) -> int:
+    # find the h index of a researcher
+    # TODO
+    if not citations:
+        return 0
+    n = len(citations) - 1
+    for i in range(n, -1, -1):
+        item = citations[i]
+        passed = n - i + 1
+        if item <= passed:
+            return citations[i]
+
+    return len(citations)
+
+print(hIndex([0,0,4,4])) # 2
+print(hIndex([11,15])) # 2
+print(hIndex([1,1,2])) # 1
+print(hIndex([99, 100])) # 1
+print(hIndex([100])) # 1
+print(hIndex([1])) # 1
+print(hIndex([0,1,3,5,6])) # 3
