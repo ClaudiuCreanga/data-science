@@ -103,3 +103,4 @@ mylogins.py
 nytimes.csv
 .mypy_cache/
 data/illumina
+kaggle.json
